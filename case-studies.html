@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;html class="light" lang="en"&gt;&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="utf-8"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;amp;family=Public+Sans:wght@300;400;500;600&amp;amp;display=swap" rel="stylesheet"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script id="tailwind-config"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>tailwind.config = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>darkMode: "class",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>theme: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>extend: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"colors": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed-variant": "#33476a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-container": "#73b4dc",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-surface-variant": "#40484e",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-on-surface": "#e4f3ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container": "#dff0fe",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-fixed-dim": "#8ecdff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface": "#f6faff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-fixed-dim": "#8dcef7",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-error-container": "#93000a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-background": "#0d1d27",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-dim": "#cbdcea",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-error": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary": "#176589",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed-variant": "#004b70",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary": "#4b5f84",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed": "#001e30",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-primary": "#8dcef7",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-container": "#465a7f",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-container": "#004567",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-fixed-variant": "#004c6b",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-surface": "#0d1d27",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-fixed-dim": "#b2c7f1",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-fixed": "#001e2d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-fixed": "#d7e3ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-tint": "#176589",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-fixed": "#cae6ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-container": "#bed2fd",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-lowest": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-bright": "#f6faff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-highest": "#d4e5f3",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-surface": "#23323d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary": "#006494",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-container": "#65b4ec",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"error": "#ba1a1a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed": "#021b3d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"outline-variant": "#c0c7ce",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-container": "#004562",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-low": "#eaf5ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-high": "#d9eaf8",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-variant": "#d4e5f3",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"outline": "#70787e",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-fixed": "#c6e7ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"error-container": "#ffdad6",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"background": "#f6faff"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"borderRadius": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"DEFAULT": "0.125rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"lg": "0.25rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"xl": "0.5rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"full": "0.75rem"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"fontFamily": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"headline": ["Manrope"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"body": ["Public Sans"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"label": ["Public Sans"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"manrope": ["Manrope"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"public-sans": ["Public Sans"]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.material-symbols-outlined {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.glass-effect {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(24px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: rgba(246, 250, 255, 0.8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.primary-gradient {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #176589 0%, #004c6b 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-surface font-body text-on-surface"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- TopAppBar from COMPONENTS_13 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-manrope"&gt;Clinical Editorial&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="hidden md:flex gap-6 items-center font-manrope font-semibold"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="index.html"&gt;Dashboard&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="modules.html"&gt;Modules&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="guidelines.html"&gt;Guidelines&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-600 active:scale-95 duration-150" href="case-studies.html"&gt;Case Studies&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;notifications&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;account_circle&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex min-h-screen"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- SideNavBar from COMPONENTS_13 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;aside class="fixed left-0 top-0 pt-20 px-4 h-full h-screen w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950 transition-all duration-200 ease-in-out"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mb-8 px-2"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-3 mb-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-10 w-10 rounded-full overflow-hidden border border-slate-200 dark:border-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;img alt="Specialist Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK1_OSvAhXZXOpNNi7IraD28wz1COWcPnh8vjuzzSWkreeIu0N0dW_O3HF9JXSoDYq5QyabmIiuI6faviHvzt0DsGDtVGyAmGZrkZ2iaA4FGKZ5NjWaVNEA2Qh1cMDcfUNfahF5FPJ93ZHcayibDC3T2yazlSJ59fwWxld1sNGCz9fG-ZGRJn8wHJylK8mjK0kvASpfTI58HOL-EBRrBZmjcU3TuyMlnDWjdTe7MdDGlIdppzGf6AO1KtOP4LeR-FouzLJToKnO_c"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-slate-900 dark:text-slate-50 text-sm font-black font-manrope"&gt;Pediatric Specialist&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-slate-500 dark:text-slate-400 text-xs font-manrope"&gt;Clinical Editorial Hub&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="space-y-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="index.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sky-600 dark:text-sky-400"&gt;dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;Dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="modules.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sky-600 dark:text-sky-400"&gt;clinical_notes&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;Modules&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="guidelines.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sky-600 dark:text-sky-400"&gt;menu_book&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;Guidelines&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-3 py-2 bg-sky-50 dark:bg-sky-900/20 text-sky-700 dark:text-sky-300 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="case-studies.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sky-600 dark:text-sky-400"&gt;biotech&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;Case Studies&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/aside&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Main Content Area --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;main class="flex-1 lg:ml-64 max-w-7xl mx-auto px-6 py-8 pt-24"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Header (Progress Tracker elements removed per request) --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mb-10 px-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex justify-between items-end mb-3"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-primary font-headline font-bold uppercase tracking-widest text-[10px]"&gt;Current Session&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="text-on-surface font-headline text-2xl font-extrabold tracking-tight"&gt;Management Decision I&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Two-Column Asymmetric Editorial Layout --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Left Panel: Patient History (Editorial Anchor) --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="lg:col-span-7 space-y-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;header class="mb-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;"&gt;emergency_home&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-xs font-bold text-primary-container font-headline uppercase tracking-wider"&gt;Pediatric Dental Case 402&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h1 class="text-4xl font-headline font-extrabold text-on-surface leading-tight tracking-tighter"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Case of 4yo with Sensory Feeding Disorder</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Clinical Photo Bento Grid --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid grid-cols-2 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;img alt="Clinical oral examination" class="w-full h-full object-cover" data-alt="close-up of a child's mouth during dental examination showing healthy gums and teeth with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBupTV0bQSwXDYYKQQXAetrYB9GHyUOyq9IO_HYBrN50nt0PAlugqtP8MoO0C6egJwegy1xK6LnSqwaoz9i3JYXtNyA1aWq_rDx8nE7SMoFnqPIzB4j8gFwmTNrCJTLLe4S8GijC9EHWZU10HIQbW-0BfhEfFNwBTKS-3G4LjgnY0vmRnjEIz1oyMYR3KUj9XUjWrLq1fF7Tu-JE9twTMd-z391XK1A9r8e9oKuT1rDEo7XtQoD8tDAvGLupuWv7QzmekELWHaJltk"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid grid-rows-2 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;img alt="Feeding behavior observation" class="w-full h-full object-cover" data-alt="a toddler sitting in a high chair showing signs of food aversion, pushing away a plate of broccoli with a hesitant expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnmdvN6rcht4GqBBMLUbKVpej66nvLYwu14Nxme-RR7cYe1cAiCEeAhhee-CbFTgXIjXA8baR5lYzmzJwBRlZW_XrFwBKyWt1X2X-jyPJxoOrsQQJ-7NQjegxNQBw2Ar12hcV8AFSmS-wtYe74zyFS6UuHs2xAxu81FxDMyrlxiF6yRdee0Mnwn3B9pwdajtjGQ5lNQ__P1qKkEisip0Vt8BAP-yhyc-EIHETwhxuMYbh7KMV-ox-D5AnJNnSo8tG9fzFU3UAfFBA"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-primary text-on-primary p-6 rounded-xl flex flex-col justify-center"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined mb-2 text-3xl"&gt;medical_information&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-headline font-bold text-lg leading-tight"&gt;Patient: Leo M.&lt;br/&gt;Age: 4.2 Years&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-primary-fixed text-xs mt-1"&gt;Diagnosis: Avoidant/Restrictive Food Intake (ARFID)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Clinical Narrative --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="surface-container-low p-8 rounded-xl space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="w-1 bg-tertiary h-auto rounded-full"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 class="font-headline font-bold text-lg text-on-surface mb-2"&gt;Patient History&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-on-surface-variant font-body leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>Patient presents with significant hypersensitivity to textures. Parents report a "beige diet" consisting primarily of processed carbohydrates. Leo exhibits gagging when introduced to fibrous textures or strong olfactory stimuli. Previous attempts at occupational therapy (OT) showed marginal improvement over 6 months.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="w-1 bg-tertiary h-auto rounded-full"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 class="font-headline font-bold text-lg text-on-surface mb-2"&gt;Nutritional Assessment&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-on-surface-variant font-body leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>Below 15th percentile for BMI-for-age. Laboratory workups indicate mild Vitamin D and Iron deficiency. Dental screening reveals early-stage demineralization on second primary molars due to lack of self-cleansing fibrous food intake.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Right Panel: Interactive Decisions --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="lg:col-span-5"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="sticky top-24 space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-surface-container-lowest border-2 border-primary-container/20 rounded-xl p-8 shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mb-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-primary font-headline font-bold text-xs uppercase tracking-widest"&gt;Decision Analysis&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 class="text-xl font-headline font-extrabold text-on-surface mt-2 leading-tight"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>What is the most appropriate next step in Leo's multidisciplinary management plan?</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="space-y-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Option 1 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-body font-semibold text-on-surface leading-snug"&gt;Implement a behavioral "consequence-based" reward system for new food trials.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Option 2 (Selected State) --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-primary text-on-primary shadow-lg shadow-sky-200 transition-all"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-5 w-5 rounded-full border-2 border-on-primary flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-2.5 w-2.5 rounded-full bg-on-primary"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-body font-semibold leading-snug"&gt;Refer to a speech-language pathologist (SLP) specializing in oral-motor dysfunction and sequential sensory-motor feeding.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Option 3 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-body font-semibold text-on-surface leading-snug"&gt;Immediate surgical intervention for suspected tongue-tie to improve mastication efficiency.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Option 4 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-body font-semibold text-on-surface leading-snug"&gt;Prescribe high-calorie liquid supplements and defer further behavioral intervention until age 6.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="w-full mt-8 primary-gradient text-on-primary font-headline font-bold py-4 rounded-xl shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;SUBMIT DECISION&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;arrow_forward&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Expert Insight Contextual Callout --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-surface-container-high relative overflow-hidden rounded-xl p-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-start gap-3"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;"&gt;lightbulb&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h4 class="font-headline font-bold text-sm text-on-surface"&gt;Clinical Insight&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-sm text-on-surface-variant mt-1 leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>Recent data suggests that sensory feeding disorders often require a &lt;strong&gt;multimodal approach&lt;/strong&gt; involving SLPs and Dietitians to address both the physical mechanics and nutritional gaps.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- BottomNavBar from COMPONENTS_13 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex justify-around items-center h-16 pb-safe px-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;clinical_notes&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Modules&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;menu_book&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Guidelines&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;"&gt;biotech&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Case Studies&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;&lt;/html&gt;</span></p>
+</body>
+</html>

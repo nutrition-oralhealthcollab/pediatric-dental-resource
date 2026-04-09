@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;html class="light" lang="en"&gt;&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="utf-8"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;amp;family=Public+Sans:wght@300;400;500;600&amp;amp;display=swap" rel="stylesheet"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script id="tailwind-config"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>tailwind.config = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>darkMode: "class",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>theme: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>extend: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"colors": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed-variant": "#33476a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-container": "#73b4dc",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-surface-variant": "#40484e",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-on-surface": "#e4f3ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container": "#dff0fe",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-fixed-dim": "#8ecdff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface": "#f6faff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-fixed-dim": "#8dcef7",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-error-container": "#93000a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-background": "#0d1d27",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-dim": "#cbdcea",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-error": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary": "#176589",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed-variant": "#004b70",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary": "#4b5f84",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed": "#001e30",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-primary": "#8dcef7",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-container": "#465a7f",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary-container": "#004567",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-fixed-variant": "#004c6b",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-surface": "#0d1d27",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-fixed-dim": "#b2c7f1",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-fixed": "#001e2d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-fixed": "#d7e3ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-tint": "#176589",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-fixed": "#cae6ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"secondary-container": "#bed2fd",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-lowest": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-bright": "#f6faff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-highest": "#d4e5f3",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"inverse-surface": "#23323d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary": "#006494",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"tertiary-container": "#65b4ec",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"error": "#ba1a1a",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed": "#021b3d",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"outline-variant": "#c0c7ce",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-primary-container": "#004562",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-low": "#eaf5ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-container-high": "#d9eaf8",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"surface-variant": "#d4e5f3",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"outline": "#70787e",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"primary-fixed": "#c6e7ff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"on-tertiary": "#ffffff",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"error-container": "#ffdad6",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"background": "#f6faff"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"borderRadius": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"DEFAULT": "0.125rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"lg": "0.25rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"xl": "0.5rem",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"full": "0.75rem"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"fontFamily": {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"headline": ["Manrope"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"body": ["Public Sans"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"label": ["Public Sans"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"manrope": ["Manrope"],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>"public-sans": ["Public Sans"]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.material-symbols-outlined {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.editorial-gradient {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #176589 0%, #004c6b 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-surface font-body text-on-surface"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- TopAppBar Component --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-manrope"&gt;Clinical Editorial&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="hidden md:flex space-x-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold active:scale-95 duration-150" href="index.html"&gt;Dashboard&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-600 font-manrope font-semibold active:scale-95 duration-150" href="modules.html"&gt;Modules&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold active:scale-95 duration-150" href="guidelines.html"&gt;Guidelines&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold active:scale-95 duration-150" href="case-studies.html"&gt;Case Studies&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;notifications&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;account_circle&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;img alt="Provider profile avatar" class="w-8 h-8 rounded-full border border-sky-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLQUC1uVCbc3MMfdnaUbYzMRuGAb6wsEGLtg6pRLHhxJrV0Gr-WpHuwbUQDiZdpTRT-UQk2Fpl09LexYtgljEN1bqk0nklgCtlUzMr2jYCPwO3arRNiJZ-sHFlyrMLe-KCn_rUaNa8JgwpMWL07kA53FOebRoDxLT9Xatu_20cDgTQgrKXMouVxHKMDfpcuTkp74Lb8IwTUblSUR4f1I1D25C4rriBEftgzQUDq_DnQs9YJyIrknyLZhgMvCa1QhbztsNU0Vw6DM"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- SideNavBar Component --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;aside class="fixed left-0 top-0 pt-20 px-4 h-full h-screen w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="px-2 py-4 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="text-lg font-black text-slate-900 dark:text-slate-50 font-manrope uppercase tracking-tighter"&gt;Pediatric Specialist&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-xs text-sky-600 dark:text-sky-400 font-medium font-manrope"&gt;Clinical Editorial Hub&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="flex-1 space-y-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="index.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;dashboard&lt;/span&gt; Dashboard</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 bg-sky-50 dark:bg-sky-900/20 text-sky-700 dark:text-sky-300 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="modules.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;clinical_notes&lt;/span&gt; Modules</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="guidelines.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;menu_book&lt;/span&gt; Guidelines</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="case-studies.html"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;biotech&lt;/span&gt; Case Studies</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="pt-4 pb-8 border-t border-slate-200/20 dark:border-slate-800/20 space-y-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="#"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;help&lt;/span&gt; Support</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="#"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;logout&lt;/span&gt; Sign Out</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/aside&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Main Content Canvas --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;main class="lg:ml-64 pt-24 pb-32 px-6 md:px-12 max-w-7xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Hero Section --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid lg:grid-cols-12 gap-12 items-start"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Left Column --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="lg:col-span-7 space-y-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;header&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="flex items-center gap-2 mb-6 text-sm font-medium text-primary"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span&gt;Modules&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-xs"&gt;chevron_right&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-on-surface-variant"&gt;Pediatric Feeding &amp;amp; Development&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tight mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Identifying Oral Health Indicators in Feeding Disorder Patients</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>A clinical guide for GI, SLP, and Nutrition specialists to recognize oral markers that impact feeding therapy outcomes and systemic pediatric health.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid sm:grid-cols-2 gap-4 pt-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-surface-container-low p-5 rounded-xl border-l-4 border-primary"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-2 text-primary mb-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-xl"&gt;medical_services&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-xs font-bold uppercase tracking-widest font-headline"&gt;Contributor&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-lg font-bold font-headline"&gt;Pediatric Dentistry&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-surface-container-low p-5 rounded-xl border-l-4 border-tertiary"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-center gap-2 text-tertiary mb-1"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-xl"&gt;account_tree&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-xs font-bold uppercase tracking-widest font-headline"&gt;Topic&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-lg font-bold font-headline"&gt;Oral Health Integration&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Clinical Intersections --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold font-headline mb-6 flex items-center gap-3"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-primary"&gt;hub&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Clinical Intersections</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;ul class="space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li class="flex items-start gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1 w-2 h-2 rounded-full bg-primary-container shrink-0"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-on-surface leading-relaxed"&gt;Recognize how oral inflammation and gingival health serve as non-invasive indicators of underlying GI distress in non-verbal pediatric patients.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li class="flex items-start gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1 w-2 h-2 rounded-full bg-primary-container shrink-0"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-on-surface leading-relaxed"&gt;Identify oral soft tissue changes that suggest micronutrient deficiencies, providing early data for nutritional and speech-language interventions.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;li class="flex items-start gap-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="mt-1 w-2 h-2 rounded-full bg-primary-container shrink-0"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-on-surface leading-relaxed"&gt;Differentiate between structural dental issues and functional feeding barriers to optimize the timing of multidisciplinary SLP/GI referrals.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Right Column --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="lg:col-span-5 space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Instructor Card --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-surface-container rounded-xl overflow-hidden"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="h-24 editorial-gradient p-6 flex items-end"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 class="text-white font-bold font-headline text-lg"&gt;Lead Instructor&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="p-6 -mt-12"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex items-end gap-4 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;img alt="Instructor Portrait" class="w-24 h-24 rounded-xl object-cover border-4 border-white shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdnyJvvogGbSs7fxd5mnFzAorLB5pbD4vB2HQY8y4OLP0Izbgi_cPR1_4yoC8HJhYa8sJ-fIxhoxYORVXWXsENAkwODGs9Cp1l9Y-biRH-OkrCtijzkDCgmefmTKr3hJgx82yHE_sIFGIv0JBIxd6zCW6LzvV2QTlI9xViyt2opr_VJ3yvn9WSA2Ortswr2dF2PyBy4FA82dwfXjG2xA5KVgmA94hROCMCdiCvMzpn2ge0fd6ZZYYnXkTmHOw7uJpym8f4-WucBTE"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="pb-2"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="font-bold font-headline text-xl"&gt;Dr. Marcus Chen&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-primary font-medium"&gt;Board Certified Pediatric Dentist&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-sm text-on-surface-variant leading-relaxed mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Dr. Chen bridges the gap between dental medicine and functional therapy, helping allied health professionals integrate oral observation into their standard diagnostic workflows.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="w-full py-4 editorial-gradient text-white font-bold font-headline rounded-xl shadow-lg hover:opacity-90 transition-all flex items-center justify-center gap-3 active:scale-95"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>START READING</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="material-symbols-outlined"&gt;menu_book&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Clinical Insight --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="bg-tertiary-container/20 p-6 rounded-xl border-l-4 border-tertiary"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h4 class="text-tertiary font-bold font-headline flex items-center gap-2 mb-2"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-sm"&gt;visibility&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Clinical Insight</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p class="text-sm text-on-tertiary-container leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>For patients with avoidant restrictive food intake disorder (ARFID), the condition of the enamel can provide critical timeline data on acid exposure and nutritional intake periods.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Icons Grid --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid grid-cols-4 gap-4 px-2"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex flex-col items-center gap-1 opacity-40"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-3xl"&gt;dentistry&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-[10px] font-bold uppercase"&gt;Dental Context&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex flex-col items-center gap-1 opacity-40"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-3xl"&gt;body_system&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-[10px] font-bold uppercase"&gt;GI Markers&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex flex-col items-center gap-1 opacity-40"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-3xl"&gt;speech_to_text&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-[10px] font-bold uppercase"&gt;SLP Link&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex flex-col items-center gap-1 opacity-40"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined text-3xl"&gt;nutrition&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="text-[10px] font-bold uppercase"&gt;Nutrition&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- BottomNavBar Component (Mobile Only) --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;nav class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="flex justify-around items-center h-16 pb-safe px-4"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:scale-95"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Dashboard&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110 tap-highlight-transparent transition-transform"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;clinical_notes&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Modules&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:scale-95"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;menu_book&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Guidelines&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:scale-95"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="material-symbols-outlined"&gt;biotech&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1"&gt;Case Studies&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;&lt;/html&gt;</span></p>
+</body>
+</html>

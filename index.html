@@ -3,363 +3,307 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Pediatric Dentist's Desk - Clinical Editorial</title>
+<title>Pulse &amp; Praxis | Specialist Resource Hub</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "on-secondary-fixed-variant": "#33476a",
-                "primary-container": "#73b4dc",
-                "on-surface-variant": "#40484e",
-                "inverse-on-surface": "#e4f3ff",
-                "surface-container": "#dff0fe",
-                "tertiary-fixed-dim": "#8ecdff",
-                "surface": "#f6faff",
-                "primary-fixed-dim": "#8dcef7",
-                "on-error-container": "#93000a",
-                "on-background": "#0d1d27",
-                "surface-dim": "#cbdcea",
-                "on-error": "#ffffff",
-                "primary": "#176589",
-                "on-tertiary-fixed-variant": "#004b70",
-                "on-secondary": "#ffffff",
-                "on-primary": "#ffffff",
-                "secondary": "#4b5f84",
-                "on-tertiary-fixed": "#001e30",
-                "inverse-primary": "#8dcef7",
-                "on-secondary-container": "#465a7f",
-                "on-tertiary-container": "#004567",
-                "on-primary-fixed-variant": "#004c6b",
-                "on-surface": "#0d1d27",
-                "secondary-fixed-dim": "#b2c7f1",
-                "on-primary-fixed": "#001e2d",
-                "secondary-fixed": "#d7e3ff",
-                "surface-tint": "#176589",
-                "tertiary-fixed": "#cae6ff",
-                "secondary-container": "#bed2fd",
-                "surface-container-lowest": "#ffffff",
-                "surface-bright": "#f6faff",
-                "surface-container-highest": "#d4e5f3",
-                "inverse-surface": "#23323d",
-                "tertiary": "#006494",
-                "tertiary-container": "#65b4ec",
-                "error": "#ba1a1a",
-                "on-secondary-fixed": "#021b3d",
-                "outline-variant": "#c0c7ce",
-                "on-primary-container": "#004562",
-                "surface-container-low": "#eaf5ff",
-                "surface-container-high": "#d9eaf8",
-                "surface-variant": "#d4e5f3",
-                "outline": "#70787e",
-                "primary-fixed": "#c6e7ff",
-                "on-tertiary": "#ffffff",
-                "error-container": "#ffdad6",
-                "background": "#f6faff"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#021b3d",
+                        "on-primary-container": "#004562",
+                        "on-background": "#0d1d27",
+                        "outline-variant": "#c0c7ce",
+                        "on-secondary-container": "#465a7f",
+                        "background": "#f6faff",
+                        "surface-tint": "#176589",
+                        "outline": "#70787e",
+                        "on-secondary-fixed-variant": "#33476a",
+                        "secondary": "#4b5f84",
+                        "primary-fixed": "#c6e7ff",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#40484e",
+                        "surface-container": "#dff0fe",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "surface": "#f6faff",
+                        "surface-container-low": "#eaf5ff",
+                        "on-tertiary-container": "#004567",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001e2d",
+                        "inverse-on-surface": "#e4f3ff",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "on-tertiary-fixed": "#001e30",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#d9eaf8",
+                        "surface-container-highest": "#d4e5f3",
+                        "secondary-fixed-dim": "#b2c7f1",
+                        "tertiary": "#006494",
+                        "secondary-fixed": "#d7e3ff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#8dcef7",
+                        "inverse-surface": "#23323d",
+                        "primary-fixed-dim": "#8dcef7",
+                        "surface-variant": "#d4e5f3",
+                        "primary": "#176589",
+                        "surface-dim": "#cbdcea",
+                        "primary-container": "#73b4dc",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#cae6ff",
+                        "secondary-container": "#bed2fd",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#65b4ec",
+                        "surface-bright": "#f6faff",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "on-surface": "#0d1d27"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
             },
-            "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-            },
-            "fontFamily": {
-                "headline": ["Manrope"],
-                "body": ["Public Sans"],
-                "label": ["Public Sans"]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      body {
-        font-family: 'Public Sans', sans-serif;
-      }
-      h1, h2, h3, h4 {
-        font-family: 'Manrope', sans-serif;
-      }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(246, 250, 255, 0.8); backdrop-filter: blur(24px); }
     </style>
 </head>
-<body class="bg-surface text-on-surface flex min-h-[1024px]" data-mode="connect">
-<!-- SideNavBar -->
-<aside class="fixed left-0 top-0 pt-20 px-4 h-full w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950 z-40 transition-all duration-200 ease-in-out">
-<div class="mb-8 px-4">
-<h2 class="text-lg font-black text-slate-900 dark:text-slate-50 tracking-tight leading-tight">Pediatric Specialist</h2>
-<p class="text-xs text-sky-600 dark:text-sky-400 font-manrope font-medium uppercase tracking-wider">Clinical Editorial Hub</p>
-</div>
-<nav class="flex-1 space-y-1">
-<a class="flex items-center gap-3 px-4 py-3 bg-sky-50 dark:bg-sky-900/20 text-sky-700 dark:text-sky-300 rounded-lg font-manrope text-sm font-medium" href="index.html">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span>Dashboard</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 font-manrope text-sm font-medium" href="modules.html">
-<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
-<span>Modules</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 font-manrope text-sm font-medium" href="guidelines.html">
-<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
-<span>Guidelines</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 font-manrope text-sm font-medium" href="case-studies.html">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-<span>Case Studies</span>
-</a>
-</nav>
-<div class="mt-auto space-y-1 pt-4 border-t border-slate-200/50 dark:border-slate-800/50 pb-8">
-<button class="w-full bg-primary text-white py-3 rounded-lg font-bold text-xs uppercase tracking-widest mb-4 hover:opacity-90 transition-opacity">
-                Share Insight
-            </button>
-<a class="flex items-center gap-3 px-4 py-2 text-slate-500 hover:text-sky-600 font-manrope text-xs" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
-<span>Support</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-2 text-slate-500 hover:text-error font-manrope text-xs" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="logout">logout</span>
-<span>Sign Out</span>
-</a>
-</div>
-</aside>
-<!-- Main Content Canvas -->
-<main class="flex-1 lg:ml-64 pb-24 lg:pb-8">
+<body class="bg-background text-on-background min-h-screen">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm border-b border-slate-100/50 dark:border-slate-800/50">
-<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto">
+<header class="fixed top-0 w-full z-50 bg-sky-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-8">
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-manrope">Clinical Editorial</span>
-<nav class="hidden md:flex gap-6">
-<a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-600 pb-1 font-manrope font-semibold" href="index.html">Dashboard</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold" href="modules.html">ABPD References</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold" href="guidelines.html">Clinical Manuals</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold" href="case-studies.html">Evidence Digest</a>
+<span class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">Pulse &amp; Praxis</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-sky-700 dark:text-sky-300 font-bold border-b-2 border-sky-600 dark:border-sky-400 pb-1" href="index.html">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="modules.html">Modules</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="guidelines.html">Guidelines</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="case-studies.html">Case Studies</a>
 </nav>
 </div>
 <div class="flex items-center gap-4">
 <div class="relative hidden sm:block">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-<input class="bg-slate-100/50 dark:bg-slate-800/50 border-none rounded-full pl-10 pr-4 py-1.5 text-sm focus:ring-2 focus:ring-sky-500 w-64" placeholder="Search AAPD / Little &amp; Falace..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary w-64 text-sm" placeholder="Search resources..." type="text"/>
 </div>
-<button class="material-symbols-outlined text-slate-600 dark:text-slate-400 p-2 hover:bg-sky-50 rounded-full transition-colors active:scale-95 duration-150" data-icon="notifications">notifications</button>
-<button class="material-symbols-outlined text-slate-600 dark:text-slate-400 p-2 hover:bg-sky-50 rounded-full transition-colors active:scale-95 duration-150" data-icon="account_circle">account_circle</button>
-</div>
-</div>
-</header>
-<!-- Canvas Content -->
-<div class="pt-24 px-8 max-w-7xl mx-auto space-y-12">
-<!-- Consolidated Clinical Hero -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Specialist Spotlight: ABPD Primary Focus -->
-<div class="md:col-span-5 bg-primary rounded-2xl p-8 flex flex-col justify-between text-white relative overflow-hidden shadow-2xl shadow-sky-200">
-<div class="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-<div class="relative z-10">
-<span class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
-<span class="material-symbols-outlined text-xs">verified</span> Board Reference Focus
-                        </span>
-<h3 class="text-2xl font-extrabold leading-tight mb-4 font-manrope">Salivary &amp; Microbiome Shifts in Pediatric Health</h3>
-<p class="text-sky-100 text-sm leading-relaxed mb-8">
-                            Analyzing systemic-oral connections based on Frontiers research and ABPD qualifying references. Focus on early dysbiosis indicators in medically complex patients.
-                        </p>
-<div class="flex flex-wrap gap-3">
-<span class="px-2 py-1 bg-sky-900/30 rounded text-[9px] font-bold border border-white/20">Nelson Textbook</span>
-<span class="px-2 py-1 bg-sky-900/30 rounded text-[9px] font-bold border border-white/20">Little &amp; Falace</span>
-</div>
-</div>
-<div class="relative z-10 pt-8">
-<button class="bg-white text-primary w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-sky-50 transition-all shadow-lg active:scale-95">Explore Digest</button>
-</div>
-</div>
-<!-- Interdisciplinary Briefs -->
-<div class="md:col-span-7 flex flex-col gap-6">
-<div class="flex justify-between items-end">
-<div>
-<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Interdisciplinary Briefs</h2>
-<p class="text-slate-500 font-medium">Synthesized evidence for clinical chairside application.</p>
-</div>
-<a class="text-primary font-bold text-sm hover:underline flex items-center gap-1" href="case-studies.html">
-                            Archives <span class="material-symbols-outlined text-sm">open_in_new</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
-<!-- Sensory Brief -->
-<div class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col">
-<div class="mb-4 flex justify-between items-start">
-<div class="bg-primary/10 p-2.5 rounded-xl">
-<span class="material-symbols-outlined text-primary" data-icon="brush">brush</span>
-</div>
-<span class="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-500 rounded uppercase tracking-widest">Therapeutics</span>
-</div>
-<h4 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors font-manrope">Sensory Toothpastes &amp; ASD</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Efficacy of non-foaming vs. traditional agents in desensitization protocols for patients with sensory processing disorders.</p>
-<div class="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
-<span class="text-[10px] font-bold text-slate-400">Nelson Ch. 22</span>
-<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-</div>
-<!-- Enamel Brief -->
-<div class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col">
-<div class="mb-4 flex justify-between items-start">
-<div class="bg-tertiary/10 p-2.5 rounded-xl">
-<span class="material-symbols-outlined text-tertiary" data-icon="layers">layers</span>
-</div>
-<span class="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-500 rounded uppercase tracking-widest">Enamel Integrity</span>
-</div>
-<h4 class="text-lg font-bold mb-2 group-hover:text-tertiary transition-colors font-manrope">GERD &amp; Chemical Erosion</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Identifying atypical wear patterns in chronic reflux. Clinical staging strictly following AAPD Best Practice standards.</p>
-<div class="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
-<span class="text-[10px] font-bold text-slate-400">ABPD Reference</span>
-<span class="material-symbols-outlined text-tertiary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Patient Access & Navigational Core -->
-<section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<!-- Patient Access: InsureKidsNow.gov -->
-<div class="lg:col-span-2 bg-surface-container-low rounded-3xl p-8 border border-primary/10 shadow-sm relative overflow-hidden">
-<div class="absolute -bottom-10 -right-10 opacity-5 pointer-events-none">
-<span class="material-symbols-outlined text-[200px]" data-icon="medical_information">medical_information</span>
-</div>
-<div class="relative z-10">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined text-white" data-icon="health_and_safety">health_and_safety</span>
-</div>
-<div>
-<h3 class="text-2xl font-bold tracking-tight text-on-surface font-manrope">Patient Access Ecosystem</h3>
-<p class="text-on-surface-variant text-sm">Direct navigation for Medicaid &amp; CHIP families.</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white p-5 rounded-2xl border border-slate-200/50 hover:border-primary/30 transition-colors group">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-sky-600 bg-sky-50 p-1.5 rounded-lg text-lg">language</span>
-<h5 class="font-bold text-sm text-on-surface">InsureKidsNow.gov</h5>
-</div>
-<p class="text-xs text-on-surface-variant leading-relaxed mb-4">Search verified local dentists who accept public insurance through the CMS national database.</p>
-<a class="inline-flex items-center gap-2 text-primary text-[11px] font-black uppercase tracking-wider group-hover:translate-x-1 transition-transform" href="https://www.insurekidsnow.gov/" target="_blank">
-                                    Access Directory <span class="material-symbols-outlined text-sm">open_in_new</span>
-</a>
-</div>
-<div class="bg-white p-5 rounded-2xl border border-slate-200/50 hover:border-primary/30 transition-colors group">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-sky-600 bg-sky-50 p-1.5 rounded-lg text-lg">person_search</span>
-<h5 class="font-bold text-sm text-on-surface">AAPD Referral Hub</h5>
-</div>
-<p class="text-xs text-on-surface-variant leading-relaxed mb-4">Locate Pediatric Dental Specialists with board certification credentials for SHCN cases.</p>
-<button class="inline-flex items-center gap-2 text-primary text-[11px] font-black uppercase tracking-wider group-hover:translate-x-1 transition-transform">
-                                    Clinical Referral <span class="material-symbols-outlined text-sm">near_me</span>
+<button class="p-2 hover:bg-sky-100/50 dark:hover:bg-slate-800/50 rounded-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="p-2 hover:bg-sky-100/50 dark:hover:bg-slate-800/50 rounded-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">account_circle</span>
 </button>
 </div>
 </div>
+<div class="bg-sky-100/50 dark:bg-slate-800/50 h-[1px] w-full"></div>
+</header>
+<main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
+<!-- Hero Section: Editorial Intelligence -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row gap-8 items-end justify-between border-b border-outline-variant/15 pb-8">
+<div class="max-w-3xl">
+<h1 class="text-5xl font-extrabold tracking-tight text-on-background mb-4 leading-tight">Academic Clinical Dashboard</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed font-light">
+                        Rigorously verified specialist content for interdisciplinary pediatric care. Bridging the gap between academic research and clinical application.
+                    </p>
 </div>
-</div>
-<!-- Quick Actions / Standards -->
-<div class="bg-slate-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-<h4 class="text-sm font-black uppercase tracking-[0.2em] text-sky-400 mb-6">Provider Toolkit</h4>
-<ul class="space-y-4">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-sky-400 mt-0.5">check_circle</span>
-<div>
-<p class="text-xs font-bold">ABPD Dosing Guide</p>
-<p class="text-[10px] text-slate-400 mt-0.5">Nelson Pediatrics 21st Ed. standards.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-sky-400 mt-0.5">check_circle</span>
-<div>
-<p class="text-xs font-bold">SHCN Protocol Checklist</p>
-<p class="text-[10px] text-slate-400 mt-0.5">Little &amp; Falace management briefs.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-sky-400 mt-0.5">check_circle</span>
-<div>
-<p class="text-xs font-bold">Trauma Management</p>
-<p class="text-[10px] text-slate-400 mt-0.5">Latest IADT guidelines integrated.</p>
-</div>
-</li>
-</ul>
-<button class="w-full mt-10 bg-sky-500 hover:bg-sky-400 text-white font-black py-3 rounded-xl text-[10px] uppercase tracking-widest transition-all shadow-lg shadow-sky-500/20 active:scale-95">
-                        Download Clinical Toolkit
+<div class="flex gap-4">
+<button class="bg-gradient-to-br from-primary to-sky-800 text-on-primary px-6 py-3 rounded-xl font-bold text-sm tracking-wider uppercase transition-transform active:scale-95 shadow-lg shadow-primary/10">
+                        New Entry
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-6 py-3 rounded-xl font-bold text-sm tracking-wider uppercase transition-colors hover:bg-surface-variant">
+                        Export Report
                     </button>
 </div>
-</section>
-<!-- Strict Board Reference Tools -->
-<section class="space-y-6">
-<div class="flex justify-between items-center">
-<h3 class="text-2xl font-bold tracking-tight text-on-surface font-manrope">ABPD/Nelson Reference Tools</h3>
-<div class="flex gap-2">
-<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
-<span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
-<span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Medication Tool -->
-<div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-primary/50 transition-all group">
-<div class="w-12 h-12 mb-5 rounded-2xl bg-primary-container/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-2xl" data-icon="medication">medication</span>
-</div>
-<h6 class="font-bold text-on-surface mb-2 font-manrope">Drug Dosages &amp; Interaction</h6>
-<p class="text-sm text-on-surface-variant leading-relaxed">Cross-reference pediatric pharmacopeia as cited in Nelson Textbook of Pediatrics and Little &amp; Falace.</p>
-<a class="mt-4 inline-flex items-center gap-2 text-[10px] font-black text-primary uppercase tracking-widest group-hover:underline" href="modules.html">
-                            Open Reference <span class="material-symbols-outlined text-xs">open_in_new</span>
-</a>
-</div>
-<!-- Best Practices Tool -->
-<div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-tertiary/50 transition-all group">
-<div class="w-12 h-12 mb-5 rounded-2xl bg-tertiary/10 flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-2xl" data-icon="policy">policy</span>
-</div>
-<h6 class="font-bold text-on-surface mb-2 font-manrope">AAPD Best Practices</h6>
-<p class="text-sm text-on-surface-variant leading-relaxed">Current clinical practice guidelines for pediatric dental management, updated per latest board requirements.</p>
-<a class="mt-4 inline-flex items-center gap-2 text-[10px] font-black text-tertiary uppercase tracking-widest group-hover:underline" href="guidelines.html">
-                            Access Manuals <span class="material-symbols-outlined text-xs">bolt</span>
-</a>
-</div>
-<!-- Trauma Tool -->
-<div class="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-secondary/50 transition-all group">
-<div class="w-12 h-12 mb-5 rounded-2xl bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-2xl" data-icon="history_edu">history_edu</span>
-</div>
-<h6 class="font-bold text-on-surface mb-2 font-manrope">Prosthodontic &amp; Trauma</h6>
-<p class="text-sm text-on-surface-variant leading-relaxed">Protocols for restorative materials and pediatric trauma staging based on board-standard textbooks.</p>
-<a class="mt-4 inline-flex items-center gap-2 text-[10px] font-black text-secondary uppercase tracking-widest group-hover:underline" href="case-studies.html">
-                            View Standards <span class="material-symbols-outlined text-xs">auto_stories</span>
-</a>
-</div>
 </div>
 </section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Main Content: Interdisciplinary Briefs -->
+<div class="md:col-span-8 space-y-6">
+<div class="flex items-center justify-between mb-2">
+<h2 class="text-2xl font-bold text-on-surface">Interdisciplinary Briefs</h2>
+<span class="text-xs font-bold text-primary bg-primary-container/20 px-3 py-1 rounded-full">LATEST UPDATES</span>
 </div>
-</main>
-<!-- BottomNavBar (Mobile) -->
-<footer class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
-<div class="flex justify-around items-center h-16 pb-safe px-4">
-<a class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110 transition-transform tap-highlight-transparent" href="index.html">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Dashboard</span>
+<!-- Sensory Oral Care Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-xl bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">spa</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Sensory Oral Care Protocol</h3>
+<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief [1]</span>
+</div>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                Strategies for sensory-sensitive pediatric patients. Implementation of non-foaming, SLS-free dentifrice to reduce tactile oral stimulation and increase compliance.
+                            </p>
+<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
+<p class="text-sm font-medium italic text-on-tertiary-container">
+                                    "Management of the Medically Compromised Patient emphasizes behavioral conditioning and minimal foam profiles." — AAPD Technical Report [1]
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Enamel Integrity Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-xl bg-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">biotech</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Enamel Integrity &amp; GERD</h3>
+<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief [2]</span>
+</div>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                Clinical assessment of chronic gastroesophageal reflux impact on primary and permanent dentition. Focus on remineralization therapies and acidity buffering.
+                            </p>
+<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
+<p class="text-sm font-medium italic text-on-tertiary-container">
+                                    "Management of Dental Erosion highlights the risk of intrinsic acid exposure on structural integrity." — AAPD Reference Manual [2]
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ABPD Dosing Guide -->
+<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-xl bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">medication</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">ABPD Dosing &amp; Fluoride Therapy</h3>
+<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief [3]</span>
+</div>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                                Unified dosing algorithms for systemic and topical fluoride based on age, weight, and risk assessment clusters.
+                            </p>
+<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
+<p class="text-sm font-medium italic text-on-tertiary-container">
+                                    "Guideline on Fluoride Therapy specifies dosage by ppm and delivery mechanism for high-risk cohorts." — AAPD 2023 [3]
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Rail: Provider Toolkit & Integration -->
+<div class="md:col-span-4 space-y-6">
+<h2 class="text-2xl font-bold text-on-surface mb-2">Provider Toolkit</h2>
+<!-- AAPD Policy Manual Download -->
+<div class="bg-gradient-to-br from-primary to-primary/80 rounded-xl p-6 text-on-primary">
+<span class="material-symbols-outlined text-4xl mb-4">description</span>
+<h3 class="text-lg font-bold mb-2">AAPD Policy Manual</h3>
+<p class="text-sky-100 text-sm mb-6 leading-relaxed">Complete PDF access to the 2023-2024 Reference Manual of Pediatric Dentistry.</p>
+<button class="w-full py-3 bg-white/10 hover:bg-white/20 transition-colors rounded-lg font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2">
+                        Download PDF <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+<!-- Checklist Card -->
+<div class="bg-surface-container-high rounded-xl p-6">
+<h3 class="text-lg font-bold text-on-surface mb-4">Medically Compromised</h3>
+<p class="text-sm text-on-surface-variant mb-6">Patient screening checklist based on Little &amp; Falace's clinical standards [4].</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl">check_box</span> Cardiovascular Stability
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl">check_box</span> Hemostatic Disorders
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl">check_box</span> Metabolic Assessment
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface opacity-50">
+<span class="material-symbols-outlined text-xl">check_box_outline_blank</span> Pulmonary Risk factors
+                        </li>
+</ul>
+</div>
+<!-- InsureKidsNow Integration -->
+<div class="bg-white rounded-xl p-6 border-l-4 border-sky-400 shadow-sm overflow-hidden relative">
+<div class="flex items-center justify-between mb-4">
+<img alt="Pediatric Health Logo" class="h-8 object-contain" data-alt="Modern minimalist healthcare logo with abstract medical cross and soft teal color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDblmS9fBU7tBowyp-Bb-zNE9SBwRFcTvfVT9Ii8HDz8zSfmlLb9w3g5_CY6nAsdBHBrJGsqzP9jURL-NTDt1KHjNSENv43pNT1XYSKBJHpGAtpdSGmefo1wluJA99TvuIG5BInR30HYW3nieXCOIraxvFYVIUDVzi8YF_RvnAEuBjVj372n5jdEd8ALpsA6b6rlAKugPD5DU8IEyCLrfjfUjqm06IPIR8fUB1P2neqoRz_WnoxrRVTmFml22lDD8uR-dOaFQn2D3Q"/>
+<span class="text-[10px] font-bold text-sky-600 bg-sky-50 px-2 py-1 rounded">PARTNER</span>
+</div>
+<h4 class="font-bold text-on-surface mb-2">InsureKidsNow.gov</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed mb-4">Direct integration for state-specific Medicaid and CHIP dental provider lookups and compliance resources.</p>
+<a class="text-primary text-xs font-bold flex items-center gap-1 hover:underline" href="#">
+                        Access Provider Portal <span class="material-symbols-outlined text-sm">open_in_new</span>
 </a>
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-50 dark:active:bg-slate-800 transition-transform tap-highlight-transparent" href="modules.html">
-<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Modules</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-50 dark:active:bg-slate-800 transition-transform tap-highlight-transparent" href="guidelines.html">
-<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Guidelines</span>
-</a>
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:bg-slate-50 dark:active:bg-slate-800 transition-transform tap-highlight-transparent" href="case-studies.html">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Case Studies</span>
-</a>
+</div>
+<!-- Clinical Asset Display -->
+<div class="rounded-xl overflow-hidden aspect-video bg-surface-container shadow-inner group cursor-pointer relative">
+<img alt="Laboratory setting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional sterile clinical laboratory environment with high-end medical equipment and soft blue atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq8RNHSug3uy1hv1PhMvqj_AlSpC8Ue0kOod4eR9EVnKIoGqGZHmRUdfoNJzOtCs8Okh51kmUkR-o8G4W88D_xBJlrmDpFuTDOoVW0DbqLeYRfTxSo11GoSXBipR2psQmRYDyQvBTrgg1o-D9bZXVK4q1ZiEwvnxrDvGCfFweMXxI6FnHDEAwarzGeWu_Rau95m4_qD_xYNnQ2CQ4Dkg8VhAEKNdlbKL_UvNd6_UfatB1Kaac5lX7C_Im6vthdIUlHVkU3isRpxbc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex flex-col justify-end p-4">
+<p class="text-white font-bold text-sm">Latest Lab Analysis: SLS Efficacy</p>
+<p class="text-white/70 text-[10px]">Academic Review 2024</p>
+</div>
+</div>
+</div>
+</div>
+<!-- References Footer Section -->
+<footer class="mt-16 pt-8 border-t border-outline-variant/30">
+<h2 class="text-xl font-bold text-on-surface mb-6">Academic References</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+<div class="text-xs leading-relaxed text-on-surface-variant">
+<span class="font-bold text-primary mr-2">[1]</span> American Academy of Pediatric Dentistry. Management of the Medically Compromised Patient. Reference Manual of Pediatric Dentistry. Chicago, Ill.: AAPD; 2023.
+                </div>
+<div class="text-xs leading-relaxed text-on-surface-variant">
+<span class="font-bold text-primary mr-2">[2]</span> American Academy of Pediatric Dentistry. Management of Dental Erosion. Reference Manual of Pediatric Dentistry. Chicago, Ill.: AAPD; 2023.
+                </div>
+<div class="text-xs leading-relaxed text-on-surface-variant">
+<span class="font-bold text-primary mr-2">[3]</span> American Academy of Pediatric Dentistry. Guideline on Fluoride Therapy. Reference Manual of Pediatric Dentistry. Chicago, Ill.: AAPD; 2023.
+                </div>
+<div class="text-xs leading-relaxed text-on-surface-variant">
+<span class="font-bold text-primary mr-2">[4]</span> Little JW, Falace DA, Miller CS, Rhodus NL. Dental Management of the Medically Compromised Patient. 9th ed. St. Louis, Mo.: Elsevier; 2018.
+                </div>
+</div>
+<div class="mt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-outline tracking-widest uppercase font-bold">
+<span>© 2024 Pulse &amp; Praxis Editorial Group</span>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Editorial Standards</a>
+<a class="hover:text-primary" href="#">Conflict of Interest</a>
+</div>
 </div>
 </footer>
+</main>
+<!-- SideNavBar (Mobile Bottom Navigation) -->
+<nav class="md:hidden fixed bottom-0 w-full bg-slate-50 dark:bg-slate-900 border-t border-outline-variant/10 px-6 py-3 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-sky-700 dark:text-sky-300" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="modules.html">
+<span class="material-symbols-outlined">clinical_notes</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Modules</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="guidelines.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Guidelines</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="case-studies.html">
+<span class="material-symbols-outlined">biotech</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Cases</span>
+</a>
+</nav>
 </body></html>

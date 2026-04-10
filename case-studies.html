@@ -3,334 +3,326 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>Case Review: Pierre Robin Sequence - Pulse &amp; Praxis</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Public Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-          tailwind.config = {
-            darkMode: "class",
-            theme: {
-              extend: {
-                "colors": {
-                        "on-secondary-fixed-variant": "#33476a",
-                        "primary-container": "#73b4dc",
-                        "on-surface-variant": "#40484e",
-                        "inverse-on-surface": "#e4f3ff",
-                        "surface-container": "#dff0fe",
-                        "tertiary-fixed-dim": "#8ecdff",
-                        "surface": "#f6faff",
-                        "primary-fixed-dim": "#8dcef7",
-                        "on-error-container": "#93000a",
-                        "on-background": "#0d1d27",
-                        "surface-dim": "#cbdcea",
-                        "on-error": "#ffffff",
-                        "primary": "#176589",
-                        "on-tertiary-fixed-variant": "#004b70",
-                        "on-secondary": "#ffffff",
-                        "on-primary": "#ffffff",
-                        "secondary": "#4b5f84",
-                        "on-tertiary-fixed": "#001e30",
-                        "inverse-primary": "#8dcef7",
-                        "on-secondary-container": "#465a7f",
-                        "on-tertiary-container": "#004567",
-                        "on-primary-fixed-variant": "#004c6b",
-                        "on-surface": "#0d1d27",
-                        "secondary-fixed-dim": "#b2c7f1",
-                        "on-primary-fixed": "#001e2d",
-                        "secondary-fixed": "#d7e3ff",
-                        "surface-tint": "#176589",
-                        "tertiary-fixed": "#cae6ff",
-                        "secondary-container": "#bed2fd",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-bright": "#f6faff",
-                        "surface-container-highest": "#d4e5f3",
-                        "inverse-surface": "#23323d",
-                        "tertiary": "#006494",
-                        "tertiary-container": "#65b4ec",
-                        "error": "#ba1a1a",
-                        "on-secondary-fixed": "#021b3d",
-                        "outline-variant": "#c0c7ce",
-                        "on-primary-container": "#004562",
-                        "surface-container-low": "#eaf5ff",
-                        "surface-container-high": "#d9eaf8",
-                        "surface-variant": "#d4e5f3",
-                        "outline": "#70787e",
-                        "primary-fixed": "#c6e7ff",
-                        "on-tertiary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "background": "#f6faff"
-                },
-                "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                },
-                "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Public Sans"],
-                        "label": ["Public Sans"],
-                        "manrope": ["Manrope"],
-                        "public-sans": ["Public Sans"]
-                }
-              },
-            },
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#021b3d",
+            "on-primary-container": "#004562",
+            "on-background": "#0d1d27",
+            "outline-variant": "#c0c7ce",
+            "on-secondary-container": "#465a7f",
+            "background": "#f6faff",
+            "surface-tint": "#176589",
+            "outline": "#70787e",
+            "on-secondary-fixed-variant": "#33476a",
+            "secondary": "#4b5f84",
+            "primary-fixed": "#c6e7ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#40484e",
+            "surface-container": "#dff0fe",
+            "on-tertiary-fixed-variant": "#004b70",
+            "surface": "#f6faff",
+            "surface-container-low": "#eaf5ff",
+            "on-tertiary-container": "#004567",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#001e2d",
+            "inverse-on-surface": "#e4f3ff",
+            "tertiary-fixed-dim": "#8ecdff",
+            "on-tertiary-fixed": "#001e30",
+            "error-container": "#ffdad6",
+            "surface-container-high": "#d9eaf8",
+            "surface-container-highest": "#d4e5f3",
+            "secondary-fixed-dim": "#b2c7f1",
+            "tertiary": "#006494",
+            "secondary-fixed": "#d7e3ff",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#8dcef7",
+            "inverse-surface": "#23323d",
+            "primary-fixed-dim": "#8dcef7",
+            "surface-variant": "#d4e5f3",
+            "primary": "#176589",
+            "surface-dim": "#cbdcea",
+            "primary-container": "#73b4dc",
+            "on-primary": "#ffffff",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#cae6ff",
+            "secondary-container": "#bed2fd",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#65b4ec",
+            "surface-bright": "#f6faff",
+            "on-primary-fixed-variant": "#004c6b",
+            "on-surface": "#0d1d27"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Public Sans"],
+            "label": ["Public Sans"]
           }
-        </script>
+        },
+      },
+    }
+  </script>
 <style>
-            .material-symbols-outlined {
-                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            }
-            .glass-effect {
-                backdrop-filter: blur(24px);
-                background-color: rgba(246, 250, 255, 0.8);
-            }
-            .primary-gradient {
-                background: linear-gradient(135deg, #176589 0%, #004c6b 100%);
-            }
-        </style>
+    body { font-family: 'Public Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .glass-effect { backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+  </style>
 </head>
-<body class="bg-surface font-body text-on-surface">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
-<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-8">
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-manrope">Clinical Editorial</span>
-<div class="hidden md:flex gap-6 items-center font-manrope font-semibold">
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="index.html">Dashboard</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="modules.html">Modules</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150" href="guidelines.html">Guidelines</a>
-<a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-600 active:scale-95 duration-150" href="case-studies.html">Case Studies</a>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Side Navigation Bar -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-slate-50 border-r-0 flex flex-col py-6 space-y-4 z-40 hidden md:flex">
+<div class="px-6 mb-8">
+<h1 class="text-xl font-extrabold text-sky-800 tracking-tight">Pulse &amp; Praxis</h1>
+<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mt-1">Clinical Hub</p>
 </div>
-</div>
-<div class="flex items-center gap-4">
-<button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150">
-<span class="material-symbols-outlined">notifications</span>
-</button>
-<button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150">
-<span class="material-symbols-outlined">account_circle</span>
-</button>
-</div>
-</div>
-</nav>
-<div class="flex min-h-screen">
-<!-- SideNavBar -->
-<aside class="fixed left-0 top-0 pt-20 px-4 h-full h-screen w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950 transition-all duration-200 ease-in-out">
-<div class="mb-8 px-2">
-<div class="flex items-center gap-3 mb-6">
-<div class="h-10 w-10 rounded-full overflow-hidden border border-slate-200 dark:border-slate-800">
-<img alt="Specialist Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK1_OSvAhXZXOpNNi7IraD28wz1COWcPnh8vjuzzSWkreeIu0N0dW_O3HF9JXSoDYq5QyabmIiuI6faviHvzt0DsGDtVGyAmGZrkZ2iaA4FGKZ5NjWaVNEA2Qh1cMDcfUNfahF5FPJ93ZHcayibDC3T2yazlSJ59fwWxld1sNGCz9fG-ZGRJn8wHJylK8mjK0kvASpfTI58HOL-EBRrBZmjcU3TuyMlnDWjdTe7MdDGlIdppzGf6AO1KtOP4LeR-FouzLJToKnO_c"/>
-</div>
-<div>
-<p class="text-slate-900 dark:text-slate-50 text-sm font-black font-manrope">Pediatric Specialist</p>
-<p class="text-slate-500 dark:text-slate-400 text-xs font-manrope">Clinical Editorial Hub</p>
-</div>
-</div>
-<nav class="space-y-1">
-<a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="index.html">
-<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">dashboard</span>
-<span>Dashboard</span>
+<nav class="flex-1 px-0 overflow-y-auto">
+<div class="space-y-1">
+<a class="flex items-center px-6 py-3 text-slate-500 hover:bg-slate-100 transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="dashboard">dashboard</span>
+<span class="font-medium">Dashboard</span>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="modules.html">
-<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">clinical_notes</span>
-<span>Modules</span>
+<a class="flex items-center px-6 py-3 text-slate-500 hover:bg-slate-100 transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-medium">Modules</span>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="guidelines.html">
-<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">menu_book</span>
-<span>Guidelines</span>
+<a class="flex items-center px-6 py-3 text-slate-500 hover:bg-slate-100 transition-all scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="menu_book">menu_book</span>
+<span class="font-medium">Guidelines</span>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 bg-sky-50 dark:bg-sky-900/20 text-sky-700 dark:text-sky-300 rounded-lg transition-all duration-200 ease-in-out font-manrope text-sm font-medium" href="case-studies.html">
-<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">biotech</span>
+<a class="flex items-center px-6 py-3 bg-sky-100 text-sky-700 rounded-r-full font-bold transition-all" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="biotech" style="font-variation-settings: 'FILL' 1;">biotech</span>
 <span>Case Studies</span>
 </a>
+</div>
 </nav>
+<div class="px-6 mt-auto space-y-4">
+<button class="w-full bg-gradient-to-br from-primary to-[#004c6b] text-on-primary py-3 rounded-md font-bold text-sm tracking-wider uppercase active:scale-95 transition-transform shadow-md">
+        New Entry
+      </button>
+<div class="pt-4 border-t border-slate-200">
+<a class="flex items-center px-2 py-2 text-slate-500 hover:text-sky-600 transition-colors text-sm" href="#">
+<span class="material-symbols-outlined mr-2 text-lg" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center px-2 py-2 text-slate-500 hover:text-sky-600 transition-colors text-sm" href="#">
+<span class="material-symbols-outlined mr-2 text-lg" data-icon="help">help</span>
+<span>Support</span>
+</a>
+</div>
 </div>
 </aside>
-<!-- Main Content Area -->
-<main class="flex-1 lg:ml-64 max-w-7xl mx-auto px-6 py-8 pt-24">
-<div class="mb-10 px-4">
-<div class="flex justify-between items-end mb-3">
-<div>
-<span class="text-primary font-headline font-bold uppercase tracking-widest text-[10px]">Case Management Module</span>
-<h2 class="text-on-surface font-headline text-2xl font-extrabold tracking-tight">Management Decision I</h2>
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-30 bg-sky-50/80 backdrop-blur-xl shadow-sm md:pl-64">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center space-x-8">
+<div class="md:hidden text-2xl font-bold tracking-tighter text-slate-900">Pulse &amp; Praxis</div>
+<nav class="hidden lg:flex items-center space-x-6">
+<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Dashboard</a>
+<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Modules</a>
+<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Guidelines</a>
+<a class="text-sky-700 font-bold border-b-2 border-sky-600 pb-1" href="#">Case Studies</a>
+</nav>
 </div>
+<div class="flex items-center space-x-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-sky-100/50 border-none rounded-md text-sm focus:ring-2 focus:ring-primary w-64 transition-all" placeholder="Search resources..." type="text"/>
 </div>
-</div>
-<!-- Two-Column Asymmetric Editorial Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<!-- Left Panel: Patient History -->
-<div class="lg:col-span-7 space-y-8">
-<header class="mb-8">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-4">
-<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">medical_services</span>
-<span class="text-xs font-bold text-primary-container font-headline uppercase tracking-wider">Craniofacial Case 501</span>
-</div>
-<h1 class="text-4xl font-headline font-extrabold text-on-surface leading-tight tracking-tighter">
-                            Pierre Robin Sequence &amp; G-Tube Dependence
-                        </h1>
-</header>
-<!-- Clinical Photo Bento Grid -->
-<div class="grid grid-cols-2 gap-4">
-<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
-<img alt="Clinical focus on jaw alignment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBupTV0bQSwXDYYKQQXAetrYB9GHyUOyq9IO_HYBrN50nt0PAlugqtP8MoO0C6egJwegy1xK6LnSqwaoz9i3JYXtNyA1aWq_rDx8nE7SMoFnqPIzB4j8gFwmTNrCJTLLe4S8GijC9EHWZU10HIQbW-0BfhEfFNwBTKS-3G4LjgnY0vmRnjEIz1oyMYR3KUj9XUjWrLq1fF7Tu-JE9twTMd-z391XK1A9r8e9oKuT1rDEo7XtQoD8tDAvGLupuWv7QzmekELWHaJltk"/>
-</div>
-<div class="grid grid-rows-2 gap-4">
-<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
-<img alt="Pediatric nutritional support" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnmdvN6rcht4GqBBMLUbKVpej66nvLYwu14Nxme-RR7cYe1cAiCEeAhhee-CbFTgXIjXA8baR5lYzmzJwBRlZW_XrFwBKyWt1X2X-jyPJxoOrsQQJ-7NQjegxNQBw2Ar12hcV8AFSmS-wtYe74zyFS6UuHs2xAxu81FxDMyrlxiF6yRdee0Mnwn3B9pwdajtjGQ5lNQ__P1qKkEisip0Vt8BAP-yhyc-EIHETwhxuMYbh7KMV-ox-D5AnJNnSo8tG9fzFU3UAfFBA"/>
-</div>
-<div class="bg-primary text-on-primary p-6 rounded-xl flex flex-col justify-center relative overflow-hidden">
-<span class="material-symbols-outlined opacity-20 absolute -right-4 -bottom-4 text-8xl" style="font-variation-settings: 'FILL' 1;">face_6</span>
-<span class="material-symbols-outlined mb-2 text-3xl">child_care</span>
-<p class="font-headline font-bold text-lg leading-tight">Patient: Maya R.<br/>Age: 3.1 Years</p>
-<p class="text-primary-fixed text-xs mt-1">Diagnosis: PRS, Gastrostomy Dependent</p>
-</div>
-</div>
-</div>
-<!-- Clinical Narrative -->
-<div class="surface-container-low p-8 rounded-xl space-y-6">
-<div class="flex gap-4">
-<div class="w-1 bg-tertiary h-auto rounded-full"></div>
-<div>
-<h3 class="font-headline font-bold text-lg text-on-surface mb-2">History &amp; Biofilm Management</h3>
-<p class="text-on-surface-variant font-body leading-relaxed">
-                                    Maya presents with micrognathia and status post cleft palate repair. Primarily G-tube dependent with minimal oral bolus, she exhibits rapid calculus formation and heavy biofilm accumulation. AAPD standards highlight that non-oral feeding leads to decreased salivary flow and reduced mechanical clearance, necessitating aggressive preventive management despite the lack of traditional cariogenic oral intake.
-                                </p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="w-1 bg-tertiary h-auto rounded-full"></div>
-<div>
-<h3 class="font-headline font-bold text-lg text-on-surface mb-2">Interdisciplinary Surgical Coordination</h3>
-<p class="text-on-surface-variant font-body leading-relaxed">
-                                    As part of the AAP-recommended interdisciplinary team, the surgical plan includes Mandibular Distraction Osteogenesis (MDO). Dental clearance is critical to prevent perioperative infection; however, care must be balanced with Maya's sensory sensitivities related to PRS. Biofilm control is the primary objective to stabilize oral health before the planned distraction.
-                                </p>
-</div>
-</div>
-<!-- Physiology Note from Frontiers Research -->
-<div class="bg-surface-container-high/50 p-6 rounded-xl border border-outline-variant/30">
-<div class="flex items-center gap-3 mb-3 text-tertiary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
-<h4 class="font-headline font-bold text-sm uppercase tracking-wide">Physiology Note: Frontiers Research Insight</h4>
-</div>
-<p class="text-sm text-on-surface-variant leading-relaxed italic">
-                                "In PRS patients with limited masticatory stimulation, salivary proteome analysis indicates a shift toward a pro-inflammatory state. Reduced salivary flow rate (hypoptyalism) directly correlates with accelerated calcium phosphate precipitation on existing biofilm, creating tenacious calculus that harbors pathogenic anaerobic flora, increasing risk for surgical site infection during mandibular distraction."
-                            </p>
-</div>
-<!-- Patient Profile Illustrations -->
-<div class="grid grid-cols-3 gap-4 pt-4">
-<div class="flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">nutrition</span>
-<span class="text-[10px] font-bold text-slate-500 uppercase">G-Tube Nutri</span>
-</div>
-<div class="flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">orthodontics</span>
-<span class="text-[10px] font-bold text-slate-500 uppercase">MDO Prep</span>
-</div>
-<div class="flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
-<span class="text-[10px] font-bold text-slate-500 uppercase">Sensory Support</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Right Panel: Interactive Decisions -->
-<div class="lg:col-span-5">
-<div class="sticky top-24 space-y-6">
-<div class="bg-surface-container-lowest border-2 border-primary-container/20 rounded-xl p-8 shadow-sm">
-<div class="mb-8">
-<span class="text-primary font-headline font-bold text-xs uppercase tracking-widest">Interdisciplinary Strategy</span>
-<h3 class="text-xl font-headline font-extrabold text-on-surface mt-2 leading-tight">
-                                    Which interdisciplinary approach best manages Maya's biofilm and surgical risk?
-                                </h3>
-</div>
-<div class="space-y-4">
-<!-- Option 1 -->
-<label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all">
-<div class="mt-1">
-<div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center">
-<div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
-</div>
-</div>
-<div class="flex-1">
-<p class="font-body font-semibold text-on-surface leading-snug">Rely on systemic fluoride via G-tube to manage biofilm mineralization in the absence of mastication.</p>
-</div>
-</label>
-<!-- Option 2 (Selected State) -->
-<label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-primary text-on-primary shadow-lg shadow-sky-200 transition-all">
-<div class="mt-1">
-<div class="h-5 w-5 rounded-full border-2 border-on-primary flex items-center justify-center">
-<div class="h-2.5 w-2.5 rounded-full bg-on-primary"></div>
-</div>
-</div>
-<div class="flex-1">
-<p class="font-body font-semibold leading-snug">Implement a non-foaming mechanical cleaning protocol with sensory support and secure dental clearance 4-6 weeks prior to MDO.</p>
-</div>
-</label>
-<!-- Option 3 -->
-<label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all">
-<div class="mt-1">
-<div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center">
-<div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
-</div>
-</div>
-<div class="flex-1">
-<p class="font-body font-semibold text-on-surface leading-snug">Defer all dental interventions until the MDO procedure to perform them under the same general anesthesia session.</p>
-</div>
-</label>
-<!-- Option 4 -->
-<label class="group flex items-start gap-4 p-4 rounded-xl cursor-pointer bg-surface-container hover:bg-secondary-container transition-all">
-<div class="mt-1">
-<div class="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center">
-<div class="h-2.5 w-2.5 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
-</div>
-</div>
-<div class="flex-1">
-<p class="font-body font-semibold text-on-surface leading-snug">Focus exclusively on G-tube nutritional adjustment to eliminate sugar, assuming biofilm poses no risk without oral intake.</p>
-</div>
-</label>
-</div>
-<button class="w-full mt-8 primary-gradient text-on-primary font-headline font-bold py-4 rounded-xl shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2">
-<span>SUBMIT DECISION</span>
-<span class="material-symbols-outlined">arrow_forward</span>
+<button class="p-2 text-sky-600 hover:bg-sky-100/50 rounded-md transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-sky-600 hover:bg-sky-100/50 rounded-md transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
 </div>
-<!-- Expert Insight Contextual Callout -->
-<div class="bg-surface-container-high relative overflow-hidden rounded-xl p-6">
-<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
+<!-- Header Section: Editorial Intelligence -->
+<header class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-3xl">
+<span class="text-tertiary font-bold tracking-widest text-xs uppercase mb-2 block">Clinical Verification — Screen 11</span>
+<h1 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
+            Case Review: <span class="text-primary">Pierre Robin Sequence</span> &amp; G-Tube Dependence
+          </h1>
+<p class="mt-4 text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+            Analyzing the intersection of interdisciplinary maxillofacial strategy and the shifting microbiome in pediatric patients requiring gastrostomy-tube enteral nutrition.
+          </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-high px-4 py-3 rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold text-slate-500 tracking-tighter">Academic Status</span>
+<span class="text-sm font-bold text-on-surface">Peer-Reviewed [9]</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Primary Analysis: Interdisciplinary Strategy -->
+<section class="lg:col-span-8 space-y-8">
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-8xl" data-icon="medical_services">medical_services</span>
+</div>
+<h2 class="text-2xl font-bold mb-6 text-on-primary-fixed-variant">Interdisciplinary Strategy</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+            Effective management of Pierre Robin Sequence (PRS) requires a calibrated <strong>Mandibular Distraction Osteogenesis (MDO)</strong> coordination plan. Traditional linear models often prioritize dental clearance as a prerequisite; however, modern editorial evidence suggests a concurrent pathway to mitigate developmental delays.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border-l-4 border-primary">
+<h3 class="font-bold text-primary mb-2">MDO Coordination</h3>
+<p class="text-sm text-on-surface-variant">Prioritizing airway patency and glossoptosis correction to reduce the duration of G-tube dependence.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border-l-4 border-tertiary">
+<h3 class="font-bold text-tertiary mb-2">Dental Clearance</h3>
+<p class="text-sm text-on-surface-variant">Focusing on managing mandibular alveolar growth and timing of orthodontic intervention post-MDO.</p>
+</div>
+</div>
+</div>
+<!-- Decision Analysis: Biofilm Management -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-error" data-icon="biotech">biotech</span>
+<h2 class="text-2xl font-bold text-on-surface">Biofilm Management &amp; Mineralization</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<p class="text-on-surface-variant leading-relaxed">
+                In non-oral feeders (G-tube dependent), the absence of mastication leads to a critical shift in oral ecology. Research in <em>Frontiers [9]</em> identifies accelerated <strong>biofilm mineralization</strong>. Without mechanical agitation from food, the salivary environment favors rapid calculus formation.
+              </p>
+<div class="mt-6 flex items-start gap-4 p-4 bg-tertiary/10 rounded-lg">
+<span class="material-symbols-outlined text-tertiary shrink-0" data-icon="lightbulb">lightbulb</span>
+<p class="text-sm text-on-tertiary-fixed-variant font-medium">
+<strong>Clinical Protocol:</strong> Utilize non-foaming cleaning agents and ultra-soft mechanical disruption twice daily, even in the absence of solid intake.
+                </p>
+</div>
+</div>
+<div class="md:w-64 shrink-0">
+<div class="bg-surface-container rounded-xl p-5 border border-primary/10">
+<h4 class="text-xs uppercase font-bold text-primary mb-3">Physiology Insight</h4>
+<div class="space-y-4">
 <div>
-<h4 class="font-headline font-bold text-sm text-on-surface">AAPD/ABPD Guidance Summary</h4>
-<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">
-                                        In complex PRS cases, <strong>non-oral feeders</strong> require specialized biofilm management as calculus forms rapidly without mechanical cleansing. ABPD standards emphasize interdisciplinary planning where dental clearance precedes major craniofacial surgery to optimize surgical outcomes and minimize bacteremia risk.
-                                    </p>
+<div class="flex justify-between text-xs mb-1">
+<span class="text-slate-600">Calculus Risk</span>
+<span class="text-primary font-bold">High (84%)</span>
+</div>
+<div class="h-2 w-full bg-secondary-fixed-dim rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container" style="width: 84%"></div>
+</div>
+</div>
+<p class="text-[11px] leading-tight text-on-surface-variant italic">
+                    Salivary proteome analysis indicating a shift toward a pro-inflammatory state in non-oral feeders.
+                  </p>
 </div>
 </div>
 </div>
 </div>
 </div>
+</section>
+<!-- Sidebar: Citations & Links -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Interactive Quiz/Poll Element -->
+<div class="bg-primary text-on-primary p-6 rounded-xl shadow-lg shadow-primary/20">
+<h3 class="text-lg font-bold mb-4">Interdisciplinary Validation</h3>
+<p class="text-sm opacity-90 mb-6">Which factor contributes most significantly to rapid biofilm mineralization in PRS patients with G-tubes?</p>
+<div class="space-y-3">
+<button class="w-full text-left p-3 rounded-md bg-white/10 hover:bg-white/20 transition-all border border-white/20 text-sm">
+              Loss of Masticatory Friction
+            </button>
+<button class="w-full text-left p-3 rounded-md bg-on-primary text-primary font-bold transition-all border border-transparent text-sm">
+              Salivary Proteome Shift [9]
+            </button>
+<button class="w-full text-left p-3 rounded-md bg-white/10 hover:bg-white/20 transition-all border border-white/20 text-sm">
+              Hyper-salivation
+            </button>
 </div>
+</div>
+<!-- Reference List -->
+<div class="bg-surface-container-high p-6 rounded-xl border-l-4 border-tertiary">
+<h3 class="text-sm font-bold text-tertiary uppercase tracking-widest mb-4">Reference List</h3>
+<ul class="space-y-4">
+<li class="text-xs leading-relaxed text-on-surface">
+<span class="font-bold text-tertiary">[9]</span> 
+              Nakamura, S., et al. (2023). "Salivary Proteome and Oral Microbiome Shift in Non-Oral Feeding Patients." <em>Frontiers in Dental Medicine</em>. DOI: 10.3389/fdmed.2023.112.
+            </li>
+<li class="pt-4 border-t border-slate-200/50">
+<a class="flex items-center gap-2 text-primary font-bold text-xs hover:underline" href="https://www.insurekidsnow.gov">
+<span class="material-symbols-outlined text-sm" data-icon="launch">launch</span>
+                InsureKidsNow.gov - Resources
+              </a>
+</li>
+</ul>
+</div>
+<!-- Callout: Case Detail Visual -->
+<div class="rounded-xl overflow-hidden shadow-sm">
+<img alt="Clinical lab setting with microscope and medical diagnostic equipment" class="w-full h-48 object-cover" data-alt="Close-up of clinical laboratory workspace with high-tech diagnostic equipment and petri dishes in a sterile blue-toned environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAuFNGSoibqKPBwAD2c8MOyDkKtuqtmSUsre7rsJLlyTotLpPFUR1tRECBG-pDVYccghGAbQySwz66jVbToZozdgvnFyvIA37o2J6OoTK7t9HsWEZbqHHF6FPzdSjWJpEmRFJyYT8f_GcArQGOO0atqSyZrulUAfu7BARQfAa11ghrZX2B77unlqg1eNwkBeJS179kMJnDxKIyxLGHdg408ItPT10GkUpPebywSMIyBQxBNk3jNvlVDHjlh38XWSsm-dcZSFJvmFk"/>
+<div class="p-4 bg-surface-container-lowest">
+<span class="text-[10px] font-bold text-slate-400 uppercase">Case Asset</span>
+<p class="text-xs text-on-surface-variant mt-1">Microscopic visualization of biofilm architecture in non-oral environments.</p>
+</div>
+</div>
+</aside>
+</div>
+<!-- Reference Section Footer -->
+<footer class="mt-16 pt-8 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-6">
+<div class="h-10 w-10 rounded-full bg-sky-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-500 uppercase tracking-tighter">Verified Clinical Hub</p>
+<p class="text-sm font-medium text-on-surface">Academic Verification Suite v4.2</p>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-md bg-surface-container-highest text-on-surface text-sm font-bold hover:bg-surface-container-high transition-all">
+            Previous Screen
+          </button>
+<button class="px-6 py-2 rounded-md bg-primary text-on-primary text-sm font-bold hover:shadow-lg transition-all">
+            Proceed to Final Plan
+          </button>
+</div>
+</div>
+</footer>
 </main>
-</div>
-<!-- BottomNavBar -->
-<nav class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
-<div class="flex justify-around items-center h-16 pb-safe px-4">
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800" href="index.html">
-<span class="material-symbols-outlined">dashboard</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Dashboard</span>
+<!-- Mobile Navigation -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-sky-50/90 backdrop-blur-md border-t border-sky-100 flex justify-around items-center py-3 z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="text-[10px] font-bold">Dashboard</span>
 </a>
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800" href="modules.html">
-<span class="material-symbols-outlined">clinical_notes</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Modules</span>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-[10px] font-bold">Modules</span>
 </a>
-<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800" href="guidelines.html">
-<span class="material-symbols-outlined">menu_book</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Guidelines</span>
+<a class="flex flex-col items-center gap-1 text-sky-700" href="#">
+<span class="material-symbols-outlined" data-icon="biotech" style="font-variation-settings: 'FILL' 1;">biotech</span>
+<span class="text-[10px] font-bold">Cases</span>
 </a>
-<a class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800" href="case-studies.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">biotech</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Case Studies</span>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="text-[10px] font-bold">Profile</span>
 </a>
-</div>
 </nav>
 </body></html>

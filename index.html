@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Pulse &amp; Praxis | Specialist Resource Hub</title>
+<title>Dashboard | Pediatric Dental-Feeding Collaborative</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -14,53 +14,53 @@
             theme: {
                 extend: {
                     "colors": {
-                        "on-secondary-fixed": "#021b3d",
-                        "on-primary-container": "#004562",
-                        "on-background": "#0d1d27",
-                        "outline-variant": "#c0c7ce",
-                        "on-secondary-container": "#465a7f",
-                        "background": "#f6faff",
-                        "surface-tint": "#176589",
-                        "outline": "#70787e",
-                        "on-secondary-fixed-variant": "#33476a",
-                        "secondary": "#4b5f84",
-                        "primary-fixed": "#c6e7ff",
-                        "error": "#ba1a1a",
-                        "on-error": "#ffffff",
-                        "on-surface-variant": "#40484e",
-                        "surface-container": "#dff0fe",
-                        "on-tertiary-fixed-variant": "#004b70",
-                        "surface": "#f6faff",
-                        "surface-container-low": "#eaf5ff",
-                        "on-tertiary-container": "#004567",
-                        "on-secondary": "#ffffff",
-                        "on-primary-fixed": "#001e2d",
-                        "inverse-on-surface": "#e4f3ff",
-                        "tertiary-fixed-dim": "#8ecdff",
-                        "on-tertiary-fixed": "#001e30",
                         "error-container": "#ffdad6",
-                        "surface-container-high": "#d9eaf8",
-                        "surface-container-highest": "#d4e5f3",
-                        "secondary-fixed-dim": "#b2c7f1",
-                        "tertiary": "#006494",
-                        "secondary-fixed": "#d7e3ff",
-                        "on-tertiary": "#ffffff",
-                        "inverse-primary": "#8dcef7",
-                        "inverse-surface": "#23323d",
-                        "primary-fixed-dim": "#8dcef7",
                         "surface-variant": "#d4e5f3",
-                        "primary": "#176589",
+                        "secondary-fixed-dim": "#b2c7f1",
+                        "inverse-primary": "#8dcef7",
+                        "background": "#f6faff",
+                        "surface": "#f6faff",
+                        "on-tertiary-container": "#004567",
+                        "tertiary": "#006494",
+                        "on-primary-fixed": "#001e2d",
                         "surface-dim": "#cbdcea",
-                        "primary-container": "#73b4dc",
+                        "surface-container-highest": "#d4e5f3",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#23323d",
+                        "surface-container": "#dff0fe",
                         "on-primary": "#ffffff",
-                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "secondary-fixed": "#d7e3ff",
+                        "primary": "#176589",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#e4f3ff",
+                        "on-secondary-fixed": "#021b3d",
+                        "surface-container-high": "#d9eaf8",
+                        "outline-variant": "#c0c7ce",
+                        "surface-container-low": "#eaf5ff",
                         "tertiary-fixed": "#cae6ff",
-                        "secondary-container": "#bed2fd",
-                        "surface-container-lowest": "#ffffff",
                         "tertiary-container": "#65b4ec",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "primary-fixed": "#c6e7ff",
+                        "on-background": "#0d1d27",
+                        "on-tertiary-fixed": "#001e30",
+                        "on-surface": "#0d1d27",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
                         "surface-bright": "#f6faff",
+                        "on-surface-variant": "#40484e",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#8dcef7",
+                        "on-secondary-container": "#465a7f",
                         "on-primary-fixed-variant": "#004c6b",
-                        "on-surface": "#0d1d27"
+                        "secondary": "#4b5f84",
+                        "on-primary-container": "#004562",
+                        "primary-container": "#73b4dc",
+                        "on-secondary-fixed-variant": "#33476a",
+                        "surface-tint": "#176589",
+                        "secondary-container": "#bed2fd",
+                        "outline": "#70787e"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -78,221 +78,205 @@
         }
     </script>
 <style>
-        body { font-family: 'Public Sans', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .glass-nav { background: rgba(246, 250, 255, 0.8); backdrop-filter: blur(24px); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
     </style>
 </head>
-<body class="bg-background text-on-background min-h-screen">
+<body class="bg-background font-body text-on-surface antialiased">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-sky-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#f8fafc] dark:bg-[#13294b] backdrop-blur-md bg-opacity-80 shadow-sm dark:shadow-none">
 <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-8">
-<span class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">Pulse &amp; Praxis</span>
-<nav class="hidden md:flex gap-6 items-center">
-<a class="text-sky-700 dark:text-sky-300 font-bold border-b-2 border-sky-600 dark:border-sky-400 pb-1" href="index.html">Dashboard</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="modules.html">Modules</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="guidelines.html">Guidelines</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-sky-600 transition-colors" href="case-studies.html">Case Studies</a>
+<h1 class="text-xl font-bold tracking-tighter text-[#13294b] dark:text-white font-headline">Pediatric Dental-Feeding Collaborative</h1>
+<nav class="hidden md:flex items-center gap-6 font-headline font-semibold tracking-tight text-lg">
+<a class="text-[#4b9cd3] border-b-2 border-[#4b9cd3] pb-1" href="#">Dashboard</a>
+<a class="text-[#13294b] dark:text-slate-300 hover:text-[#4b9cd3] transition-colors" href="#">Modules</a>
+<a class="text-[#13294b] dark:text-slate-300 hover:text-[#4b9cd3] transition-colors" href="#">Guidelines</a>
 </nav>
 </div>
 <div class="flex items-center gap-4">
-<div class="relative hidden sm:block">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary w-64 text-sm" placeholder="Search resources..." type="text"/>
+<div class="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-md">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 font-body" placeholder="Search guidelines..." type="text"/>
 </div>
-<button class="p-2 hover:bg-sky-100/50 dark:hover:bg-slate-800/50 rounded-md transition-all active:scale-95">
-<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+<button class="p-2 hover:bg-[#d8e9f7]/50 dark:hover:bg-white/10 rounded-md transition-all text-[#13294b] dark:text-white">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
-<button class="p-2 hover:bg-sky-100/50 dark:hover:bg-slate-800/50 rounded-md transition-all active:scale-95">
-<span class="material-symbols-outlined text-on-surface-variant">account_circle</span>
+<button class="p-2 hover:bg-[#d8e9f7]/50 dark:hover:bg-white/10 rounded-md transition-all text-[#13294b] dark:text-white">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
 </button>
 </div>
 </div>
-<div class="bg-sky-100/50 dark:bg-slate-800/50 h-[1px] w-full"></div>
+<div class="bg-[#d8e9f7] dark:bg-[#1e3a5f] h-[1px] w-full"></div>
 </header>
-<main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
+<main class="pt-24 pb-12 max-w-screen-2xl mx-auto px-8">
 <!-- Hero Section: Editorial Intelligence -->
-<section class="mb-12">
-<div class="flex flex-col md:flex-row gap-8 items-end justify-between border-b border-outline-variant/15 pb-8">
-<div class="max-w-3xl">
-<h1 class="text-5xl font-extrabold tracking-tight text-on-background mb-4 leading-tight">Academic Clinical Dashboard</h1>
-<p class="text-xl text-on-surface-variant leading-relaxed font-light">
-                        Rigorously verified specialist content for interdisciplinary pediatric care. Bridging the gap between academic research and clinical application.
-                    </p>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
+<div class="lg:col-span-7">
+<h2 class="text-5xl lg:text-6xl font-headline font-extrabold text-primary tracking-tight leading-[1.1] mb-6">
+                    The Oral-Systemic Link in <span class="text-on-surface">Pediatric Feeding.</span>
+</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8 max-w-2xl">
+                    Interdisciplinary pediatric dental care is not an adjunct; it is central to the feeding team. By integrating oral health protocols into feeding therapy, we ensure precise diagnostic alignment and superior clinical outcomes for complex pediatric populations.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-[#0e4b6b] text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-sm tracking-widest uppercase shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">
+                        Explore Collaborative Protocols
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-headline font-bold text-sm tracking-widest uppercase hover:bg-surface-variant transition-colors">
+                        View Resources
+                    </button>
 </div>
-<div class="flex gap-4">
-<button class="bg-gradient-to-br from-primary to-sky-800 text-on-primary px-6 py-3 rounded-xl font-bold text-sm tracking-wider uppercase transition-transform active:scale-95 shadow-lg shadow-primary/10">
-                        New Entry
-                    </button>
-<button class="bg-surface-container-highest text-on-surface px-6 py-3 rounded-xl font-bold text-sm tracking-wider uppercase transition-colors hover:bg-surface-variant">
-                        Export Report
-                    </button>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
+<img alt="Clinical setting" class="w-full h-full object-cover" data-alt="Modern bright dental clinic examination room with clean white equipment and soft natural window light reflecting on surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy3tOqgdFYMli0YSP6lPMPUs1-mPntMsiVepFbcyltyb0T9FRHuHsIqJHqd3afJ5LDCSOE_wXf5HofABZzivb6HcR4SWvUuyEo9FYkPMj2BiT8xuTokjBhLabPX8nEHALAlBS7urWc6xIj3t0MybMytkHYRCWEjPc_VmaCdXtCEmRQhGfF1ZCNBadJqm-KJgSZSMaGO7ry2BhxjdOvjzuMzUKoJpSflAGAVz7XD1Iicshifi4ZQs8ppmDOVKaugutEzI8eRJLcs88"/>
+</div>
+<!-- Glassmorphism Overlay Card -->
+<div class="absolute -bottom-6 -left-6 glass-effect bg-white/80 p-8 rounded-2xl shadow-xl max-w-xs border border-white/40">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-2" data-icon="clinical_notes">clinical_notes</span>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Editorial Insight</h3>
+<p class="text-sm text-on-surface-variant italic">"Early dental intervention reduces feeding aversion risk by 34% in neonatal transition cases."</p>
 </div>
 </div>
 </section>
-<!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Main Content: Interdisciplinary Briefs -->
-<div class="md:col-span-8 space-y-6">
-<div class="flex items-center justify-between mb-2">
-<h2 class="text-2xl font-bold text-on-surface">Interdisciplinary Briefs</h2>
-<span class="text-xs font-bold text-primary bg-primary-container/20 px-3 py-1 rounded-full">LATEST UPDATES</span>
+<!-- Learning Modules: Bento Grid -->
+<section class="mb-20">
+<div class="flex items-baseline justify-between mb-10">
+<h2 class="text-3xl font-headline font-bold text-on-surface tracking-tight">Clinical Learning Modules</h2>
+<div class="h-px flex-grow mx-8 bg-surface-container-highest"></div>
+<a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center gap-2" href="#">View All <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
 </div>
-<!-- Sensory Oral Care Card -->
-<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
-<div class="flex items-start gap-6">
-<div class="w-16 h-16 rounded-xl bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-3xl">spa</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Featured Module -->
+<div class="md:col-span-2 group relative bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary text-xs font-bold uppercase tracking-widest mb-6">Foundational</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Neuro-Motor Foundations of Infant Feeding</h3>
+<p class="text-on-surface-variant max-w-lg mb-8">An in-depth look at the intersection of dental anatomy and neuro-developmental feeding triggers.</p>
 </div>
-<div class="flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Sensory Oral Care Protocol</h3>
-<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief [1]</span>
-</div>
-<p class="text-on-surface-variant mb-4 leading-relaxed">
-                                Strategies for sensory-sensitive pediatric patients. Implementation of non-foaming, SLS-free dentifrice to reduce tactile oral stimulation and increase compliance.
-                            </p>
-<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
-<p class="text-sm font-medium italic text-on-tertiary-container">
-                                    "Management of the Medically Compromised Patient emphasizes behavioral conditioning and minimal foam profiles." — AAPD Technical Report [1]
-                                </p>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+</button>
+<span class="font-headline font-bold text-sm text-on-surface">6 Clinical Hours</span>
 </div>
 </div>
+<div class="absolute top-8 right-8 text-surface-container-highest group-hover:text-primary/10 transition-colors">
+<span class="material-symbols-outlined text-9xl leading-none" data-icon="neurology">neurology</span>
 </div>
 </div>
-<!-- Enamel Integrity Card -->
-<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
-<div class="flex items-start gap-6">
-<div class="w-16 h-16 rounded-xl bg-tertiary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-tertiary-container text-3xl">biotech</span>
-</div>
-<div class="flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Enamel Integrity &amp; GERD</h3>
-<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief [2]</span>
-</div>
-<p class="text-on-surface-variant mb-4 leading-relaxed">
-                                Clinical assessment of chronic gastroesophageal reflux impact on primary and permanent dentition. Focus on remineralization therapies and acidity buffering.
-                            </p>
-<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
-<p class="text-sm font-medium italic text-on-tertiary-container">
-                                    "Management of Dental Erosion highlights the risk of intrinsic acid exposure on structural integrity." — AAPD Reference Manual [2]
-                                </p>
-</div>
-</div>
-</div>
-</div>
-<!-- Dosing Guide -->
-<div class="bg-surface-container-lowest rounded-xl p-8 transition-all hover:shadow-xl hover:shadow-sky-900/5 group">
-<div class="flex items-start gap-6">
-<div class="w-16 h-16 rounded-xl bg-primary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-primary-container text-3xl">medication</span>
-</div>
-<div class="flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">ABPD Dosing &amp; Fluoride Therapy</h3>
-<span class="text-[10px] font-bold tracking-widest text-outline uppercase">Brief</span>
-</div>
-<p class="text-on-surface-variant mb-4 leading-relaxed">
-                                Unified dosing algorithms for systemic and topical fluoride based on age, weight, and risk assessment clusters.
-                            </p>
-<div class="p-4 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
-<p class="text-sm font-medium italic text-on-tertiary-container">
-                                    "Guideline on Fluoride Therapy specifies dosage by ppm and delivery mechanism for high-risk cohorts." — AAPD 2023 [3]
-                                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Side Rail: Provider Toolkit & Integration -->
-<div class="md:col-span-4 space-y-6">
-<h2 class="text-2xl font-bold text-on-surface mb-2">Provider Toolkit</h2>
+<!-- Secondary Module -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6" data-icon="stomatology">dentistry</span>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-3">Structural Anomalies</h3>
+<p class="text-sm text-on-surface-variant mb-6">Managing ankyloglossia and palatal variations in multi-disciplinary teams.</p>
+<button class="text-primary font-bold text-sm uppercase tracking-wider flex items-center gap-1 group">
+                        Access Module <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
 </button>
 </div>
-<!-- Checklist Card -->
-<div class="bg-surface-container-high rounded-xl p-6">
-<h3 class="text-lg font-bold text-on-surface mb-4">Medically Compromised</h3>
-<p class="text-sm text-on-surface-variant mb-6">Patient screening checklist based on Little &amp; Falace's clinical standards [4].</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
-<span class="material-symbols-outlined text-primary text-xl">check_box</span> Cardiovascular Stability
-                        </li>
-<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
-<span class="material-symbols-outlined text-primary text-xl">check_box</span> Hemostatic Disorders
-                        </li>
-<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
-<span class="material-symbols-outlined text-primary text-xl">check_box</span> Metabolic Assessment
-                        </li>
-<li class="flex items-center gap-3 text-sm font-medium text-on-surface opacity-50">
-<span class="material-symbols-outlined text-xl">check_box_outline_blank</span> Pulmonary Risk factors
-                        </li>
+<!-- Module 3 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6" data-icon="nutrition">nutrition</span>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-3">Nutritional Pathologies</h3>
+<p class="text-sm text-on-surface-variant mb-6">Identifying early childhood caries as a barrier to optimal caloric intake.</p>
+<button class="text-primary font-bold text-sm uppercase tracking-wider flex items-center gap-1 group">
+                        Access Module <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Module 4 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6" data-icon="psychology">psychology</span>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-3">Feeding Aversion</h3>
+<p class="text-sm text-on-surface-variant mb-6">Behavioral strategies and the dental professional's role in desensitization.</p>
+<button class="text-primary font-bold text-sm uppercase tracking-wider flex items-center gap-1 group">
+                        Access Module <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Module 5 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6" data-icon="medical_services">medical_services</span>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-3">Pharmacological Impact</h3>
+<p class="text-sm text-on-surface-variant mb-6">How medications impact salivary flow and pediatric oral health outcomes.</p>
+<button class="text-primary font-bold text-sm uppercase tracking-wider flex items-center gap-1 group">
+                        Access Module <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Resources Section -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- AAPD Resources -->
+<div class="lg:col-span-1 bg-surface-container-low rounded-3xl p-8 border-l-4 border-tertiary">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="menu_book">menu_book</span>
+                    AAPD Guidelines
+                </h3>
+<ul class="space-y-6">
+<li>
+<a class="group block" href="https://www.aapd.org/research/oral-health-policies--recommendations/">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest block mb-1">Primary Research</span>
+<span class="text-on-surface font-semibold group-hover:text-primary transition-colors block">Oral Health Policies &amp; Recommendations</span>
+<p class="text-sm text-on-surface-variant mt-1">Official standards for pediatric dental management.</p>
+</a>
+</li>
+<li>
+<a class="group block" href="#">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest block mb-1">Policy</span>
+<span class="text-on-surface font-semibold group-hover:text-primary transition-colors block">Interdisciplinary Care Models</span>
+<p class="text-sm text-on-surface-variant mt-1">Recommendations for collaborative feeding teams.</p>
+</a>
+</li>
 </ul>
 </div>
-<!-- InsureKidsNow Integration -->
-<div class="bg-white rounded-xl p-6 border-l-4 border-sky-400 shadow-sm overflow-hidden relative">
-<div class="flex items-center justify-between mb-4">
-<img alt="Pediatric Health Logo" class="h-8 object-contain" data-alt="Modern minimalist healthcare logo with abstract medical cross and soft teal color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDblmS9fBU7tBowyp-Bb-zNE9SBwRFcTvfVT9Ii8HDz8zSfmlLb9w3g5_CY6nAsdBHBrJGsqzP9jURL-NTDt1KHjNSENv43pNT1XYSKBJHpGAtpdSGmefo1wluJA99TvuIG5BInR30HYW3nieXCOIraxvFYVIUDVzi8YF_RvnAEuBjVj372n5jdEd8ALpsA6b6rlAKugPD5DU8IEyCLrfjfUjqm06IPIR8fUB1P2neqoRz_WnoxrRVTmFml22lDD8uR-dOaFQn2D3Q"/>
+<!-- Provider Search -->
+<div class="bg-surface-container-high rounded-3xl p-8 relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Local Provider Network</h3>
+<p class="text-on-surface-variant mb-8">Locate board-certified pediatric dentists in your region to streamline referrals for feeding patients.</p>
+<button class="w-full bg-white text-primary font-bold py-4 rounded-xl shadow-sm border border-outline-variant/10 flex items-center justify-center gap-2 hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+                        Find a Pediatric Dentist
+                    </button>
 </div>
-<h4 class="font-bold text-on-surface mb-2">InsureKidsNow.gov</h4>
-<p class="text-xs text-on-surface-variant leading-relaxed mb-4">Direct integration for state-specific Medicaid and CHIP dental provider lookups and compliance resources.</p>
-<a class="text-primary text-xs font-bold flex items-center gap-1 hover:underline" href="#">
-                        Access Provider Portal <span class="material-symbols-outlined text-sm">open_in_new</span>
+<div class="absolute -bottom-10 -right-10 opacity-10 rotate-12">
+<span class="material-symbols-outlined text-[12rem]" data-icon="location_on">location_on</span>
+</div>
+</div>
+<!-- Insure Kids Now -->
+<div class="bg-primary rounded-3xl p-8 text-on-primary">
+<h3 class="text-2xl font-headline font-bold mb-4">Insure Kids Now</h3>
+<p class="text-primary-fixed/80 mb-8 leading-relaxed">Providing clinicians and families with direct access to Medicaid and CHIP coverage resources for essential pediatric care.</p>
+<div class="space-y-4">
+<a class="flex items-center justify-between p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all" href="https://insurekidsnow.gov">
+<span class="font-bold">Coverage Details</span>
+<span class="material-symbols-outlined" data-icon="open_in_new">open_in_new</span>
 </a>
-</div>
-<!-- Clinical Asset Display -->
-<div class="rounded-xl overflow-hidden aspect-video bg-surface-container shadow-inner group cursor-pointer relative">
-<img alt="Laboratory setting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional sterile clinical laboratory environment with high-end medical equipment and soft blue atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq8RNHSug3uy1hv1PhMvqj_AlSpC8Ue0kOod4eR9EVnKIoGqGZHmRUdfoNJzOtCs8Okh51kmUkR-o8G4W88D_xBJlrmDpFuTDOoVW0DbqLeYRfTxSo11GoSXBipR2psQmRYDyQvBTrgg1o-D9bZXVK4q1ZiEwvnxrDvGCfFweMXxI6FnHDEAwarzGeWu_Rau95m4_qD_xYNnQ2CQ4Dkg8VhAEKNdlbKL_UvNd6_UfatB1Kaac5lX7C_Im6vthdIUlHVkU3isRpxbc"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex flex-col justify-end p-4">
-<p class="text-white font-bold text-sm">Latest Lab Analysis: SLS Efficacy</p>
-<p class="text-white/70 text-[10px]">Academic Review 2024</p>
+<div class="p-4 border border-white/20 rounded-xl text-sm italic">
+                        "High-quality dental care is a right, not a privilege, for every child in transition."
+                    </div>
 </div>
 </div>
+</section>
+</main>
+<!-- Footer / Bottom Branding -->
+<footer class="bg-white border-t border-surface-container py-12 mt-20">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<h4 class="font-headline font-extrabold text-[#13294b] tracking-tighter text-lg">Pediatric Dental-Feeding Collaborative</h4>
+<p class="text-on-surface-variant text-sm mt-1">Advancing clinical intelligence through interdisciplinary partnership.</p>
 </div>
-</div>
-<!-- References Footer Section -->
-<footer class="mt-16 pt-8 border-t border-outline-variant/30">
-<h2 class="text-xl font-bold text-on-surface mb-6">Academic References</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-<div class="text-xs leading-relaxed text-on-surface-variant">
-<span class="font-bold text-primary mr-2">[1]</span> American Academy of Pediatric Dentistry. Management of the Medically Compromised Patient. Reference Manual of Pediatric Dentistry. Chicago, Ill.: AAPD; 2023.
-                </div>
-<div class="text-xs leading-relaxed text-on-surface-variant">
-<span class="font-bold text-primary mr-2">[3]</span> American Academy of Pediatric Dentistry. Guideline on Fluoride Therapy. Reference Manual of Pediatric Dentistry. Chicago, Ill.: AAPD; 2023.
-                </div>
-<div class="text-xs leading-relaxed text-on-surface-variant">
-<span class="font-bold text-primary mr-2">[4]</span> Little JW, Falace DA, Miller CS, Rhodus NL. Dental Management of the Medically Compromised Patient. 9th ed. St. Louis, Mo.: Elsevier; 2018.
-                </div>
-</div>
-<div class="mt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-outline tracking-widest uppercase font-bold">
-<span>© 2024 Pulse &amp; Praxis Editorial Group</span>
-<div class="flex gap-6 mt-4 md:mt-0">
-<a class="hover:text-primary" href="#">Privacy Policy</a>
-<a class="hover:text-primary" href="#">Editorial Standards</a>
-<a class="hover:text-primary" href="#">Conflict of Interest</a>
+<div class="flex gap-8 text-sm font-semibold text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Use</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Clinical Support</a>
 </div>
 </div>
 </footer>
-</main>
-<!-- SideNavBar (Mobile Bottom Navigation) -->
-<nav class="md:hidden fixed bottom-0 w-full bg-slate-50 dark:bg-slate-900 border-t border-outline-variant/10 px-6 py-3 flex justify-between items-center z-50">
-<a class="flex flex-col items-center gap-1 text-sky-700 dark:text-sky-300" href="index.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Dashboard</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="modules.html">
-<span class="material-symbols-outlined">clinical_notes</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Modules</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="guidelines.html">
-<span class="material-symbols-outlined">menu_book</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Guidelines</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="case-studies.html">
-<span class="material-symbols-outlined">biotech</span>
-<span class="text-[10px] font-bold uppercase tracking-tighter">Cases</span>
-</a>
-</nav>
 </body></html>

@@ -3,64 +3,62 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Pulse &amp; Praxis | Modules - Clinical Editorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             "colors": {
-                    "on-secondary-fixed": "#021b3d",
-                    "on-primary-container": "#004562",
-                    "on-background": "#0d1d27",
-                    "outline-variant": "#c0c7ce",
-                    "on-secondary-container": "#465a7f",
-                    "background": "#f6faff",
-                    "surface-tint": "#176589",
-                    "outline": "#70787e",
                     "on-secondary-fixed-variant": "#33476a",
-                    "secondary": "#4b5f84",
-                    "primary-fixed": "#c6e7ff",
-                    "error": "#ba1a1a",
-                    "on-error": "#ffffff",
-                    "on-surface-variant": "#40484e",
-                    "surface-container": "#dff0fe",
-                    "on-tertiary-fixed-variant": "#004b70",
-                    "surface": "#f6faff",
-                    "surface-container-low": "#eaf5ff",
-                    "on-tertiary-container": "#004567",
-                    "on-secondary": "#ffffff",
-                    "on-primary-fixed": "#001e2d",
-                    "inverse-on-surface": "#e4f3ff",
-                    "tertiary-fixed-dim": "#8ecdff",
-                    "on-tertiary-fixed": "#001e30",
-                    "error-container": "#ffdad6",
-                    "surface-container-high": "#d9eaf8",
-                    "surface-container-highest": "#d4e5f3",
-                    "secondary-fixed-dim": "#b2c7f1",
-                    "tertiary": "#006494",
-                    "secondary-fixed": "#d7e3ff",
-                    "on-tertiary": "#ffffff",
-                    "inverse-primary": "#8dcef7",
-                    "inverse-surface": "#23323d",
-                    "primary-fixed-dim": "#8dcef7",
-                    "surface-variant": "#d4e5f3",
-                    "primary": "#176589",
-                    "surface-dim": "#cbdcea",
                     "primary-container": "#73b4dc",
-                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#40484e",
+                    "inverse-on-surface": "#e4f3ff",
+                    "surface-container": "#dff0fe",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "surface": "#f6faff",
+                    "primary-fixed-dim": "#8dcef7",
                     "on-error-container": "#93000a",
+                    "on-background": "#0d1d27",
+                    "surface-dim": "#cbdcea",
+                    "on-error": "#ffffff",
+                    "primary": "#176589",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary": "#4b5f84",
+                    "on-tertiary-fixed": "#001e30",
+                    "inverse-primary": "#8dcef7",
+                    "on-secondary-container": "#465a7f",
+                    "on-tertiary-container": "#004567",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "on-surface": "#0d1d27",
+                    "secondary-fixed-dim": "#b2c7f1",
+                    "on-primary-fixed": "#001e2d",
+                    "secondary-fixed": "#d7e3ff",
+                    "surface-tint": "#176589",
                     "tertiary-fixed": "#cae6ff",
                     "secondary-container": "#bed2fd",
                     "surface-container-lowest": "#ffffff",
-                    "tertiary-container": "#65b4ec",
                     "surface-bright": "#f6faff",
-                    "on-primary-fixed-variant": "#004c6b",
-                    "on-surface": "#0d1d27"
+                    "surface-container-highest": "#d4e5f3",
+                    "inverse-surface": "#23323d",
+                    "tertiary": "#006494",
+                    "tertiary-container": "#65b4ec",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#021b3d",
+                    "outline-variant": "#c0c7ce",
+                    "on-primary-container": "#004562",
+                    "surface-container-low": "#eaf5ff",
+                    "surface-container-high": "#d9eaf8",
+                    "surface-variant": "#d4e5f3",
+                    "outline": "#70787e",
+                    "primary-fixed": "#c6e7ff",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#f6faff"
             },
             "borderRadius": {
                     "DEFAULT": "0.125rem",
@@ -71,7 +69,9 @@
             "fontFamily": {
                     "headline": ["Manrope"],
                     "body": ["Public Sans"],
-                    "label": ["Public Sans"]
+                    "label": ["Public Sans"],
+                    "manrope": ["Manrope"],
+                    "public-sans": ["Public Sans"]
             }
           },
         },
@@ -81,235 +81,350 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        body { font-family: 'Public Sans', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #176589 0%, #004c6b 100%);
+        }
     </style>
 </head>
-<body class="bg-background text-on-background min-h-screen">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-sky-50/80 backdrop-blur-xl shadow-sm">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-8">
-<span class="text-2xl font-bold tracking-tighter text-slate-900">Pulse &amp; Praxis</span>
-<nav class="hidden md:flex items-center gap-6">
-<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Dashboard</a>
-<a class="text-sky-700 font-bold border-b-2 border-sky-600 pb-1" href="#">Modules</a>
-<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Guidelines</a>
-<a class="text-slate-600 font-medium hover:text-sky-600 transition-colors" href="#">Case Studies</a>
-</nav>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-manrope">Clinical Editorial</span>
+<div class="hidden md:flex space-x-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold active:scale-95 duration-150" href="index.html">Dashboard</a>
+<a class="text-sky-700 dark:text-sky-300 border-b-2 border-sky-600 font-manrope font-semibold active:scale-95 duration-150" href="modules.html">Modules</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors font-manrope font-semibold active:scale-95 duration-150" href="guidelines.html">Guidelines</a>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<button class="p-2 hover:bg-sky-100/50 rounded-md transition-all active:scale-95">
-<span class="material-symbols-outlined text-sky-600">notifications</span>
+<button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined">notifications</span>
 </button>
-<button class="p-2 hover:bg-sky-100/50 rounded-md transition-all active:scale-95">
-<span class="material-symbols-outlined text-sky-600">account_circle</span>
+<button class="p-2 text-slate-600 dark:text-slate-400 hover:text-sky-500 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined">account_circle</span>
 </button>
+<img alt="Provider profile avatar" class="w-8 h-8 rounded-full border border-sky-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLQUC1uVCbc3MMfdnaUbYzMRuGAb6wsEGLtg6pRLHhxJrV0Gr-WpHuwbUQDiZdpTRT-UQk2Fpl09LexYtgljEN1bqk0nklgCtlUzMr2jYCPwO3arRNiJZ-sHFlyrMLe-KCn_rUaNa8JgwpMWL07kA53FOebRoDxLT9Xatu_20cDgTQgrKXMouVxHKMDfpcuTkp74Lb8IwTUblSUR4f1I1D25C4rriBEftgzQUDq_DnQs9YJyIrknyLZhgMvCa1QhbztsNU0Vw6DM"/>
 </div>
 </div>
-<div class="bg-sky-100/50 h-[1px] w-full"></div>
-</header>
-<!-- SideNavBar (Hidden on small screens) -->
-<aside class="hidden lg:flex flex-col h-screen w-64 fixed left-0 top-0 bg-slate-50 py-6 space-y-4 z-40">
-<div class="px-6 mb-8">
-<h2 class="text-xl font-extrabold text-sky-800">Pulse &amp; Praxis</h2>
-<p class="text-xs text-secondary uppercase tracking-widest font-bold">Clinical Hub</p>
+</nav>
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 pt-20 px-4 h-full h-screen w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950">
+<div class="px-2 py-4 mb-4">
+<h2 class="text-lg font-black text-slate-900 dark:text-slate-50 font-manrope uppercase tracking-tighter">Pediatric Specialist</h2>
+<p class="text-xs text-sky-600 dark:text-sky-400 font-medium font-manrope">Resource Overview</p>
 </div>
-<div class="flex-1 space-y-1">
-<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-sky-600 transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span class="font-medium">Dashboard</span>
-</a>
-<a class="flex items-center gap-3 px-6 py-3 bg-sky-100 text-sky-700 rounded-r-full font-bold" href="#">
-<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
-<span class="font-medium">Modules</span>
-</a>
-<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-sky-600 transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
-<span class="font-medium">Guidelines</span>
-</a>
-<a class="flex items-center gap-3 px-6 py-3 text-slate-500 hover:text-sky-600 transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-<span class="font-medium">Case Studies</span>
-</a>
-</div>
-<div class="px-6 pt-4 space-y-1 border-t border-slate-200">
-<a class="flex items-center gap-3 py-2 text-slate-500 hover:text-sky-600 transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="settings">settings</span>
-<span class="text-sm">Settings</span>
-</a>
-<a class="flex items-center gap-3 py-2 text-slate-500 hover:text-sky-600 transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="help">help</span>
-<span class="text-sm">Support</span>
-</a>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="index.html">
+<span class="material-symbols-outlined">dashboard</span> Dashboard
+        </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-sky-50 dark:bg-sky-900/20 text-sky-700 dark:text-sky-300 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="modules.html">
+<span class="material-symbols-outlined">clinical_notes</span> Modules
+        </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="guidelines.html">
+<span class="material-symbols-outlined">menu_book</span> Guidelines
+        </a>
+</nav>
+<div class="pt-4 pb-8 border-t border-slate-200/20 dark:border-slate-800/20 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="#">
+<span class="material-symbols-outlined">help</span> Support
+        </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out rounded-lg font-manrope text-sm font-medium" href="#">
+<span class="material-symbols-outlined">logout</span> Sign Out
+        </a>
 </div>
 </aside>
 <!-- Main Content Canvas -->
-<main class="lg:pl-64 pt-24 pb-12 min-h-screen">
-<div class="max-w-7xl mx-auto px-8">
-<!-- Hero Editorial Header -->
-<section class="mb-12">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div class="max-w-2xl">
-<span class="text-primary font-bold tracking-widest text-sm uppercase mb-2 block">Pediatric Clinical Hub</span>
-<h1 class="text-5xl font-extrabold text-on-surface tracking-tight mb-4">Resource Overview: Pediatric Oral Health</h1>
-<p class="text-on-surface-variant text-lg leading-relaxed">Rigorous clinical integration of developmental milestones, systemic manifestations, and sensory protocols for comprehensive pediatric care.</p>
+<main class="lg:ml-64 pt-24 pb-32 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-12">
+<nav class="flex items-center gap-2 mb-6 text-sm font-medium text-primary">
+<a class="hover:underline" href="modules.html">Modules</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-on-surface-variant">Resource Overview: Complex Pediatric Profiles</span>
+</nav>
+<h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tight mb-4">
+            Consolidated Resource Overview
+        </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-3xl">
+            A comprehensive integration of clinical learning, developmental milestones, systemic manifestations, and collaborative care standards for pediatric complex feeding profiles.
+        </p>
+</header>
+<div class="grid lg:grid-cols-12 gap-12">
+<!-- Main Column -->
+<div class="lg:col-span-8 space-y-12">
+<!-- 1. Clinical Learning Intersections -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/30">
+<h2 class="text-2xl font-bold font-headline mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">hub</span>
+                    1. Clinical Learning Intersections
+                </h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">face_6</span>
 </div>
-<div class="bg-surface-container-high p-4 rounded-xl flex items-center gap-4">
-<div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<h3 class="font-bold font-headline">Craniofacial</h3>
+<p class="text-sm text-on-surface-variant">Analysis of structural anomalies affecting swallow mechanics and arch development.</p>
+</div>
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="font-bold font-headline">Sensory</h3>
+<p class="text-sm text-on-surface-variant">Management of oral aversion and desensitization protocols for therapeutic success.</p>
+</div>
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
 <span class="material-symbols-outlined">verified</span>
 </div>
-<div>
-<p class="text-xs font-bold uppercase text-secondary">Academic Status</p>
-<p class="text-sm font-semibold">Verified Clinical Data [2024]</p>
-</div>
+<h3 class="font-bold font-headline">AAPD Best Practices</h3>
+<p class="text-sm text-on-surface-variant">Alignment with 2023 AAPD "Policy on Management of the Developing Dentition and Occlusion."</p>
 </div>
 </div>
 </section>
-<!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- Clinical Learning Intersections (The Core Insights) -->
-<div class="md:col-span-8 space-y-8">
-<div class="bg-surface-container-low rounded-xl p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary">schema</span>
-                            Clinical Learning Intersections
-                        </h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-l-4 border-tertiary">
-<h3 class="font-bold text-lg mb-2">Craniofacial Structures</h3>
-<p class="text-sm text-on-surface-variant mb-4">Structural anomalies and syndromic indicators in pediatric patients.</p>
-<div class="bg-surface-container p-3 rounded text-xs italic">
-                                    "Cite Gorlin's/Nelson [5] on structural anomalies: Recognition of dysmorphic features is critical for early diagnosis of genetic syndromes."
-                                </div>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-l-4 border-tertiary">
-<h3 class="font-bold text-lg mb-2">Sensory &amp; Behavioral</h3>
-<p class="text-sm text-on-surface-variant mb-4">Managed care for patients with sensory processing sensitivities.</p>
-<div class="bg-surface-container p-3 rounded text-xs italic">
-                                    "Cite AAPD desensitization protocols [1]: Incremental exposure and 'Tell-Show-Do' techniques reduce clinical anxiety."
-                                </div>
-</div>
-</div>
-</div>
-<!-- Developmental Feeding Milestones (Large Feature) -->
-<div class="bg-surface-container-low rounded-xl p-8">
-<div class="flex justify-between items-start mb-8">
-<h2 class="text-2xl font-bold flex items-center gap-2">
+<!-- 2. Developmental Feeding Milestones & Habits -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/30">
+<h2 class="text-2xl font-bold font-headline mb-6 flex items-center gap-3">
 <span class="material-symbols-outlined text-primary">child_care</span>
-                                Developmental Feeding Milestones
-                            </h2>
-<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold">AAPD Standard</span>
+                    2. Developmental Feeding Milestones
+                </h2>
+<div class="mb-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-lg font-bold font-headline flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">draw</span>
+                        Non-Nutritive Sucking Impact
+                    </h3>
+<span class="bg-primary/10 text-primary text-[10px] px-2 py-1 rounded font-bold border border-primary/20 uppercase">AAPD Policy (2023)</span>
 </div>
-<div class="space-y-6">
-<div class="flex flex-col md:flex-row gap-6 items-start">
-<img class="w-full md:w-48 h-48 object-cover rounded-xl shadow-md" data-alt="Close-up of a smiling toddler showing early primary teeth in a brightly lit pediatric clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbr4qsFIhmx5YKpL0gc9Uih2RNM4pOVG52vD3L625y9b5fdzknPoQ3Li7hQVNm0xjttJd85q6ApDvnZnqtiy_M1oA7p1zU3os4Pb7V6KyVxpQXmUPQFgje69g3hVMxgfzT2mrGzOsGoDG-9Ckn6CyWtacMvXEVMw97tsQNJVud3u1jcQp9MFSYyHVNDntBgfB_hcWsEcnymdv4gQ75Tn31-TJszrwBaypaAcfithYuVbTiEATM7w9YmamgiAl5_MFxtI1whXTR24"/>
-<div class="flex-1">
-<h4 class="font-bold text-primary mb-2">Non-Nutritive Sucking (Pacifier/Digit)</h4>
-<p class="text-sm leading-relaxed text-on-surface-variant mb-4">
-                                        Understanding the temporal impact of sucking habits on maxillofacial development. Excessive duration beyond critical windows necessitates orthodontic intervention.
-                                    </p>
-<div class="bg-white/50 border-l-4 border-primary p-4 rounded-r-lg">
-<p class="text-sm font-semibold text-on-surface">Verification Key:</p>
-<p class="text-xs text-on-surface-variant">Cite AAPD 'Developing Dentition' [6] on malocclusion timing (age 3+ intervention recommended to prevent permanent skeletal changes).</p>
-</div>
-</div>
-</div>
-<div class="pt-6 border-t border-sky-100/50">
-<h4 class="font-bold text-primary mb-4">Primary Eruption Benchmarks [7]</h4>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="text-center p-3 bg-white rounded-lg">
-<p class="text-xs text-secondary font-bold">Central Incisors</p>
-<p class="text-lg font-bold">6-10 Mo</p>
-</div>
-<div class="text-center p-3 bg-white rounded-lg">
-<p class="text-xs text-secondary font-bold">Lateral Incisors</p>
-<p class="text-lg font-bold">9-13 Mo</p>
-</div>
-<div class="text-center p-3 bg-white rounded-lg">
-<p class="text-xs text-secondary font-bold">First Molars</p>
-<p class="text-lg font-bold">13-19 Mo</p>
-</div>
-<div class="text-center p-3 bg-white rounded-lg">
-<p class="text-xs text-secondary font-bold">Canines</p>
-<p class="text-lg font-bold">16-23 Mo</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Right Column (Systemic & Physiological) -->
-<div class="md:col-span-4 space-y-8">
-<!-- Systemic Manifestations Card -->
-<div class="bg-surface-container-high rounded-xl p-6 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-2 opacity-10">
-<span class="material-symbols-outlined text-6xl">vital_signs</span>
-</div>
-<h3 class="text-xl font-bold mb-6">Systemic Manifestations</h3>
-<div class="space-y-6">
-<div>
-<h4 class="text-sm font-bold text-error uppercase tracking-wider mb-2">Malnutrition Indicators</h4>
-<ul class="text-sm space-y-2 text-on-surface-variant">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-sm mt-0.5">check_circle</span>
-<span>Angular Cheilitis (B-vit/Iron deficiency) [5]</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-sm mt-0.5">check_circle</span>
-<span>Glossitis: Inflammation of the tongue [5]</span>
-</li>
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<p class="text-on-surface-variant text-sm">Consistent with AAPD recommendations, persistent habits (beyond age 3) require intervention to prevent:</p>
+<ul class="text-sm space-y-2 list-disc pl-4">
+<li><strong>Anterior Open Bite:</strong> Significant vertical discrepancy between incisors.</li>
+<li><strong>V-Shaped Maxilla:</strong> Narrowing of the maxillary arch with posterior crossbite.</li>
+<li><strong>Proclination:</strong> Increased overjet of maxillary incisors.</li>
 </ul>
+<p class="text-[10px] text-on-surface-variant italic">Ref: AAPD Best Practices | Management of Developing Dentition</p>
 </div>
-<div class="pt-4 border-t border-sky-200/30">
-<h4 class="text-sm font-bold text-primary uppercase tracking-wider mb-2">Infection Profiles</h4>
-<div class="bg-surface-container-lowest p-4 rounded-lg">
-<p class="text-xs font-bold mb-1">Oral Candidiasis [8]</p>
-<p class="text-xs text-on-surface-variant leading-tight italic">Commonly presenting as pseudomembranous white patches in infants and immunocompromised patients.</p>
+<!-- Diagram Placeholder for Habits -->
+<div class="bg-surface-container-low rounded-lg p-4 border border-outline-variant aspect-video flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[120px]">dentistry</span>
 </div>
+<div class="z-10 text-center">
+<p class="text-xs font-bold uppercase text-primary tracking-widest mb-2">Morphological Diagram</p>
+<div class="flex gap-2">
+<div class="h-16 w-1 bg-primary/20 rounded-full"></div>
+<div class="h-20 w-1 bg-primary/40 rounded-full"></div>
+<div class="h-24 w-1 bg-primary rounded-full"></div>
+<div class="h-20 w-1 bg-primary/40 rounded-full"></div>
+<div class="h-16 w-1 bg-primary/20 rounded-full"></div>
 </div>
-</div>
-</div>
-<!-- Physiological Insight (Frontiers) -->
-<div class="bg-secondary-container text-on-secondary-container rounded-xl p-6">
-<div class="flex items-center gap-2 mb-4">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
-<h3 class="font-bold">Physiological Insight</h3>
-</div>
-<p class="text-sm leading-relaxed font-medium">
-                            Recent research highlights that lack of mechanical cleansing in non-oral feeders (G-tube dependent) significantly increases calculus formation [9].
-                        </p>
-<div class="mt-4 pt-4 border-t border-on-secondary-container/20">
-<p class="text-xs italic opacity-80 italic">Note: Requires specialized prophylaxis frequency.</p>
-</div>
-</div>
-<!-- Reference List (The Verification Anchor) -->
-<div class="bg-surface-container-low rounded-xl p-6">
-<h3 class="text-xs font-extrabold text-secondary uppercase tracking-widest mb-4">References [5-9]</h3>
-<ol class="text-[10px] space-y-3 leading-tight text-on-surface-variant list-decimal pl-4">
-<li>Kliegman RM, et al. Nelson Textbook of Pediatrics. 21st ed. Elsevier; 2020. (Craniofacial/Malnutrition).</li>
-<li>American Academy of Pediatric Dentistry. Management of the Developing Dentition and Occlusion. Reference Manual 2023.</li>
-<li>AAPD. Guideline on Periodicity of Examination, Preventive Dental Services, and Anticipatory Guidance. 2023.</li>
-<li>AAPD. Oral Pathology in Children and Adolescents. Clinical Guidelines.</li>
-<li>Frontiers in Pediatrics. Oral Health in Enterally Fed Children: Impact of Mechanical Cleansing Absence. 2022.</li>
-</ol>
+<p class="text-[10px] mt-2 text-on-surface-variant font-medium italic">Visualization: Maxillary Constriction</p>
 </div>
 </div>
 </div>
-<!-- Footer Clinical CTA -->
-<footer class="mt-16 flex flex-col md:flex-row items-center justify-between gap-8 p-8 border-t border-sky-100">
-<div class="flex items-center gap-6">
-<img class="w-16 h-16 rounded-full object-cover" data-alt="Professional medical specialist in a clean white coat holding a digital tablet with medical charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYfbAkzzCEjJseCpbe7ghMkeqg4QWRXp5o3IqPGuqaznA7nR4DnrRdWJQZXK3CEBF1lr-K65baExqB24HkruzBdjkS15SC3HEa-H5-lK4nWrRbtjacC-5tBVbGOpeyBUcdtuQcHdRdjMmWYQVM-xoZPhDeaETcAltxpBrUbXdbg13Ml59YaTFUoePGeC_x2ZJL4EyNBaCP0sjWbZhvT6qKmQpJmiETUhwknwbM81jGhXbzS-6bG1agxdal8itAzRCrvCEa7VG8wXc"/>
+</div>
 <div>
-<h4 class="font-bold text-on-surface">Module Academic Lead</h4>
-<p class="text-sm text-on-surface-variant">Verified by Clinical Editorial Board</p>
+<div class="flex justify-between items-end mb-4">
+<h3 class="text-lg font-bold font-headline">Eruption &amp; Exfoliation Sequence</h3>
+<span class="text-[10px] text-on-surface-variant font-medium">Source: AAPD Reference Manual</span>
+</div>
+<!-- Diagram Placeholder for Eruption -->
+<div class="mb-4 bg-primary/5 p-4 rounded-lg flex items-center gap-4 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">calendar_today</span>
+<div>
+<p class="text-sm font-bold">AAPD Standard Timing Guide</p>
+<p class="text-xs text-on-surface-variant">Clinical benchmarks for monitoring transitional dentition and arch development.</p>
 </div>
 </div>
-<div class="flex gap-4">
-<button class="px-6 py-3 bg-surface-container-highest text-on-surface font-bold rounded-md hover:bg-slate-200 transition-all active:scale-95">Download PDF</button>
-<button class="px-6 py-3 bg-gradient-to-br from-primary to-sky-800 text-on-primary font-bold rounded-md shadow-md hover:opacity-90 transition-all active:scale-95 uppercase tracking-wider text-xs">Complete Module</button>
+<div class="overflow-x-auto">
+<table class="w-full text-sm text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant">
+<th class="py-3 font-bold text-primary">Tooth Group</th>
+<th class="py-3 font-bold text-primary">Primary Eruption</th>
+<th class="py-3 font-bold text-primary">Exfoliation</th>
+<th class="py-3 font-bold text-primary">Permanent Eruption</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<tr>
+<td class="py-3 font-semibold">Central Incisor</td>
+<td class="py-3">6–12 mo</td>
+<td class="py-3">6–7 yr</td>
+<td class="py-3">6–8 yr</td>
+</tr>
+<tr>
+<td class="py-3 font-semibold">Lateral Incisor</td>
+<td class="py-3">9–16 mo</td>
+<td class="py-3">7–8 yr</td>
+<td class="py-3">7–9 yr</td>
+</tr>
+<tr>
+<td class="py-3 font-semibold">Canine (Cuspid)</td>
+<td class="py-3">16–23 mo</td>
+<td class="py-3">9–12 yr</td>
+<td class="py-3">9–12 yr</td>
+</tr>
+<tr>
+<td class="py-3 font-semibold">Molars/Premolars</td>
+<td class="py-3">13–33 mo</td>
+<td class="py-3">9–12 yr</td>
+<td class="py-3">10–12 yr</td>
+</tr>
+</tbody>
+</table>
 </div>
-</footer>
+</div>
+</section>
+<!-- 3. Systemic Manifestations -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold font-headline flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">medical_information</span>
+                    3. Systemic Manifestations
+                </h2>
+<span class="text-[10px] bg-tertiary/10 text-tertiary px-2 py-1 rounded font-bold border border-tertiary/20">AAPD CLINICAL RECOMMENDATIONS</span>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="p-6 rounded-xl bg-error/5 border-l-4 border-error">
+<h3 class="font-bold mb-3 flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-error">nutrition</span>
+                            Nutritional Deficiencies
+                        </h3>
+<ul class="space-y-3 text-sm">
+<li><strong>Angular Cheilitis:</strong> Riboflavin/Iron/B12 deficiency indicators.</li>
+<li><strong>Glossitis:</strong> "Bald tongue" associated with anemia (AAPD Handbook).</li>
+<li><strong>Enamel Defects:</strong> Systematic markers of early nutritional insult.</li>
+</ul>
+<p class="mt-4 text-[10px] font-semibold text-error/70 italic">Ref: AAPD Recommendations on Infant Oral Health</p>
+</div>
+<div class="p-6 rounded-xl bg-primary/5 border-l-4 border-primary">
+<h3 class="font-bold mb-3 flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary">coronavirus</span>
+                            Systemic Disease Signs
+                        </h3>
+<ul class="space-y-3 text-sm">
+<li><strong>Candidiasis:</strong> Key indicator for immune dysfunction monitoring.</li>
+<li><strong>Drug-Induced Gingival Overgrowth:</strong> Common with anticonvulsants/CCBs.</li>
+<li><strong>G-Tube Calculus:</strong> Increased risk due to lack of mechanical clearing.</li>
+</ul>
+<p class="mt-4 text-[10px] font-semibold text-primary/70 italic">Ref: AAPD Policy on Management of SHCN Patients</p>
+</div>
+</div>
+</section>
+<!-- 4. Collaborative Care -->
+<section class="bg-primary/5 rounded-xl p-8 border border-primary/10">
+<h2 class="text-2xl font-bold font-headline mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">groups</span>
+                    4. Collaborative Care &amp; Coverage
+                </h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-sm">
+<h3 class="font-bold font-headline text-lg mb-2 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">health_and_safety</span>
+                            Coverage Resources
+                        </h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">
+                            Ensure families have active dental coverage through Medicaid/CHIP to facilitate multidisciplinary care.
+                        </p>
+<a class="text-sm font-bold text-primary flex items-center gap-1 hover:underline" href="https://www.insurekidsnow.gov" target="_blank">
+                            InsureKidsNow.gov <span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-sm">
+<h3 class="font-bold font-headline text-lg mb-2 flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Local Specialist Finder
+                        </h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Connect patients with providers experienced in desensitization and complex needs management.
+                        </p>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar / Right Column -->
+<aside class="lg:col-span-4 space-y-6">
+<div class="sticky top-24 space-y-6">
+<!-- Summary Card -->
+<div class="bg-surface-container-high p-6 rounded-xl border border-outline-variant">
+<h4 class="font-bold font-headline mb-4">Resource Summary</h4>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Integrated Clinical Models</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Growth Charts &amp; Diagrams</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Systemic Health Markers</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Advocacy &amp; Funding Tools</span>
+</div>
+</div>
+<button class="w-full mt-6 bg-primary text-on-primary py-3 rounded-lg font-bold text-sm shadow-md active:scale-95 transition-transform">
+                        Download Full Overview (PDF)
+                    </button>
+</div>
+<!-- Quick Tips -->
+<div class="bg-tertiary-container/20 p-6 rounded-xl border-l-4 border-tertiary">
+<h4 class="text-tertiary font-bold font-headline flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-sm">lightbulb</span>
+                        Provider Tip
+                    </h4>
+<p class="text-sm text-on-tertiary-container leading-relaxed">
+                        Non-oral feeders require more frequent dental cleanings due to high salivary mineral content and lack of mechanical cleansing from food.
+                    </p>
+</div>
+<!-- Academic Sources -->
+<div class="px-2">
+<p class="text-[10px] font-bold uppercase text-on-surface-variant tracking-widest mb-4">References &amp; Standards</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-xl">school</span>
+<span class="text-[10px] font-bold">ABPD</span>
+</div>
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-xl">medical_services</span>
+<span class="text-[10px] font-bold">AAPD</span>
+</div>
+<div class="flex items-center gap-2 opacity-60">
+<span class="text-[10px] font-bold">AAP</span>
+</div>
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-xl">biotech</span>
+<span class="text-[10px] font-bold">CASAMASSIMO</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
 </div>
 </main>
+<!-- BottomNavBar Component (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex justify-around items-center h-16 pb-safe px-4">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 transition-transform active:scale-95" href="index.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110" href="modules.html">
+<span class="material-symbols-outlined">clinical_notes</span>
+<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Modules</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 transition-transform active:scale-95" href="guidelines.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider mt-1">Guidelines</span>
+</a>
+</div>
+</nav>
 </body></html>

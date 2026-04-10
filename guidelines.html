@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dental Implications of GERD | Clinical Editorial</title>
+<title>AAPD Guidelines: GI-Dental Interface | Clinical Editorial</title>
 <!-- Google Fonts: Manrope & Public Sans -->
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols -->
@@ -90,10 +90,14 @@
         .bg-primary-gradient {
             background: linear-gradient(135deg, #176589 0%, #004c6b 100%);
         }
+        .erosion-scale-1 { background: #e0f2fe; }
+        .erosion-scale-2 { background: #bae6fd; }
+        .erosion-scale-3 { background: #7dd3fc; }
+        .erosion-scale-4 { background: #38bdf8; }
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
-<!-- Top Navigation Bar (Shared Component {{DATA:COMPONENTS:COMPONENTS_13}} TopAppBar) -->
+<!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
 <div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-8">
@@ -108,7 +112,7 @@
 <div class="flex items-center gap-4">
 <div class="hidden lg:flex items-center bg-slate-100/50 dark:bg-slate-800/50 px-4 py-1.5 rounded-full ring-1 ring-outline-variant/20">
 <span class="material-symbols-outlined text-outline text-lg" data-icon="search">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-outline/60" placeholder="Search guidelines..." type="text"/>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-outline/60" placeholder="Search AAPD guidelines..." type="text"/>
 </div>
 <button class="p-2 text-slate-600 hover:text-sky-500 transition-colors duration-150 active:scale-95">
 <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
@@ -119,7 +123,7 @@
 </div>
 </div>
 </nav>
-<!-- Sidebar Navigation (Shared Component {{DATA:COMPONENTS:COMPONENTS_13}} SideNavBar) -->
+<!-- Sidebar Navigation -->
 <aside class="fixed left-0 top-0 pt-20 px-4 h-full h-screen w-64 hidden lg:flex flex-col border-r-0 bg-slate-50 dark:bg-slate-950 z-40">
 <div class="px-4 py-2 mb-6">
 <h2 class="text-lg font-black text-slate-900 dark:text-slate-50 font-manrope uppercase">Pediatric Specialist</h2>
@@ -163,159 +167,222 @@
 <!-- Hero Header -->
 <header class="max-w-6xl mx-auto mb-12">
 <nav class="flex items-center gap-2 text-sm text-outline mb-4">
-<a class="hover:text-primary" href="#">Guidelines</a>
+<a class="hover:text-primary" href="guidelines.html">Guidelines</a>
 <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
-<span class="text-on-surface-variant font-medium">Dental Complications</span>
+<span class="text-on-surface-variant font-medium">SHCN Technical Protocols</span>
 </nav>
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div>
-<h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tighter text-on-surface mb-2">Dental Implications of GERD</h1>
-<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Evidence-based clinical guidelines for identifying and managing Gastroesophageal Reflux Disease in pediatric dental patients.</p>
+<h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tighter text-on-surface mb-2">GI-Dental Clinical Protocols</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Consolidated technical guidelines for pediatric patients with special health care needs (SHCN).</p>
 </div>
 <div class="flex gap-3">
-<button class="bg-surface-container-highest px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest text-on-surface hover:bg-surface-dim transition-all">Download PDF</button>
-<button class="bg-primary-gradient px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest text-white shadow-md hover:opacity-90 transition-all">Share Guide</button>
+<button class="bg-surface-container-highest px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest text-on-surface hover:bg-surface-dim transition-all">Download Protocol PDF</button>
+<button class="bg-primary-gradient px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest text-white shadow-md hover:opacity-90 transition-all">Clinic Toolkit</button>
 </div>
 </div>
 </header>
-<!-- Bento Layout -->
-<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
-<!-- Erosion Prevention Section (Left Col) -->
-<section class="lg:col-span-8 space-y-6">
-<div class="bg-surface-container-low rounded-[1.5rem] p-8 border-l-4 border-primary">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="shield">shield</span>
-<h2 class="text-2xl font-bold font-headline tracking-tight">Erosion Prevention Strategies</h2>
+<!-- Main Content -->
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Technical Protocols -->
+<section class="lg:col-span-8 space-y-8">
+<!-- 1. Erosion Prevention -->
+<div class="bg-white rounded-3xl p-8 shadow-sm border border-outline-variant/20">
+<div class="flex items-center gap-4 mb-8">
+<div class="p-3 bg-primary/10 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="shield_with_heart">shield_with_heart</span>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Card 1 -->
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<h3 class="text-primary font-bold mb-2">Immediate Response</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Instruct patients NOT to brush teeth for at least 30-60 minutes following a reflux episode. Rinse with water or sodium bicarbonate solution immediately.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
-<h3 class="text-primary font-bold mb-2">Salivary Stimulation</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Recommend sugar-free xylitol gum to stimulate protective salivary flow and neutralize gastric acids through increased bicarbonate production.</p>
+<div>
+<h2 class="text-2xl font-bold font-headline tracking-tight">I. Erosion Prevention (GERD/Reflux)</h2>
+<p class="text-sm text-on-surface-variant">Protocols for managing gastric acid exposure and enamel stability.</p>
 </div>
 </div>
-<div class="mt-8 bg-surface-variant/30 rounded-xl p-6">
-<h3 class="text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-sm" data-icon="list_alt">list_alt</span>
-                            Dietary Modifications
-                        </h3>
-<ul class="space-y-4">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-sm text-on-surface">Avoid carbonated beverages and acidic citrus fruits in the evening.</span>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="text-sm text-on-surface">Minimize snacking between meals to allow salivary pH recovery.</span>
-</li>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="space-y-4">
+<h3 class="font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-base" data-icon="water_ph">water_ph</span>
+                                Salivary Neutralization
+                            </h3>
+<ul class="text-sm space-y-3 text-on-surface-variant">
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> Immediate water rinsing post-reflux episode.</li>
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> Sialagogue therapy (sugar-free xylitol) to boost bicarbonate.</li>
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> <strong>Wait 60 minutes</strong> before mechanical brushing.</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h3 class="font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-base" data-icon="auto_fix">auto_fix</span>
+                                Remineralization
+                            </h3>
+<ul class="text-sm space-y-3 text-on-surface-variant">
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> 5000 ppm Fluoride toothpaste (Rx strength).</li>
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> CPP-ACP (Casein Phosphopeptide-Amorphous Calcium Phosphate).</li>
+<li class="flex gap-3"><span class="text-primary font-bold">•</span> Professional fluoride varnish every 3 months.</li>
 </ul>
 </div>
 </div>
-<!-- Screening Tools Section -->
-<div class="bg-surface-container-low rounded-[1.5rem] p-8">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="content_paste_search">content_paste_search</span>
-<h2 class="text-2xl font-bold font-headline tracking-tight text-on-surface">Screening for Non-Dental Providers</h2>
+<!-- Clinical Illustration: Erosion Levels -->
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Clinical Reference: BEWE Erosion Scores</h4>
+<div class="grid grid-cols-4 gap-2 h-24 mb-3">
+<div class="erosion-scale-1 rounded-lg flex items-end justify-center pb-2 text-[10px] font-bold text-sky-800">Score 0</div>
+<div class="erosion-scale-2 rounded-lg flex items-end justify-center pb-2 text-[10px] font-bold text-sky-800">Score 1</div>
+<div class="erosion-scale-3 rounded-lg flex items-end justify-center pb-2 text-[10px] font-bold text-sky-800">Score 2</div>
+<div class="erosion-scale-4 rounded-lg flex items-end justify-center pb-2 text-[10px] font-bold text-sky-800">Score 3</div>
 </div>
-<div class="space-y-4">
-<div class="flex flex-col md:flex-row gap-6 p-6 bg-surface-container-lowest rounded-xl">
-<div class="md:w-1/3">
-<span class="text-xs font-black text-tertiary-container bg-tertiary px-2 py-1 rounded-md uppercase tracking-tighter">Oral Inspection</span>
-</div>
-<div class="md:w-2/3">
-<h4 class="font-bold text-on-surface mb-1">Palatal Erosion Patterns</h4>
-<p class="text-sm text-on-surface-variant">Non-dental providers should check for "cupping" on molar cusps and thinning of enamel on the palatal surfaces of upper incisors.</p>
+<div class="flex justify-between text-[10px] text-slate-400 font-medium px-1">
+<span>No Loss</span>
+<span>Initial Surface Loss</span>
+<span>Hard Tissue Loss &lt; 50%</span>
+<span>Severe Loss &gt; 50%</span>
 </div>
 </div>
-<div class="flex flex-col md:flex-row gap-6 p-6 bg-surface-container-lowest rounded-xl">
-<div class="md:w-1/3">
-<span class="text-xs font-black text-tertiary-container bg-tertiary px-2 py-1 rounded-md uppercase tracking-tighter">Questionnaire</span>
 </div>
-<div class="md:w-2/3">
-<h4 class="font-bold text-on-surface mb-1">BEWE Scoring</h4>
-<p class="text-sm text-on-surface-variant">The Basic Erosive Wear Examination (BEWE) tool allows quick categorization of risk: Score 0-18. Scores &gt;13 require immediate specialist referral.</p>
+<!-- 2. Cariogenic Potential -->
+<div class="bg-white rounded-3xl p-8 shadow-sm border border-outline-variant/20">
+<div class="flex items-center gap-4 mb-8">
+<div class="p-3 bg-secondary/10 rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="nutrition">nutrition</span>
 </div>
+<div>
+<h2 class="text-2xl font-bold font-headline tracking-tight">II. Cariogenic Potential</h2>
+<p class="text-sm text-on-surface-variant">Nutrition and supplemental exposure management.</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="p-5 bg-surface-container-low rounded-xl flex gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="warning">warning</span>
+<div>
+<h4 class="font-bold text-sm mb-1">Thickened Liquids &amp; Supplements</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">High-viscosity supplements increase carbohydrate retention time. Patients using thickened liquids require enhanced oral clearance protocols immediately after feeding cycles.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="border border-outline-variant/30 p-4 rounded-xl">
+<h5 class="text-xs font-bold uppercase text-slate-500 mb-2">Risk Factor</h5>
+<p class="text-xs font-medium">Enteral nutrition "grazing" patterns</p>
+</div>
+<div class="border border-outline-variant/30 p-4 rounded-xl">
+<h5 class="text-xs font-bold uppercase text-slate-500 mb-2">Mitigation</h5>
+<p class="text-xs font-medium">Scheduled bolus feeds over continuous sips</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Hygiene for Non-Oral Feeders -->
+<div class="bg-white rounded-3xl p-8 shadow-sm border border-outline-variant/20">
+<div class="flex items-center gap-4 mb-8">
+<div class="p-3 bg-tertiary/10 rounded-2xl">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="medical_services">medical_services</span>
+</div>
+<div>
+<h2 class="text-2xl font-bold font-headline tracking-tight">III. Hygiene for G-Tube / Non-Oral Feeders</h2>
+<p class="text-sm text-on-surface-variant">Managing the unique oral environment of enteral nutrition.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="p-4 bg-tertiary-container/10 rounded-xl border border-tertiary-container/20">
+<h4 class="text-xs font-bold text-tertiary mb-2 uppercase tracking-wide">Biofilm Control</h4>
+<p class="text-[11px] leading-relaxed text-on-surface-variant">Twice daily soft brushing with 0.12% Chlorhexidine to manage altered microbial diversity.</p>
+</div>
+<div class="p-4 bg-tertiary-container/10 rounded-xl border border-tertiary-container/20">
+<h4 class="text-xs font-bold text-tertiary mb-2 uppercase tracking-wide">Calculus Mgmt</h4>
+<p class="text-[11px] leading-relaxed text-on-surface-variant">Frequent (3mo) prophy due to higher salivary pH and calcium concentrations in G-tube users.</p>
+</div>
+<div class="p-4 bg-tertiary-container/10 rounded-xl border border-tertiary-container/20">
+<h4 class="text-xs font-bold text-tertiary mb-2 uppercase tracking-wide">Sialagogues</h4>
+<p class="text-[11px] leading-relaxed text-on-surface-variant">Artificial saliva or stimulation to maintain ductal patency and oral mucosal integrity.</p>
+</div>
+</div>
+<!-- Clinical Illustration: Biofilm Chart -->
+<div class="bg-slate-900 rounded-2xl p-6 text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Biofilm Homeostasis Chart</h4>
+<div class="flex items-end gap-1 h-32 mb-4">
+<div class="w-1/6 bg-sky-500 h-1/4 rounded-t-sm" title="Oral Feeder"></div>
+<div class="w-1/6 bg-sky-400 h-1/3 rounded-t-sm" title="Oral Feeder"></div>
+<div class="w-1/6 bg-sky-300 h-2/5 rounded-t-sm" title="Oral Feeder"></div>
+<div class="w-1/6 bg-tertiary h-3/4 rounded-t-sm" title="G-Tube"></div>
+<div class="w-1/6 bg-tertiary h-5/6 rounded-t-sm" title="G-Tube"></div>
+<div class="w-1/6 bg-tertiary h-full rounded-t-sm" title="G-Tube"></div>
+</div>
+<div class="flex justify-between text-[9px] font-bold text-slate-400 uppercase tracking-tighter">
+<span>Balanced Microbiome (Oral)</span>
+<span class="text-tertiary">Pathogenic Shift (G-Tube)</span>
 </div>
 </div>
 </div>
 </section>
-<!-- Referral Protocols (Right Col) -->
+<!-- Right Column: Triggers & Access -->
 <aside class="lg:col-span-4 space-y-6">
-<div class="bg-surface-container-high rounded-[1.5rem] p-8 overflow-hidden relative">
-<div class="absolute top-0 right-0 p-4 opacity-10">
-<span class="material-symbols-outlined text-8xl" data-icon="groups">groups</span>
+<!-- Referral Triggers -->
+<div class="bg-error-container/10 rounded-3xl p-6 border-2 border-error/20">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-error" data-icon="priority_high">priority_high</span>
+<h2 class="text-lg font-bold font-headline">IV. Referral Triggers</h2>
 </div>
-<h2 class="text-xl font-bold font-headline tracking-tight text-on-surface mb-6">Referral Protocols</h2>
-<div class="relative pl-6 space-y-8 before:content-[''] before:absolute before:left-[5px] before:top-2 before:bottom-2 before:w-[2px] before:bg-outline-variant/30">
-<!-- Step 1 -->
-<div class="relative">
-<span class="absolute -left-[23px] top-0 w-3 h-3 rounded-full bg-primary border-4 border-surface-container-high"></span>
-<h4 class="font-bold text-on-surface leading-none mb-2">Step 1: Clinical Suspicion</h4>
-<p class="text-xs text-on-surface-variant">Presence of dental erosion (Tooth Wear Index &gt;2) alongside symptoms like chronic coughing or waterbrash.</p>
+<div class="space-y-4">
+<div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-error">
+<h4 class="text-xs font-bold text-error uppercase mb-1">Erosive Crisis</h4>
+<p class="text-[11px] text-on-surface-variant">Dentin exposure or hypersensitivity preventing adequate oral intake.</p>
 </div>
-<!-- Step 2 -->
-<div class="relative">
-<span class="absolute -left-[23px] top-0 w-3 h-3 rounded-full bg-primary border-4 border-surface-container-high"></span>
-<h4 class="font-bold text-on-surface leading-none mb-2">Step 2: GI Collaboration</h4>
-<p class="text-xs text-on-surface-variant">Standardized referral to Pediatric Gastroenterology. Include photographic evidence of palatal thinning.</p>
+<div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-error">
+<h4 class="text-xs font-bold text-error uppercase mb-1">Aspiration Risk</h4>
+<p class="text-[11px] text-on-surface-variant">Heavy biofilm in medically fragile patients with dysphagia history.</p>
 </div>
-<!-- Step 3 -->
-<div class="relative">
-<span class="absolute -left-[23px] top-0 w-3 h-3 rounded-full bg-primary border-4 border-surface-container-high"></span>
-<h4 class="font-bold text-on-surface leading-none mb-2">Step 3: Joint Management</h4>
-<p class="text-xs text-on-surface-variant">Establish 3-month dental recall cycle to monitor erosion progression while GI manages pharmacological therapy.</p>
+<div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-error">
+<h4 class="text-xs font-bold text-error uppercase mb-1">Anesthesia Coordination</h4>
+<p class="text-[11px] text-on-surface-variant">Need for GA restorative work requiring GI/Cardiac clearance.</p>
 </div>
 </div>
-<div class="mt-10 p-4 rounded-xl bg-primary/10 border-l-2 border-primary">
-<p class="text-xs font-semibold text-primary">URGENCY INDICATOR</p>
-<p class="text-xs text-on-surface mt-1">Refer immediately if dentinal sensitivity prohibits oral hygiene maintenance.</p>
+<button class="w-full mt-6 py-3 bg-error text-white text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-red-700 transition-colors">Urgent Referral Portal</button>
 </div>
-</div>
-<!-- Deep Dive Card -->
-<div class="bg-tertiary-container/20 rounded-[1.5rem] p-8 border border-tertiary-container/30">
-<div class="flex items-center gap-2 text-tertiary mb-3">
-<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
-<span class="text-xs font-bold uppercase tracking-widest">Deep Dive</span>
-</div>
-<h3 class="text-lg font-bold font-headline text-on-tertiary-container mb-3">Silent Reflux in Pediatrics</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Learn why dental erosion is often the ONLY presenting symptom of Laryngopharyngeal Reflux (LPR) in children under 10.</p>
-<a class="flex items-center gap-2 text-sm font-bold text-tertiary hover:underline" href="#">
-                        Read White Paper
-                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+<!-- Care Access -->
+<div class="bg-primary-container/10 rounded-3xl p-6 border border-primary-container/30">
+<h3 class="font-bold text-primary flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-lg" data-icon="family_history">family_history</span>
+                        Care Access Support
+                    </h3>
+<p class="text-xs text-on-surface-variant mb-4 leading-relaxed">
+                        Navigating coverage for SHCN patients is essential. Direct families to the national portal for Medicaid/CHIP details.
+                    </p>
+<a class="flex items-center justify-between w-full p-3 bg-white rounded-xl text-xs font-bold text-on-surface border border-outline-variant/30 hover:border-primary transition-all" href="https://www.insurekidsnow.gov" target="_blank">
+                        InsureKidsNow.gov
+                        <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
 </a>
 </div>
-<!-- Clinical Callout -->
-<div class="bg-surface-container-high rounded-xl p-6 border-l-4 border-tertiary">
-<h4 class="text-sm font-bold text-on-surface mb-1">Key Insight</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed italic">"Erosion from GERD is typically located on the palatal surfaces of maxillary teeth and the occlusal surfaces of mandibular molars."</p>
+<!-- Reference Card -->
+<div class="bg-surface-container-high rounded-3xl p-6 border border-outline-variant/20">
+<div class="flex items-center gap-2 text-slate-500 mb-3">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Manual Reference</span>
+</div>
+<h4 class="text-sm font-bold mb-2">AAPD Reference Manual</h4>
+<p class="text-xs text-on-surface-variant mb-4 leading-relaxed italic">
+                        "Physiological homeostasis in SHCN patients requires a multidisciplinary approach bridging gastroenterology and dentistry."
+                    </p>
+<a class="text-xs font-bold text-primary hover:underline flex items-center gap-1" href="#">
+                        View Policy Paper <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</a>
 </div>
 </aside>
 </div>
 </main>
-<!-- Bottom Navigation Bar (Shared Component {{DATA:COMPONENTS:COMPONENTS_13}} BottomNavBar) -->
+<!-- Bottom Navigation Bar (Mobile) -->
 <nav class="fixed bottom-0 w-full z-50 lg:hidden rounded-t-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
 <div class="flex justify-around items-center h-16 pb-safe px-4">
-<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800">
+<a class="flex flex-col items-center justify-center text-slate-400" href="index.html">
 <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider">Dashboard</span>
-</div>
-<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800">
-<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider">Modules</span>
-</div>
-<div class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110 tap-highlight-transparent transition-transform">
+<span class="text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-sky-600 scale-110 font-bold" href="guidelines.html">
 <span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider">Guidelines</span>
-</div>
-<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 tap-highlight-transparent transition-transform active:bg-slate-50 dark:active:bg-slate-800">
+<span class="text-[10px] uppercase tracking-wider">Guides</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400" href="case-studies.html">
 <span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-<span class="font-public-sans text-[10px] font-bold uppercase tracking-wider">Case Studies</span>
-</div>
+<span class="text-[10px] font-bold uppercase tracking-wider">Cases</span>
+</a>
 </div>
 </nav>
 </body></html>

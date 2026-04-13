@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 4: Feeding Behaviors &amp; Dental Consequences</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0f4f8",
+                    "tertiary-fixed": "#cae6ff",
+                    "primary-fixed": "#c6e7ff",
+                    "on-secondary-container": "#465a7f",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "surface-dim": "#cbdcea",
+                    "outline": "#70787e",
+                    "on-primary-container": "#004562",
+                    "on-tertiary-container": "#004567",
+                    "tertiary": "#006494",
+                    "primary": "#005a92",
+                    "inverse-on-surface": "#e4f3ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#ffffff",
+                    "primary-container": "#e0f2ff",
+                    "inverse-primary": "#8dcef7",
+                    "surface-variant": "#f1f5f9",
+                    "on-primary-fixed": "#001e2d",
+                    "on-secondary-fixed": "#021b3d",
+                    "on-tertiary-fixed": "#001e30",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#33476a",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#d7e3ff",
+                    "tertiary-container": "#65b4ec",
+                    "secondary-container": "#bed2fd",
+                    "secondary-fixed-dim": "#b2c7f1",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#e2e8f0",
+                    "inverse-surface": "#1e293b",
+                    "on-surface": "#0f172a",
+                    "secondary": "#475569",
+                    "surface-bright": "#ffffff",
+                    "surface-container-low": "#f8fafc",
+                    "surface-container-high": "#f1f5f9",
+                    "on-surface-variant": "#64748b",
+                    "surface-container-highest": "#e2e8f0",
+                    "primary-fixed-dim": "#8dcef7",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#005a92",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "background": "#ffffff",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "on-background": "#0f172a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.375rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .sidebar-link-active {
+        background-color: #e0f2ff;
+        color: #005a92;
+        border-right: 4px solid #005a92;
+      }
+      .nav-link {
+        position: relative;
+        padding-bottom: 2px;
+      }
+      .nav-link-active::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #005a92;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+<div class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xl">medical_services</span>
+</div>
+<div class="text-xl font-bold tracking-tight text-slate-900">Pediatric Dental <span class="text-primary font-extrabold">Resource</span></div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="nav-link text-slate-600 font-medium hover:text-primary transition-colors cursor-pointer" href="index.html">Dashboard</a>
+<a class="nav-link nav-link-active text-primary font-bold transition-colors cursor-pointer" href="modules.html">Modules</a>
+<a class="nav-link text-slate-600 font-medium hover:text-primary transition-colors cursor-pointer" href="guidelines.html">Guidelines</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-600">search</span>
+</button>
+<button class="p-2 hover:bg-slate-100 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-600">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<div class="flex pt-16 min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col w-72 fixed h-[calc(100vh-64px)] bg-slate-50 border-r border-slate-200 overflow-y-auto">
+<div class="p-6">
+<h3 class="font-headline text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Course Modules</h3>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 font-semibold text-sm hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-lg">home</span> Introduction
+          </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 font-semibold text-sm hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-lg">school</span> Foundations
+          </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 font-semibold text-sm hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-lg">medical_services</span> Disease Recognition
+          </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 font-semibold text-sm hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-lg">nutrition</span> Nutrition
+          </a>
+<a class="flex items-center gap-3 px-4 py-3 sidebar-link-active font-bold text-sm rounded-lg cursor-pointer">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">psychology</span> Feeding Behaviors
+          </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 font-semibold text-sm hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-lg">groups</span> Special Populations
+          </a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 lg:ml-72 p-6 lg:p-12 max-w-6xl">
+<!-- Editorial Header -->
+<section class="mb-12">
+<div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800 mb-4">
+            MODULE 04
+          </div>
+<h1 class="font-headline text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+            Feeding Behaviors, Oral Habits &amp; <span class="text-primary">Dental Consequences</span>
+</h1>
+<p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+            Speech-language pathologists are uniquely positioned to identify and address behaviors that drive dental consequences — because those behaviors are often the same ones driving feeding dysfunction.
+          </p>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+<!-- Large Primary Insight: Tongue Thrust -->
+<div class="md:col-span-8 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<h2 class="font-headline text-2xl font-bold mb-4 text-slate-900">Tongue Thrust &amp; Malocclusion Indicators</h2>
+<p class="text-slate-600 mb-6 leading-relaxed">
+                  Tongue thrusting affects both swallowing efficiency and dental arch development. A persistent forward tongue position during swallow exerts continuous pressure on the anterior dentition, often resulting in an anterior open bite or flared incisors.
+                </p>
+<div class="bg-blue-50 border-l-4 border-primary p-4 rounded-r-lg">
+<span class="font-bold text-xs text-primary uppercase tracking-wider block mb-1">SLP Observation Note</span>
+<p class="text-sm text-slate-700">Observe resting posture. Is the tongue positioned against the palate or resting against the lower lip? Check for mouth breathing during non-feeding tasks.</p>
+</div>
+</div>
+<div class="w-full md:w-56 h-56 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0">
+<img alt="Anatomical illustration of tongue placement" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZyYB474nxpHNeuK55TaO-B57jJvLtIDnGYi8k_pzWcJUwkFlLem2HA4Af-Er_c3nWOtCETtUkQ8-CD5gKN42NJ7RJNEwGMjxgskLK_PEKbm5MIWt4cdJJtcg-Ay6FPZ83V8-SlcUbf4mNdgChTqPJypg16lXYXqHwJMqTWmOV_5sv6entRftkBe8bSGdrqKU7cCZnfJ9GpMBt6gEFePAHrh0mKQyEqmhzIXkhxbcovhqc-JtjrAE5PBOPFAAXohm8SWoMZciNiDI"/>
+</div>
+</div>
+</div>
+<!-- Secondary Insight: Non-Nutritive Sucking -->
+<div class="md:col-span-4 bg-slate-900 rounded-2xl p-8 flex flex-col justify-between text-white">
+<div>
+<h3 class="font-headline text-xl font-bold mb-4">Non-Nutritive Sucking</h3>
+<p class="text-slate-300 text-sm leading-relaxed mb-4">Prolonged pacifier or digit use alters arch development, leading to posterior crossbites and narrowed maxillary arches.</p>
+</div>
+<div class="mt-4">
+<div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest mb-2 text-slate-400">
+<span>Clinical Risk Level</span>
+<span class="text-red-400">High Risk</span>
+</div>
+<div class="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-red-400 w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Bento: Sensory Oral Aversion -->
+<div class="md:col-span-6 bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+<div class="h-56">
+<img alt="Child's toothbrush and tools" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEOV35c5TJPjRCJeRzKS6pK5ftdsyj-G0bsmknUEvv7OJt6tok1PRRo__2CDa_bS7aj_yzcPrpWdDCqqGrVUW6k4MS8el55smNuZtwMkmO6TB6L_pSUxWnMzetoyrNmSZoDgLLJWznD3uNS57yEPNI-4dnY6jF0wxAXoi1Q8UZXF8h9k8gLBXwpAwyXASSRNmf65vU-W6rD2TUEhy-JQbW3nM6s9ofgGlCx2YZreM_mLOhrmQvL8mLeS74PzOXgFYkzDqF4ZZJMFE"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-3 text-slate-900">Sensory Oral Aversion: Hygiene Barriers</h3>
+<p class="text-slate-600 leading-relaxed">
+                Oral sensory aversion creates significant barriers to both food acceptance and consistent toothbrushing. Clinicians must address tactile defensiveness to ensure long-term periodontal health.
+              </p>
+</div>
+</div>
+<!-- Bento: Bruxism & Motor Organization -->
+<div class="md:col-span-6 bg-blue-50 border border-blue-100 rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-slate-900">Bruxism &amp; Motor Organization</h3>
+</div>
+<p class="text-slate-600 leading-relaxed mb-6">
+            Bruxism may reflect the same neurological substrate as feeding motor disorganization. Rhythmic jaw movements outside of mastication may signal a need for increased proprioceptive input or indicate underlying autonomic dysregulation.
+          </p>
+<div class="mt-auto p-4 bg-white/60 rounded-xl border border-blue-200/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">tips_and_updates</span>
+<span class="text-sm font-medium italic text-slate-700">Linking nocturnal grinding with daytime feeding efficiency.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SLP Checklist Section -->
+<section class="bg-slate-50 border border-slate-200 rounded-2xl p-8 lg:p-12 mb-12">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-2xl font-extrabold mb-8 text-center text-slate-900">Clinical Assessment Checklist for SLPs</h2>
+<div class="space-y-3">
+<div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+<div class="text-slate-700 font-medium text-sm">Screen for lip incompetence and mouth breathing during resting state.</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+<div class="text-slate-700 font-medium text-sm">Assess swallow pattern for perioral muscle recruitment (mentalis strain).</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+<div class="text-slate-700 font-medium text-sm">Evaluate palatal height and width relative to tongue resting position.</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+<div class="text-slate-700 font-medium text-sm">Identify presence of dental attritions/wear facets suggestive of bruxism.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Actions -->
+<footer class="mt-16 pt-8 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+<div class="max-w-lg">
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">References &amp; Standards</p>
+<p class="text-xs text-slate-500 leading-relaxed">
+                Clinical guidelines curated in alignment with the American Academy of Pediatric Dentistry (AAPD) recommendations on Non-Nutritive Sucking Habits and the American Speech-Language-Hearing Association (ASHA) scope of practice for Pediatric Feeding Disorders.
+              </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-5 py-2.5 bg-slate-100 text-slate-700 font-bold text-xs rounded-lg uppercase tracking-wider hover:bg-slate-200 transition-colors">Download PDF</button>
+<button class="px-6 py-2.5 bg-primary text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-lg shadow-blue-900/10 hover:bg-blue-700 transition-colors">Complete Module</button>
+</div>
+</div>
+<div class="text-center py-8 border-t border-slate-100">
+<p class="text-xs text-slate-400 font-medium">© 2024 Pediatric Dental-Feeding Collaborative. All rights reserved.</p>
+</div>
+</footer>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clinical Editorial - Module 3: Diet, Nutrition, and Oral Health</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f0f4f8",
+                      "tertiary-fixed": "#cae6ff",
+                      "primary-fixed": "#c6e7ff",
+                      "on-secondary-container": "#465a7f",
+                      "tertiary-fixed-dim": "#8ecdff",
+                      "surface-dim": "#cbdcea",
+                      "outline": "#70787e",
+                      "on-primary-container": "#004562",
+                      "on-tertiary-container": "#004567",
+                      "tertiary": "#006494",
+                      "primary": "#1e3a8a",
+                      "inverse-on-surface": "#e4f3ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f8fafc",
+                      "primary-container": "#dbeafe",
+                      "inverse-primary": "#8dcef7",
+                      "surface-variant": "#f1f5f9",
+                      "on-primary-fixed": "#001e2d",
+                      "on-secondary-fixed": "#021b3d",
+                      "on-tertiary-fixed": "#001e30",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#33476a",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#d7e3ff",
+                      "tertiary-container": "#65b4ec",
+                      "secondary-container": "#bed2fd",
+                      "secondary-fixed-dim": "#b2c7f1",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#cbd5e1",
+                      "inverse-surface": "#23323d",
+                      "on-surface": "#0f172a",
+                      "secondary": "#475569",
+                      "surface-bright": "#ffffff",
+                      "surface-container-low": "#f8fafc",
+                      "surface-container-high": "#f1f5f9",
+                      "on-surface-variant": "#64748b",
+                      "surface-container-highest": "#e2e8f0",
+                      "primary-fixed-dim": "#8dcef7",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#1e3a8a",
+                      "on-tertiary-fixed-variant": "#004b70",
+                      "background": "#ffffff",
+                      "on-primary-fixed-variant": "#004c6b",
+                      "on-background": "#0f172a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.375rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Public Sans"],
+                      "label": ["Public Sans"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .nav-active { @apply text-primary font-bold border-b-2 border-primary; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar Updated -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+<div class="flex justify-between items-center px-6 lg:px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">medical_information</span>
+</div>
+<div class="text-xl font-bold tracking-tight text-slate-900 font-manrope uppercase">Clinical Editorial</div>
+</div>
+<nav class="hidden md:flex gap-10 items-center">
+<a class="text-slate-600 hover:text-primary font-medium transition-colors cursor-pointer" href="index.html">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-primary py-1 cursor-pointer" href="modules.html">Modules</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors cursor-pointer" href="guidelines.html">Guidelines</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 rounded-full hover:bg-slate-100 text-slate-600 transition-colors">search</button>
+<div class="h-8 w-px bg-slate-200 mx-2"></div>
+<div class="flex items-center gap-2 cursor-pointer group">
+<div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl leading-none">person</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="flex pt-16 min-h-screen">
+<!-- SideNavBar Updated -->
+<aside class="hidden md:flex flex-col gap-1 p-4 h-[calc(100vh-64px)] w-64 bg-white border-r border-slate-200 sticky top-16 overflow-y-auto">
+<div class="px-4 py-6 mb-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+<img alt="Clinical Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByPnTLm_CMcgE8ArsCFUivt_cnhbIG5r4ZUr4gfhkFhTKufyvirPdJvrZAkIekhVM0xvwM6KP6v6eElpyqAsKXUqb8wR6S807FcyzobeFlTDWBPIfx2lx0fhw7eJDbQpUfscmcCW_9QDkrkAtRy38UdsQ9xqq9n22rlQ91Lii1BNSPOSx_HoQwJl-8E5HSTgZMLYJuVydifGfFSJ2C_dCQU7F7krs2gekgUjQ4V1Q17VXOi81OlwM8mlK91BS37KmWbTxp8R8s-N4"/>
+</div>
+<div>
+<div class="text-slate-900 font-bold text-xs uppercase tracking-tight">Academic Intel</div>
+<div class="text-slate-500 text-[10px] font-semibold">PED FEEDING TEAM</div>
+</div>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">school</span>
+<span class="text-sm font-semibold tracking-wide">FOUNDATIONS</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">stethoscope</span>
+<span class="text-sm font-semibold tracking-wide">DISEASE RECOGNITION</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-blue-50 text-primary border-l-4 border-primary rounded-r-lg transition-all" href="#">
+<span class="material-symbols-outlined text-lg">nutrition</span>
+<span class="text-sm font-bold tracking-wide">NUTRITION</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">psychology</span>
+<span class="text-sm font-semibold tracking-wide">FEEDING BEHAVIORS</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">diversity_3</span>
+<span class="text-sm font-semibold tracking-wide">SPECIAL POPULATIONS</span>
+</a>
+</nav>
+<div class="mt-auto px-4 py-6 border-t border-slate-100">
+<div class="p-4 bg-slate-50 rounded-xl">
+<div class="text-[10px] font-bold text-slate-400 uppercase mb-2">Current Course</div>
+<div class="text-xs font-bold text-slate-900 mb-1 leading-tight">Dietetic Integration</div>
+<div class="w-full bg-slate-200 h-1.5 rounded-full mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 bg-surface-container-low p-8 lg:p-16">
+<div class="max-w-5xl mx-auto">
+<!-- Editorial Hero Header -->
+<section class="mb-16">
+<div class="flex items-center gap-2 text-primary font-bold tracking-[0.15em] uppercase text-[10px] mb-4">
+<span class="w-8 h-px bg-primary/30"></span>
+                        Module 03 // Clinical Intelligence
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-10">
+                        Diet, Nutrition, and <br/><span class="text-blue-600">Oral Health.</span>
+</h1>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-7">
+<p class="text-lg text-slate-600 leading-relaxed font-body">
+                                Registered dietitians possess a uniquely powerful position to identify oral health risks. This module translates core dental nutrition science into actionable practice, identifying how early childhood caries act as a barrier to optimal caloric intake.
+                            </p>
+</div>
+<div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-blue-600"></div>
+<h3 class="text-[11px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Core Insight</h3>
+<p class="text-slate-800 leading-relaxed italic text-sm">
+                                "Early childhood caries can be a hidden barrier to optimal caloric intake in sensory feeding patients."
+                            </p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<!-- Cariogenic Properties Card -->
+<div class="col-span-1 md:col-span-2 bg-white p-10 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-slate-900">Cariogenic Properties of Thickened Liquids</h2>
+<p class="text-slate-500 text-sm mt-1">Impact of viscosity on oral clearance and enamel health</p>
+</div>
+<span class="bg-red-50 text-red-700 text-[10px] px-3 py-1.5 rounded-full font-bold uppercase tracking-wider border border-red-100">Critical Risk</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                    Thickening agents often introduce hidden fermentable carbohydrates. The viscosity increases oral clearance time, keeping sugars in contact with enamel longer.
+                                </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-sm font-semibold text-slate-800">
+<span class="material-symbols-outlined text-blue-500 text-lg">check_circle</span>
+                                        Starch-based thickeners
+                                    </li>
+<li class="flex items-start gap-3 text-sm font-semibold text-slate-800">
+<span class="material-symbols-outlined text-blue-500 text-lg">check_circle</span>
+                                        High-calorie supplements (ONS)
+                                    </li>
+</ul>
+</div>
+<!-- Data Visualization -->
+<div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+<div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-6">pH Clearance Comparison (Min)</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-[11px] font-bold">
+<span class="text-slate-700">Standard Water</span>
+<span class="text-slate-500">2 min</span>
+</div>
+<div class="h-2.5 bg-slate-200 rounded-full w-full overflow-hidden">
+<div class="h-full bg-slate-400 rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-[11px] font-bold">
+<span class="text-slate-900">Thickened Liquid (Lvl 3)</span>
+<span class="text-blue-600">22 min</span>
+</div>
+<div class="h-2.5 bg-slate-200 rounded-full w-full overflow-hidden">
+<div class="h-full bg-blue-600 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Enamel Mineralization Card -->
+<div class="bg-primary text-white p-10 rounded-2xl flex flex-col justify-between shadow-lg shadow-blue-900/10 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="relative z-10">
+<div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-2xl">science</span>
+</div>
+<h2 class="text-2xl font-bold mb-4 leading-tight">Enamel Mineralization</h2>
+<p class="text-sm text-blue-100 leading-relaxed">
+                                Vital micro-nutrients influence post-eruptive tooth resilience. Calcium, Phosphate, and Vitamin D levels must be optimized in the early dietetic plan.
+                            </p>
+</div>
+<button class="relative z-10 mt-10 text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-3 hover:gap-5 transition-all w-fit group">
+<span>Nutrient Guide</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Grazing Management -->
+<div class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm">
+<h2 class="text-xl font-bold mb-4 text-slate-900">Managing 'Grazing'</h2>
+<p class="text-sm text-slate-500 mb-8 leading-relaxed">
+                            Sensory feeding patients often prefer frequent, small intakes. This constant "acid bath" prevents critical remineralization windows.
+                        </p>
+<div class="space-y-4">
+<div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+<div class="text-[10px] font-bold text-blue-600 uppercase mb-2 tracking-widest">Dietetic Strategy</div>
+<div class="text-xs font-bold text-slate-800 leading-normal">Scheduled "Structured Snacks" instead of ad-lib grazing.</div>
+</div>
+<div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+<div class="text-[10px] font-bold text-blue-600 uppercase mb-2 tracking-widest">Counter-measure</div>
+<div class="text-xs font-bold text-slate-800 leading-normal">Immediate water rinse following high-viscosity intake.</div>
+</div>
+</div>
+</div>
+<!-- Care Plan Integration -->
+<div class="col-span-1 md:col-span-2 bg-slate-900 text-white p-10 rounded-2xl shadow-xl relative overflow-hidden">
+<div class="absolute right-0 top-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px]"></div>
+<div class="flex items-center gap-5 mb-10">
+<div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/20">
+<span class="material-symbols-outlined text-2xl">assignment_add</span>
+</div>
+<div>
+<h2 class="text-2xl font-bold">Care Plan Integration</h2>
+<p class="text-slate-400 text-sm">Clinical application for multidisciplinary teams</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<div class="space-y-3 p-6 bg-white/5 rounded-xl border border-white/10">
+<span class="text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em]">01 Assessment</span>
+<p class="text-sm font-medium leading-relaxed">Evaluate frequency of fermentable carb exposure alongside total caloric intake goals.</p>
+</div>
+<div class="space-y-3 p-6 bg-white/5 rounded-xl border border-white/10">
+<span class="text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em]">02 Intervention</span>
+<p class="text-sm font-medium leading-relaxed">Adjust supplemental thickening agents to non-cariogenic alternatives where clinically possible.</p>
+</div>
+<div class="space-y-3 p-6 bg-white/5 rounded-xl border border-white/10">
+<span class="text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em]">03 Collaboration</span>
+<p class="text-sm font-medium leading-relaxed">Coordinate with Pediatric Dentist for high-risk fluoride varnish schedules and sealant needs.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- References Footer Updated -->
+<footer class="mt-32 pb-16 border-t border-slate-200 pt-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-md">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">Evidence Based Practice</h4>
+<p class="text-[13px] text-slate-500 leading-relaxed">
+                                Content derived from the American Academy of Pediatric Dentistry (AAPD) Policy on Dietary Recommendations for Infant and Oral Health and the Academy of Nutrition and Dietetics (AND) clinical guidelines.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white border border-slate-200 p-5 rounded-xl flex items-center gap-4 hover:border-primary hover:shadow-sm transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">picture_as_pdf</span>
+<div>
+<div class="text-[10px] font-bold text-slate-400 uppercase">AAPD 2023</div>
+<div class="text-xs font-bold text-slate-900">Download Policy</div>
+</div>
+</a>
+<a class="bg-white border border-slate-200 p-5 rounded-xl flex items-center gap-4 hover:border-primary hover:shadow-sm transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">table_chart</span>
+<div>
+<div class="text-[10px] font-bold text-slate-400 uppercase">Resource Kit</div>
+<div class="text-xs font-bold text-slate-900">Access Templates</div>
+</div>
+</a>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
+<span>© 2024 Pediatric Dental-Feeding Collaborative</span>
+<div class="flex gap-10">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Clinical Ethics</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</div>
+</main>
+</div>
+<!-- Mobile Bottom Nav -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 flex justify-around items-center py-3 px-6 z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="index.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="modules.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-bold uppercase">Modules</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="guidelines.html">
+<span class="material-symbols-outlined">bookmark_manager</span>
+<span class="text-[10px] font-bold uppercase">Intel</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

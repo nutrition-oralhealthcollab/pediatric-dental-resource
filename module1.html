@@ -3,345 +3,294 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Module 1: Foundations - Clinical Editorial</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>Foundations of Pediatric Oral Health | Clinical Editorial</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Public_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container": "#f0f4f8",
-                    "tertiary-fixed": "#cae6ff",
-                    "primary-fixed": "#c6e7ff",
-                    "on-secondary-container": "#465a7f",
-                    "tertiary-fixed-dim": "#8ecdff",
-                    "surface-dim": "#dbe4ee",
-                    "outline": "#71787e",
-                    "on-primary-container": "#001d33",
-                    "on-tertiary-container": "#001d35",
-                    "tertiary": "#00639b",
-                    "primary": "#0061a4",
-                    "inverse-on-surface": "#f0f0f3",
-                    "surface-container-lowest": "#ffffff",
-                    "surface": "#f8f9ff",
-                    "primary-container": "#d1e4ff",
-                    "inverse-primary": "#9ecaff",
-                    "surface-variant": "#dfe3eb",
-                    "on-primary-fixed": "#001d35",
-                    "on-secondary-fixed": "#121c2b",
-                    "on-tertiary-fixed": "#001d35",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-fixed-variant": "#3e4759",
-                    "on-primary": "#ffffff",
-                    "on-secondary": "#ffffff",
-                    "secondary-fixed": "#d7e3f7",
-                    "tertiary-container": "#cfe5ff",
-                    "secondary-container": "#d7e3f7",
-                    "secondary-fixed-dim": "#bbc7db",
-                    "on-error": "#ffffff",
-                    "error": "#ba1a1a",
-                    "on-error-container": "#410002",
-                    "outline-variant": "#c3c7cf",
-                    "inverse-surface": "#2e3135",
-                    "on-surface": "#191c20",
-                    "secondary": "#565f71",
-                    "surface-bright": "#f8f9ff",
-                    "surface-container-low": "#f1f3f9",
-                    "surface-container-high": "#e5e8ee",
-                    "on-surface-variant": "#43474e",
-                    "surface-container-highest": "#dfe3eb",
-                    "primary-fixed-dim": "#9ecaff",
-                    "error-container": "#ffdad6",
-                    "surface-tint": "#0061a4",
-                    "on-tertiary-fixed-variant": "#004a75",
-                    "background": "#f8f9ff",
-                    "on-primary-fixed-variant": "#00497d",
-                    "on-background": "#191c20"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#40484e",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#001e2d",
+                        "secondary-container": "#bed2fd",
+                        "secondary": "#4b5f84",
+                        "surface-container-highest": "#d4e5f3",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "primary-container": "#73b4dc",
+                        "surface-container-low": "#eaf5ff",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#c6e7ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#021b3d",
+                        "surface-variant": "#d4e5f3",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#0d1d27",
+                        "error-container": "#ffdad6",
+                        "surface": "#f6faff",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#70787e",
+                        "tertiary": "#006494",
+                        "secondary-fixed-dim": "#b2c7f1",
+                        "on-background": "#0d1d27",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "surface-container": "#dff0fe",
+                        "background": "#f6faff",
+                        "surface-bright": "#f6faff",
+                        "inverse-on-surface": "#e4f3ff",
+                        "on-secondary-container": "#465a7f",
+                        "on-primary-container": "#004562",
+                        "secondary-fixed": "#d7e3ff",
+                        "on-tertiary-container": "#004567",
+                        "inverse-primary": "#8dcef7",
+                        "tertiary-container": "#65b4ec",
+                        "surface-tint": "#176589",
+                        "primary-fixed-dim": "#8dcef7",
+                        "outline-variant": "#c0c7ce",
+                        "inverse-surface": "#23323d",
+                        "surface-dim": "#cbdcea",
+                        "primary": "#176589",
+                        "surface-container-high": "#d9eaf8",
+                        "on-secondary-fixed-variant": "#33476a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "on-tertiary-fixed": "#001e30",
+                        "tertiary-fixed": "#cae6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.375rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "2xl": "1rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Manrope"],
-                    "body": ["Public Sans"],
-                    "label": ["Public Sans"]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
+        body { font-family: 'Public Sans', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        body { font-family: 'Public Sans', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .editorial-shadow {
+            box-shadow: 0 8px 32px 0 rgba(13, 29, 39, 0.06);
+        }
     </style>
 </head>
-<body class="bg-surface text-on-surface">
+<body class="bg-background text-on-surface antialiased">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-white border-b border-surface-variant/50">
-<div class="flex justify-between items-center px-6 h-16 max-w-[1600px] mx-auto">
-<div class="flex items-center gap-4">
-<div class="text-xl font-extrabold tracking-tight text-primary flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
-<span>Clinical Editorial</span>
-</div>
-</div>
-<nav class="hidden md:flex items-center gap-1">
-<a class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-lg transition-all" href="index.html">Dashboard</a>
-<a class="px-4 py-2 text-sm font-semibold text-primary bg-primary-container rounded-lg transition-all" href="modules.html">Modules</a>
-<a class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-lg transition-all" href="guidelines.html">Guidelines</a>
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-3 bg-[#d8e9f7]/80 dark:bg-slate-900/80 backdrop-blur-md z-50 shadow-sm opacity-90">
+<div class="text-lg font-black text-[#13294b] dark:text-white tracking-tighter font-['Manrope']">
+            Pediatric Dental-Feeding Collaborative
+        </div>
+<nav class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight">
+<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="index.html">Dashboard</a>
+<a class="text-[#13294b] dark:text-white border-b-2 border-[#4b9cd3] pb-1" href="modules.html">Modules</a>
+<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="guidelines.html">Guidelines</a>
 </nav>
-<div class="flex items-center gap-2">
-<div class="hidden lg:flex items-center bg-surface-container-low px-3 py-1.5 rounded-full border border-outline-variant/30">
-<span class="material-symbols-outlined text-outline text-lg mr-2">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm w-40 text-on-surface placeholder-on-surface-variant/50" placeholder="Search resources..." type="text"/>
+<div class="flex items-center space-x-4">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#4b9cd3]">search</span>
+<input class="pl-10 pr-4 py-1.5 rounded-full bg-white/50 border-none focus:ring-2 focus:ring-[#4b9cd3] text-sm w-64" placeholder="Search modules..." type="text"/>
 </div>
-<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined">account_circle</span>
+<button class="text-[#4b9cd3] hover:bg-[#4b9cd3]/10 p-2 rounded-full transition-colors duration-150">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
-</div>
 </div>
 </header>
 <div class="flex min-h-screen pt-16">
 <!-- SideNavBar -->
-<aside class="hidden lg:flex flex-col w-72 bg-white border-r border-surface-variant/50 sticky top-16 h-[calc(100vh-64px)] overflow-y-auto">
-<div class="p-6">
-<div class="mb-6">
-<h3 class="text-[10px] font-bold uppercase tracking-widest text-primary/60 mb-1">Pediatric Feeding Team</h3>
-<p class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Academic Intelligence</p>
+<aside class="h-screen w-64 fixed left-0 top-16 bg-[#f0f7ff] dark:bg-slate-950 flex flex-col pt-8 space-y-2 pr-4 bg-gradient-to-r from-transparent to-[#d8e9f7]/30">
+<div class="px-6 mb-6">
+<h2 class="text-[#13294b] font-bold font-['Public_Sans'] text-xs uppercase tracking-widest">Clinical Modules</h2>
+<p class="text-[#4b9cd3] text-[10px] font-medium tracking-tight">Editorial Intelligence</p>
 </div>
-<nav class="flex flex-col gap-1">
-<a class="flex items-center gap-3 px-4 py-3 bg-primary/10 text-primary rounded-xl font-bold cursor-pointer transition-colors border border-primary/20">
-<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">school</span>
-<span class="text-sm">Foundations</span>
+<nav class="flex flex-col space-y-1">
+<a class="flex items-center space-x-3 py-3 px-6 bg-[#4b9cd3] text-white rounded-r-full shadow-lg transition-transform duration-200" href="module1.html">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Public_Sans'] text-sm font-medium">Foundations</span>
 </a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl font-medium cursor-pointer transition-colors">
-<span class="material-symbols-outlined text-[22px]">medical_services</span>
-<span class="text-sm">Disease Recognition</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Public_Sans'] text-sm font-medium">Disease Recognition</span>
 </a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl font-medium cursor-pointer transition-colors">
-<span class="material-symbols-outlined text-[22px]">nutrition</span>
-<span class="text-sm">Nutrition</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-['Public_Sans'] text-sm font-medium">Nutrition</span>
 </a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl font-medium cursor-pointer transition-colors">
-<span class="material-symbols-outlined text-[22px]">psychology</span>
-<span class="text-sm">Feeding Behaviors</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Public_Sans'] text-sm font-medium">Habits</span>
 </a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl font-medium cursor-pointer transition-colors">
-<span class="material-symbols-outlined text-[22px]">groups</span>
-<span class="text-sm">Special Populations</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+<span class="font-['Public_Sans'] text-sm font-medium">Special Populations</span>
 </a>
 </nav>
-</div>
-<div class="mt-auto p-6">
-<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/20">
-<div class="flex items-center gap-2 mb-2">
-<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Current Course</span>
-</div>
-<p class="text-xs font-bold text-primary leading-snug">Module 1: Foundations of Pediatric Oral Health</p>
-</div>
-</div>
 </aside>
-<!-- Main Canvas -->
-<main class="flex-1 px-6 py-8 md:px-12 md:py-12 max-w-5xl mx-auto">
-<!-- Breadcrumb -->
-<nav class="flex items-center gap-2 mb-10 text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">
-<a class="hover:text-primary transition-colors" href="modules.html">Modules</a>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span class="text-primary">Foundations</span>
-</nav>
-<!-- Hero Section -->
-<section class="mb-12">
-<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10">
-<div class="max-w-2xl">
-<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-6 leading-tight">
-                        Foundations of <span class="text-primary">Pediatric Oral Health</span>
-</h1>
-<p class="text-lg md:text-xl text-on-surface-variant font-body leading-relaxed">
-                        Bridging the gap between dental anatomy and interdisciplinary feeding care for SLPs, Dietitians, and GI specialists.
-                    </p>
+<!-- Main Content Canvas -->
+<main class="ml-64 flex-1 p-8 lg:p-12 overflow-y-auto">
+<!-- Editorial Header Section -->
+<section class="max-w-6xl mx-auto mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-4 max-w-2xl">
+<span class="text-tertiary font-bold tracking-widest text-xs uppercase">Module 01 • Editorial Intelligence</span>
+<h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tighter">Foundations of Pediatric Oral Health</h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed">A comprehensive guide for multidisciplinary feeding teams to synchronize dental anatomy knowledge with clinical swallowing assessment.</p>
 </div>
-<div class="bg-primary text-white w-20 h-20 rounded-2xl shadow-xl flex flex-col items-center justify-center shrink-0">
-<span class="text-2xl font-black">M1</span>
-<span class="text-[8px] font-bold uppercase tracking-[0.2em] opacity-80">PHASE 1</span>
+<div class="bg-surface-container-high p-6 rounded-xl w-full md:w-64 editorial-shadow">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface">Standards Alignment</span>
 </div>
-</div>
-<!-- Insight Box -->
-<div class="bg-white rounded-3xl p-8 border border-outline-variant/30 shadow-sm relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
-<div class="flex gap-6 items-start">
-<div class="w-12 h-12 rounded-2xl bg-primary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-2xl">lightbulb</span>
-</div>
-<div>
-<h3 class="text-lg font-bold text-on-surface mb-2">Why this matters for feeding teams</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                            As feeding team providers, you interact daily with children whose oral structures directly influence their ability to eat, drink, and maintain adequate nutrition. This module builds a shared vocabulary so your observations during feeding assessments can be communicated effectively to dental colleagues, and dental findings can be meaningfully integrated into your care plans.
-                        </p>
-</div>
+<p class="text-xs text-on-secondary-fixed-variant leading-snug">Aligned with AAPD Reference Manual &amp; ABPD 2024 Clinical Standards.</p>
 </div>
 </div>
 </section>
-<!-- Content Grid -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
-<!-- Anatomy Card -->
-<div class="md:col-span-8 bg-white rounded-3xl p-8 border border-outline-variant/30 shadow-sm">
-<div class="flex justify-between items-center mb-6">
-<h2 class="text-2xl font-bold text-on-surface">Anatomy of the Pediatric Oral Cavity</h2>
-<span class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary transition-colors">info</span>
+<!-- Bento Grid Content Layout -->
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Clinical Significance - Large Asymmetric Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">neurology</span>
 </div>
-<div class="aspect-video bg-surface-container rounded-2xl overflow-hidden mb-8 relative border border-outline-variant/20 shadow-inner">
-<img alt="Anatomy diagram" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9wY3w15Y3Sw0kql92X4lO13cF2v6jgXGQKmj8ZAPBS_aIQxD18LxCdvSEQIS7tyuZ2dskx5Dn6RVZ2V_nCgXVN6_nN7YBJN8vLQCp9okhH6gv5OVsAD55iPIbSahBNIKlPMsv1rsH10aPEsEnLy90FIjwfBXqSAejyBwLRZiNZO0Lc4RASNrajPdOhBNCDUAPgiGLI82882-KOqEnQ5xcEUg8NZNRfoglibEtE6jNzolEIK4L8Xo5UYTFCmZKI_XT7MQn1k2hp_c"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex flex-wrap gap-2 content-end p-6">
-<span class="bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-primary border border-white/20">Hard Palate</span>
-<span class="bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-primary border border-white/20">Alveolar Ridge</span>
-<span class="bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-primary border border-white/20">Labial Frenulum</span>
-</div>
-</div>
+<h2 class="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">analytics</span>
+                        Clinical Significance in Swallowing
+                    </h2>
+<div class="space-y-6 relative z-10">
 <p class="text-on-surface-variant leading-relaxed">
-                    Visual assessment starts with identifying the dynamic relationship between the primary dentition and the soft tissues of the oropharynx. Focus on the structural integrity of the dental arch which serves as the physical boundary for tongue placement.
-                </p>
+                            The primary dentition is not merely a precursor to permanent teeth; it serves as a critical structural anchor for the oral phase of swallowing. Feeding specialists (SLPs/OTs) must recognize that tooth eruption patterns directly influence bolus management and lingual coordination.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<h3 class="font-bold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">expand</span>
+                                    Vertical Dimension
+                                </h3>
+<p class="text-sm text-on-surface-variant">Maintenance of occlusal height supports the jaw stability required for efficient mastication.</p>
 </div>
-<!-- Side Vocabulary -->
-<div class="md:col-span-4 bg-primary text-white rounded-3xl p-8 shadow-lg flex flex-col justify-between">
-<div>
-<div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-2xl" style="font-variation-settings: 'FILL' 1;">translate</span>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<h3 class="font-bold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">vibration</span>
+                                    Proprioceptive Feedback
+                                </h3>
+<p class="text-sm text-on-surface-variant">The periodontal ligament provides sensory input that regulates bite force during feeding.</p>
 </div>
-<h2 class="text-2xl font-bold mb-6">Shared Vocabulary</h2>
-<ul class="space-y-6">
-<li class="group">
-<span class="block text-[10px] font-bold uppercase tracking-[0.2em] opacity-60 mb-1 group-hover:opacity-100 transition-opacity">Occlusion</span>
-<span class="text-sm font-medium border-l-2 border-white/20 pl-3 block">Alignment of teeth when jaws close</span>
+</div>
+</div>
+</div>
+<!-- Shared Vocabulary - Narrow Accent Card -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-6 border-l-4 border-tertiary">
+<h2 class="text-xl font-bold font-headline mb-4 text-on-surface">Shared Vocabulary</h2>
+<ul class="space-y-4">
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Primary Dentition</span>
+<span class="text-sm font-medium">Deciduous or "baby" teeth (20 total).</span>
 </li>
-<li class="group">
-<span class="block text-[10px] font-bold uppercase tracking-[0.2em] opacity-60 mb-1 group-hover:opacity-100 transition-opacity">Deciduous</span>
-<span class="text-sm font-medium border-l-2 border-white/20 pl-3 block">Primary or 'baby' teeth (20 total)</span>
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Centric Occlusion</span>
+<span class="text-sm font-medium">The relation of opposing surfaces of the teeth.</span>
 </li>
-<li class="group">
-<span class="block text-[10px] font-bold uppercase tracking-[0.2em] opacity-60 mb-1 group-hover:opacity-100 transition-opacity">Malocclusion</span>
-<span class="text-sm font-medium border-l-2 border-white/20 pl-3 block">Misalignment impacting chewing</span>
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Bolus Containment</span>
+<span class="text-sm font-medium">Ability of teeth and lips to keep food in the oral cavity.</span>
+</li>
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Exfoliation</span>
+<span class="text-sm font-medium">Natural loss of primary teeth.</span>
 </li>
 </ul>
 </div>
-<button class="mt-10 bg-white text-primary px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md">
-                    Download Glossary
-                </button>
-</div>
-<!-- Significance Section -->
-<div class="md:col-span-12 bg-surface-container-low rounded-3xl p-8 md:p-12 border border-outline-variant/30">
-<div class="grid md:grid-cols-2 gap-12 items-center">
+<!-- Visual Guide - Clinical Anatomy -->
+<div class="md:col-span-12 lg:col-span-4 bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between">
 <div>
-<h2 class="text-2xl font-bold text-on-surface mb-8">Clinical Significance of Primary Dentition in Swallowing</h2>
-<div class="space-y-8">
-<div class="flex gap-5">
-<div class="w-12 h-12 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary">restaurant</span>
+<h2 class="text-xl font-bold font-headline mb-4">Dental Anatomy Guide</h2>
+<p class="text-sm text-on-surface-variant mb-6">Key landmarks for GI and SLP teams when assessing oral phase dysfunction.</p>
 </div>
-<div>
-<h4 class="font-bold text-on-surface mb-1">Masticatory Efficiency</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">The presence of molars dictates the transition from munching patterns to true rotary chewing.</p>
+<img alt="Clinical dental model" class="rounded-lg w-full h-48 object-cover mb-4" data-alt="Detailed anatomical model of pediatric primary teeth showing eruption patterns and dental arches in a clinical bright setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ4a1tYOVP5_VvjQYPpmnurMfXBCYRziyPBh9QxlJH5PBA52-HrvED0wxfby8Na3OTjAQn8SXu2GHsx7p9FYK8bTPT3DOoAFP82wdLC9JBZuR9XLTP_45chycQBZcqSfyiwdhCY-UCIY2VLSgcebEVJemJpE3jrq4YtA15c4M3j7M3lZGGEd0K5-HPN8T4vFJxZcqNPRy4paimPqtKSxKhVrBzDw9RCCMmzVVdS7ccWByobqXgPbW-pqO4vGikQPj8wZz-LkOZqys"/>
+<button class="w-full py-3 bg-gradient-to-r from-primary to-tertiary text-white font-bold text-xs uppercase tracking-widest rounded-lg">View Full Anatomy Map</button>
 </div>
+<!-- Collaborative Insights - Vertical Column -->
+<div class="md:col-span-12 lg:col-span-8 space-y-8">
+<!-- Insight 1 -->
+<div class="flex gap-6 items-start">
+<div class="bg-primary-container text-on-primary-container p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">group</span>
 </div>
-<div class="flex gap-5">
-<div class="w-12 h-12 shrink-0 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary">speech_to_text</span>
-</div>
-<div>
-<h4 class="font-bold text-on-surface mb-1">Bolus Containment</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Anterior teeth provide the necessary seal to prevent premature bolus loss during the oral phase.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white rounded-3xl p-8 border border-outline-variant/30 shadow-md relative overflow-hidden">
-<div class="flex items-center gap-2 mb-6">
-<span class="material-symbols-outlined text-error text-xl">warning</span>
-<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-error">Clinical Red Flag</span>
-</div>
-<p class="italic text-on-surface text-lg leading-relaxed mb-8">
-                            "Children with missing primary molars often compensate by over-utilizing the tongue for crushing, leading to increased fatigue during meals and a preference for pureed textures long after the developmental norm."
-                        </p>
-<div class="flex items-center gap-4 border-t border-surface-variant/50 pt-6">
-<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden border border-outline-variant/20">
-<img alt="Dr. Elena Vance" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBBzLSmv86V_bhR-NB87vjSh2d4LjOyLPiXJ0PrB0fADaBuS2tVXbXIZI4y74ovr-nX-It0Ru5iPid6Y9xwPqoZY9CdBk1HQJRVjVTRnlPWxNJHbaeMdpvTNhPvCNf5NcBze0yVBZaZWPRbowN02G6Qn-V9z9rBiWP5bNAfeLTsfom5i-5VmMdKLYmG-fGyrPZyhqPr9Cc4KTpVU2rP4H8zF30v-ysMiGmoGfJcj357W1JsGdBsAL6rRMvf5h60dTZqrrTAdVhHj0"/>
-</div>
-<div>
-<span class="block text-xs font-bold text-on-surface">DR. ELENA VANCE</span>
-<span class="text-[9px] font-bold text-on-surface-variant uppercase tracking-widest">Pediatric Dentistry</span>
+<div class="flex-1 border-b border-surface-variant pb-8">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Multidisciplinary Integration</h3>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                                Dietitians should consider tooth availability when prescribing texture gradients. For example, a child lacking primary molars (typically erupting between 13-33 months) may struggle with stage 3 solids despite age-appropriate motor patterns.
+                            </p>
+<div class="flex gap-3">
+<span class="px-3 py-1 bg-surface-container text-[10px] font-bold rounded-full uppercase text-primary">SLP Priority</span>
+<span class="px-3 py-1 bg-surface-container text-[10px] font-bold rounded-full uppercase text-primary">RD Consideration</span>
 </div>
 </div>
 </div>
+<!-- Insight 2 -->
+<div class="flex gap-6 items-start">
+<div class="bg-tertiary-container text-on-tertiary-container p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">medical_information</span>
 </div>
-</div>
-<!-- References -->
-<div class="md:col-span-12 mt-4">
-<h3 class="text-xs font-bold uppercase tracking-[0.3em] text-on-surface-variant/60 mb-8 flex items-center gap-4">
-                    Reference Section
-                    <span class="h-px flex-1 bg-surface-variant/50"></span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 hover:shadow-lg transition-all cursor-pointer group">
-<div class="w-10 h-10 rounded-xl bg-surface-container-low group-hover:bg-primary-container transition-colors flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-xl">description</span>
-</div>
-<h4 class="font-bold text-sm mb-2 group-hover:text-primary transition-colors">AAPD Oral Health Policies</h4>
-<p class="text-xs text-on-surface-variant leading-relaxed">Comprehensive guidelines for clinical oral exams and recommendations.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 hover:shadow-lg transition-all cursor-pointer group">
-<div class="w-10 h-10 rounded-xl bg-surface-container-low group-hover:bg-primary-container transition-colors flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-xl">menu_book</span>
-</div>
-<h4 class="font-bold text-sm mb-2 group-hover:text-primary transition-colors">Feeding Framework</h4>
-<p class="text-xs text-on-surface-variant leading-relaxed">Integrating dental findings into standard SLP evaluation tools.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 hover:border-primary/50 hover:shadow-lg transition-all cursor-pointer group">
-<div class="w-10 h-10 rounded-xl bg-surface-container-low group-hover:bg-primary-container transition-colors flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-xl">campaign</span>
-</div>
-<h4 class="font-bold text-sm mb-2 group-hover:text-primary transition-colors">Interdisciplinary Referrals</h4>
-<p class="text-xs text-on-surface-variant leading-relaxed">Protocol for communicating with local pediatric dental partners.</p>
+<div class="flex-1">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Gastrointestinal Connection</h3>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                                Chronic GERD can lead to dental erosion, significantly increasing tooth sensitivity and resulting in food refusal. This "pain-based refusal" often presents as behavioral but is physiologically driven by enamel loss.
+                            </p>
+<div class="bg-surface p-4 rounded-lg border-l-4 border-error/20">
+<p class="text-xs font-bold text-error uppercase mb-1">Clinical Red Flag</p>
+<p class="text-sm text-on-surface-variant italic">Monitor for thinning enamel on the lingual surfaces of maxillary incisors in patients with diagnosed reflux.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- Footer Navigation -->
-<div class="flex flex-col sm:flex-row justify-between items-center gap-6 pt-12 border-t border-surface-variant/50">
-<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors font-bold text-sm uppercase tracking-widest group" href="modules.html">
-<span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
-<span>Course Overview</span>
-</a>
-<button class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold text-sm tracking-widest uppercase shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0 transition-all">
-                Next Module: Disease Recognition
-            </button>
+<!-- Quick Access Tool - Floating Content -->
+<div class="md:col-span-12 mt-8">
+<div class="bg-gradient-to-br from-primary to-tertiary p-8 rounded-2xl text-white flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl font-extrabold font-headline mb-4">Eruption Timeline Assessment</h2>
+<p class="opacity-90 leading-relaxed font-body">Download the printable clinical reference card for dental eruption windows to use during bedside swallow evaluations.</p>
 </div>
+<div class="flex gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-surface-container-lowest transition-colors editorial-shadow">
+                                Download PDF
+                            </button>
+<button class="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-white/30 transition-colors border border-white/20">
+                                Interactive Chart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Spacing -->
+<footer class="mt-24 pt-12 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-6 text-on-surface-variant text-sm">
+<div class="flex items-center gap-2">
+<span class="font-bold text-[#13294b]">Clinical Editorial Intelligence</span>
+<span class="opacity-30">|</span>
+<span>Version 4.2.0</span>
+</div>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="#">Privacy Standards</a>
+<a class="hover:text-primary transition-colors" href="#">Institutional Access</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+</div>
+</footer>
 </main>
 </div>
-<!-- Mobile Nav (Visible only on small screens) -->
-<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-surface-variant/50 flex justify-around p-4 z-50">
-<a class="flex flex-col items-center gap-1 text-on-surface-variant/60" href="index.html">
-<span class="material-symbols-outlined">dashboard</span>
-<span class="text-[9px] font-bold uppercase">Home</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-primary" href="modules.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
-<span class="text-[9px] font-bold uppercase">Modules</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant/60" href="guidelines.html">
-<span class="material-symbols-outlined">description</span>
-<span class="text-[9px] font-bold uppercase">Guides</span>
-</a>
-</nav>
+<!-- Floating Action for Quick Reference -->
+<button class="fixed bottom-8 right-8 bg-[#13294b] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform z-50">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
 </body></html>

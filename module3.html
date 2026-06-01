@@ -3,10 +3,9 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Module 3: Diet, Nutrition, and Oral Health</title>
+<title>Module 3: Diet, Nutrition, and Oral Health | Clinical Editorial</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Public_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -78,212 +77,234 @@
         }
     </script>
 <style>
+        body { font-family: 'Public Sans', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
         }
-        .editorial-gradient {
-            background: linear-gradient(135deg, #176589 0%, #004562 100%);
+        .editorial-shadow {
+            box-shadow: 0 8px 32px 0 rgba(13, 29, 39, 0.06);
         }
     </style>
 </head>
-<body class="bg-background font-body text-on-surface">
+<body class="bg-background text-on-surface antialiased">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full flex justify-between items-center px-6 py-3 bg-[#d8e9f7]/80 dark:bg-slate-900/80 backdrop-blur-md z-50 shadow-sm opacity-90">
 <div class="text-lg font-black text-[#13294b] dark:text-white tracking-tighter font-['Manrope']">
             Pediatric Dental-Feeding Collaborative
         </div>
-<nav class="hidden md:flex items-center space-x-8">
-<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="index.html">Dashboard</a>
-<a class="text-[#13294b] dark:text-white border-b-2 border-[#4b9cd3] pb-1 font-['Manrope'] font-bold tracking-tight" href="modules.html">Modules</a>
-<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] font-['Manrope'] font-bold tracking-tight transition-colors duration-200" href="guidelines.html">Guidelines</a>
+<nav class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight">
+<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="index.html">Dashboard</a>
+<a class="text-[#13294b] dark:text-white border-b-2 border-[#4b9cd3] pb-1" href="modules.html">Modules</a>
+<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="guidelines.html">Guidelines</a>
 </nav>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#4b9cd3] cursor-pointer hover:bg-[#4b9cd3]/10 p-2 rounded-full transition-colors" data-icon="account_circle">account_circle</span>
+<div class="flex items-center space-x-4">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#4b9cd3]">search</span>
+<input class="pl-10 pr-4 py-1.5 rounded-full bg-white/50 border-none focus:ring-2 focus:ring-[#4b9cd3] text-sm w-64" placeholder="Search modules..." type="text"/>
+</div>
+<button class="text-[#4b9cd3] hover:bg-[#4b9cd3]/10 p-2 rounded-full transition-colors duration-150">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
 </div>
 </header>
 <div class="flex min-h-screen pt-16">
 <!-- SideNavBar -->
 <aside class="h-screen w-64 fixed left-0 top-16 bg-[#f0f7ff] dark:bg-slate-950 flex flex-col pt-8 space-y-2 pr-4 bg-gradient-to-r from-transparent to-[#d8e9f7]/30">
 <div class="px-6 mb-6">
-<h2 class="text-[#13294b] font-bold text-sm tracking-widest uppercase font-['Manrope']">Clinical Modules</h2>
-<p class="text-[#4b9cd3] text-xs font-medium">Editorial Intelligence</p>
+<h2 class="text-[#13294b] font-extrabold font-['Manrope'] text-xs uppercase tracking-widest">Clinical Modules</h2>
+<p class="text-[#4b9cd3] text-[10px] font-medium tracking-tight">Editorial Intelligence</p>
 </div>
-<nav class="space-y-1">
-<a class="flex items-center px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full group transition-transform duration-200 hover:translate-x-1" href="module1.html">
-<span class="material-symbols-outlined mr-3 text-[#4b9cd3]" data-icon="menu_book">menu_book</span>
-<span class="text-sm font-['Manrope'] font-bold">Foundations</span>
+<nav class="flex flex-col space-y-1">
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module1.html">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Manrope'] text-sm font-semibold">Foundations</span>
 </a>
-<a class="flex items-center px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full group transition-transform duration-200 hover:translate-x-1" href="module2.html">
-<span class="material-symbols-outlined mr-3 text-[#4b9cd3]" data-icon="medical_services">medical_services</span>
-<span class="text-sm font-['Manrope'] font-bold">Disease Recognition</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module2.html">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Manrope'] text-sm font-semibold">Disease Recognition</span>
 </a>
-<a class="flex items-center px-6 py-3 bg-[#4b9cd3] text-white rounded-r-full shadow-lg" href="module3.html">
-<span class="material-symbols-outlined mr-3" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
-<span class="text-sm font-['Manrope'] font-bold">Nutrition</span>
+<a class="flex items-center space-x-3 py-3 px-6 bg-[#4b9cd3] text-white rounded-r-full shadow-lg transition-transform duration-200" href="module3.html">
+<span class="material-symbols-outlined" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-['Manrope'] text-sm font-semibold">Nutrition</span>
 </a>
-<a class="flex items-center px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full group transition-transform duration-200 hover:translate-x-1" href="module4.html">
-<span class="material-symbols-outlined mr-3 text-[#4b9cd3]" data-icon="psychology">psychology</span>
-<span class="text-sm font-['Manrope'] font-bold">Habits</span>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module4.html">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Manrope'] text-sm font-semibold">Habits</span>
 </a>
-<a class="flex items-center px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full group transition-transform duration-200 hover:translate-x-1" href="module5.html">
-<span class="material-symbols-outlined mr-3 text-[#4b9cd3]" data-icon="diversity_3">diversity_3</span>
-<span class="text-sm font-['Manrope'] font-bold">Special Populations</span>
-</a>
-</nav>
+<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module5.html">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+<span class="font-['Manrope'] text-sm font-semibold">Special Populations</span>
+</a></nav>
 </aside>
 <!-- Main Content Canvas -->
-<main class="ml-64 flex-1 p-8 bg-surface">
-<div class="max-w-6xl mx-auto space-y-12">
-<!-- Editorial Hero Section -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
-<div class="lg:col-span-8 space-y-4">
-<span class="text-tertiary font-bold tracking-widest text-xs uppercase">Module 3</span>
-<h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tighter">
-                            Diet, Nutrition, and <br/><span class="text-primary">Oral Health</span>
-</h1>
-<p class="text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
-                            Exploring the intersection of dietetic interventions and pediatric dental outcomes. A clinical guide for dietitians in multidisciplinary care.
-                        </p>
+<main class="ml-64 flex-1 p-8 lg:p-12 overflow-y-auto">
+<!-- Editorial Header Section -->
+<section class="max-w-6xl mx-auto mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-4 max-w-2xl">
+<span class="text-tertiary font-bold tracking-widest text-xs uppercase">Module 03 • Editorial Intelligence</span>
+<h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tighter">Diet, Nutrition, and Oral Health</h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed">Exploring the intersection of dietetic interventions and pediatric dental outcomes. A clinical guide for dietitians in multidisciplinary care.</p>
 </div>
-<div class="lg:col-span-4 pb-2">
-<div class="bg-surface-container-high p-6 rounded-xl border-l-4 border-tertiary">
-<h3 class="font-headline font-bold text-on-surface text-sm mb-1">Key Reference</h3>
-<p class="text-xs text-on-surface-variant italic">Based on AAPD Dietary Policies for Infants, Children, and Adolescents.</p>
+<div class="bg-surface-container-high p-6 rounded-xl w-full md:w-64 editorial-shadow">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface">Key Reference</span>
+</div>
+<p class="text-xs text-on-secondary-fixed-variant leading-snug">Based on AAPD Dietary Policies for Infants, Children, and Adolescents.</p>
 </div>
 </div>
 </section>
-<!-- Bento Grid Layout for Module Content -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Main Card: Cariogenic Risks -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-sm group hover:shadow-md transition-shadow">
-<div class="flex items-center gap-4 mb-6">
-<div class="p-3 rounded-full bg-primary-fixed text-primary">
-<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<!-- Bento Grid Content Layout -->
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Cariogenic Risks - Large Asymmetric Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">warning</span>
 </div>
-<h2 class="text-2xl font-headline font-bold">Cariogenic Properties of Supplements</h2>
+<h2 class="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">monitoring</span>
+                        Cariogenic Properties of Supplements
+                    </h2>
+<div class="space-y-6 relative z-10">
+<p class="text-on-surface-variant leading-relaxed">
+                            Dietary interventions for complex pediatric needs often introduce increased dental risks. Recognizing the cariogenic potential of nutritional supports is essential for integrated preventive care.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<h3 class="font-bold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">liquids</span>
+                                    Thickened Liquids
+                                </h3>
+<p class="text-sm text-on-surface-variant mb-3">Starch-based agents increase oral clearance time, prolonging exposure to fermentable carbohydrates.</p>
+<div class="bg-surface-container-low p-2 rounded text-[11px] italic text-on-surface-variant border-l-2 border-primary/30">
+                                    Clinical Insight: Reduced salivary flow increases demineralization risk.
+                                </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-<div class="space-y-4">
-<h3 class="text-primary font-bold text-sm uppercase tracking-wider">Thickened Liquids</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">
-                                    Commonly used for dysphagia, thickened liquids often contain starch-based agents that increase oral clearance time, prolonging exposure to fermentable carbohydrates.
-                                </p>
-<div class="bg-surface-container-low p-4 rounded-lg">
-<span class="text-xs font-bold text-secondary block mb-1">Clinical Insight</span>
-<p class="text-xs italic">Reduced salivary flow or physical barriers increase the risk of rapid enamel demineralization.</p>
-</div>
-</div>
-<div class="space-y-4">
-<h3 class="text-primary font-bold text-sm uppercase tracking-wider">High-Calorie Supplements</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">
-                                    Enteral formulas and oral supplements (shakes) frequently have high sugar content to meet caloric needs, presenting a significant dental challenge.
-                                </p>
-<ul class="text-xs space-y-2 text-on-surface-variant">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> High viscosity = increased stickiness</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Frequency is often more damaging than volume</li>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<h3 class="font-bold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">nutrition</span>
+                                    High-Calorie Formulas
+                                </h3>
+<p class="text-sm text-on-surface-variant mb-2">Oral supplements frequently have high sugar content to meet intensive caloric needs.</p>
+<ul class="text-[11px] space-y-1 text-on-surface-variant list-disc pl-4">
+<li>High viscosity increases stickiness</li>
+<li>Intake frequency is often more damaging than total volume</li>
 </ul>
 </div>
 </div>
 </div>
-<!-- Side Card: Grazing Patterns -->
-<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-tertiary mb-4" data-icon="schedule" style="font-size: 40px;">schedule</span>
-<h2 class="text-2xl font-headline font-bold mb-4">Managing 'Grazing'</h2>
-<p class="text-sm text-on-surface-variant leading-relaxed">
-                                Continuous exposure to food prevents the pH of the mouth from returning to a neutral state, maintaining a constant acid attack on enamel.
-                            </p>
 </div>
-<div class="mt-8">
-<div class="h-2 w-full bg-secondary-fixed-dim rounded-full overflow-hidden">
-<div class="h-full editorial-gradient w-[75%] rounded-full"></div>
+<!-- Managing Grazing - Narrow Accent Card -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-6 border-l-4 border-tertiary">
+<h2 class="text-xl font-bold font-headline mb-4 text-on-surface">Managing 'Grazing'</h2>
+<div class="space-y-6">
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Continuous exposure to food prevents oral pH from returning to a neutral state, maintaining a constant acid attack on enamel.
+                        </p>
+<div class="mt-4">
+<div class="h-2 w-full bg-white/50 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-tertiary w-[75%] rounded-full"></div>
 </div>
 <p class="text-[10px] mt-2 font-bold text-secondary uppercase tracking-tighter">Oral PH Neutralization Phase Progress</p>
 </div>
+<ul class="space-y-4 pt-4 border-t border-surface-variant/30 text-sm">
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Acid Attack</span>
+<span class="font-medium">Triggered immediately upon carbohydrate ingestion.</span>
+</li>
+<li class="flex flex-col">
+<span class="text-xs font-bold text-tertiary uppercase">Neutralization</span>
+<span class="font-medium">Typically takes 20-30 minutes post-intake.</span>
+</li>
+</ul>
 </div>
-<!-- Role of Dietitians: Image & Text -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm md:col-span-1">
-<div class="h-48 w-full bg-slate-200">
-<img alt="Professional healthcare consultation" class="w-full h-full object-cover" data-alt="A clean, professional view of a dietitian consulting with a parent in a bright medical office with educational nutrition posters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBt92Mo1YIPXAZ6wHsj7DUT4_xof4uepBumQEItSR-vLVOdDFwV2ZnIzH1AuoUXrGr4afInaEBz8IFgvz2UT6NXkmNHHKBVXSKC89Kicto_QHZzmu58zkI38xTRKYpAn8Df6QsZAPetb8PZDNV3YRGb_dO5O9EkhQYE6MjPvZYYDvQPim9b4c59nw51Y92Akv3khR_M197GSAwgWe_4vVtIJZOsFlDoZ2qnx673mo5K3Iqf_g5l2o6DyzbDDYF5_vHpBAemR8VmNE"/>
 </div>
-<div class="p-6 space-y-3">
-<h3 class="font-headline font-bold text-lg">Integrated Care Plans</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-                                Dietitians are uniquely positioned to integrate dental risk screening into standard nutritional assessments, particularly for children with complex needs.
-                            </p>
+<!-- Visual Guide - Professional Context -->
+<div class="md:col-span-12 lg:col-span-4 bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<h2 class="text-xl font-bold font-headline mb-4">Integrated Care Plans</h2>
+<p class="text-sm text-on-surface-variant mb-6">Dietitians are uniquely positioned to integrate dental risk screening into standard nutritional assessments.</p>
 </div>
+<img alt="Healthcare professional consultation" class="rounded-lg w-full h-48 object-cover mb-4" data-alt="A clean, professional view of a dietitian consulting with a parent in a bright medical office with educational nutrition posters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBt92Mo1YIPXAZ6wHsj7DUT4_xof4uepBumQEItSR-vLVOdDFwV2ZnIzH1AuoUXrGr4afInaEBz8IFgvz2UT6NXkmNHHKBVXSKC89Kicto_QHZzmu58zkI38xTRKYpAn8Df6QsZAPetb8PZDNV3YRGb_dO5O9EkhQYE6MjPvZYYDvQPim9b4c59nw51Y92Akv3khR_M197GSAwgWe_4vVtIJZOsFlDoZ2qnx673mo5K3Iqf_g5l2o6DyzbDDYF5_vHpBAemR8VmNE"/>
+<button class="w-full py-3 bg-gradient-to-r from-primary to-tertiary text-white font-bold text-xs uppercase tracking-widest rounded-lg">View Assessment Protocols</button>
 </div>
-<!-- Clinical Action Checklist -->
-<div class="md:col-span-2 bg-secondary-container/30 rounded-xl p-8">
-<h2 class="text-2xl font-headline font-bold mb-6 flex items-center gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="checklist">checklist</span>
-                            Dietetic Care Plan Checklist
-                        </h2>
+<!-- Collaborative Insights - Vertical Column (Dietetic Checklist) -->
+<div class="md:col-span-12 lg:col-span-8 space-y-8">
+<!-- Checklist Header -->
+<div class="flex gap-6 items-start">
+<div class="bg-primary-container text-on-primary-container p-4 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined">checklist</span>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Dietetic Care Plan Checklist</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Standardize clinical actions to mitigate dental risk during nutritional support.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="flex items-start gap-3 bg-surface-container-lowest p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex items-start gap-3 p-4 bg-surface rounded-lg border border-surface-variant/20">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 <div>
-<p class="font-bold text-sm">Review Supplement Timing</p>
-<p class="text-xs text-on-surface-variant">Advise intake with meals rather than sip-grazing between meals.</p>
+<p class="text-sm font-bold text-on-surface">Review Supplement Timing</p>
+<p class="text-xs text-on-surface-variant">Intake with meals rather than sip-grazing.</p>
 </div>
 </div>
-<div class="flex items-start gap-3 bg-surface-container-lowest p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex items-start gap-3 p-4 bg-surface rounded-lg border border-surface-variant/20">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 <div>
-<p class="font-bold text-sm">Oral Rinse Advocacy</p>
-<p class="text-xs text-on-surface-variant">Encourage rinsing with water immediately after consuming thickened liquids.</p>
+<p class="text-sm font-bold text-on-surface">Oral Rinse Advocacy</p>
+<p class="text-xs text-on-surface-variant">Rinse with water after thickened liquids.</p>
 </div>
 </div>
-<div class="flex items-start gap-3 bg-surface-container-lowest p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex items-start gap-3 p-4 bg-surface rounded-lg border border-surface-variant/20">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 <div>
-<p class="font-bold text-sm">Identify 'Hidden' Sugars</p>
-<p class="text-xs text-on-surface-variant">Educate families on the fermentable carbohydrate content of thickening agents.</p>
+<p class="text-sm font-bold text-on-surface">Identify Hidden Sugars</p>
+<p class="text-xs text-on-surface-variant">Screen fermentable carb content in thickeners.</p>
 </div>
 </div>
-<div class="flex items-start gap-3 bg-surface-container-lowest p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex items-start gap-3 p-4 bg-surface rounded-lg border border-surface-variant/20">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 <div>
-<p class="font-bold text-sm">Dental Referral Trigger</p>
-<p class="text-xs text-on-surface-variant">Standardize referrals for patients on high-carbohydrate nutritional support.</p>
+<p class="text-sm font-bold text-on-surface">Dental Referral Trigger</p>
+<p class="text-xs text-on-surface-variant">Standardize referrals for high-carb support.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<!-- Footer Call to Action -->
-<div class="flex justify-between items-center py-10 border-t border-[#d8e9f7]">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
 </div>
-<div>
-<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">Previous</p>
-<p class="font-bold text-sm">Disease Recognition</p>
+<!-- Progress Action Tool -->
+<div class="md:col-span-12 mt-8">
+<div class="bg-gradient-to-br from-primary to-tertiary p-8 rounded-2xl text-white flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl font-extrabold font-headline mb-2">Module Completion</h2>
+<p class="opacity-90 leading-relaxed font-body">Mark this module as complete to update your clinical progress and unlock the next section: Behavioral Habits.</p>
 </div>
-</div>
-<button class="editorial-gradient text-white px-8 py-4 rounded-xl font-headline font-bold text-sm flex items-center gap-3 shadow-lg hover:scale-105 transition-transform duration-150">
-                        COMPLETE MODULE 3
-                        <span class="material-symbols-outlined" data-icon="verified">verified</span>
+<div class="flex gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-surface-container-lowest transition-colors editorial-shadow flex items-center gap-2">
+                                COMPLETE MODULE 3
+                                <span class="material-symbols-outlined text-sm">verified</span>
 </button>
-<div class="flex items-center gap-4 text-right">
-<div>
-<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">Next</p>
-<p class="font-bold text-sm">Behavioral Habits</p>
-</div>
-<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </div>
 </div>
 </div>
 </div>
+<!-- Footer Spacing -->
+<footer class="mt-24 pt-12 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-6 text-on-surface-variant text-sm">
+<div class="flex items-center gap-2">
+<span class="font-bold text-[#13294b]">Clinical Editorial Intelligence</span>
+<span class="opacity-30">|</span>
+<span>Version 4.2.0</span>
+</div>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="#">Privacy Standards</a>
+<a class="hover:text-primary transition-colors" href="#">Institutional Access</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+</div>
+</footer>
 </main>
 </div>
+<!-- Floating Action for Quick Reference -->
+<button class="fixed bottom-8 right-8 bg-[#13294b] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform z-50">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
 </body></html>

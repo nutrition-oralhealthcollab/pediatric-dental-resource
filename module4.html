@@ -1,289 +1,323 @@
-<!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Module 4: Feeding Behaviors &amp; Oral Habits | Clinical Editorial</title>
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Module 4: Feeding Behaviors &amp; Oral Habits</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Public_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-surface-variant": "#40484e",
-                        "error": "#ba1a1a",
-                        "on-primary-fixed": "#001e2d",
-                        "secondary-container": "#bed2fd",
-                        "secondary": "#4b5f84",
-                        "surface-container-highest": "#d4e5f3",
-                        "on-primary-fixed-variant": "#004c6b",
-                        "primary-container": "#73b4dc",
-                        "surface-container-low": "#eaf5ff",
-                        "on-error-container": "#93000a",
-                        "on-primary": "#ffffff",
-                        "primary-fixed": "#c6e7ff",
-                        "surface-container-lowest": "#ffffff",
-                        "on-secondary-fixed": "#021b3d",
-                        "surface-variant": "#d4e5f3",
-                        "on-secondary": "#ffffff",
-                        "on-surface": "#0d1d27",
-                        "error-container": "#ffdad6",
-                        "surface": "#f6faff",
-                        "on-tertiary": "#ffffff",
-                        "outline": "#70787e",
-                        "tertiary": "#006494",
-                        "secondary-fixed-dim": "#b2c7f1",
-                        "on-background": "#0d1d27",
-                        "tertiary-fixed-dim": "#8ecdff",
-                        "surface-container": "#dff0fe",
-                        "background": "#f6faff",
-                        "surface-bright": "#f6faff",
-                        "inverse-on-surface": "#e4f3ff",
-                        "on-secondary-container": "#465a7f",
-                        "on-primary-container": "#004562",
-                        "secondary-fixed": "#d7e3ff",
-                        "on-tertiary-container": "#004567",
-                        "inverse-primary": "#8dcef7",
-                        "tertiary-container": "#65b4ec",
-                        "surface-tint": "#176589",
-                        "primary-fixed-dim": "#8dcef7",
-                        "outline-variant": "#c0c7ce",
-                        "inverse-surface": "#23323d",
-                        "surface-dim": "#cbdcea",
-                        "primary": "#176589",
-                        "surface-container-high": "#d9eaf8",
-                        "on-secondary-fixed-variant": "#33476a",
-                        "on-error": "#ffffff",
-                        "on-tertiary-fixed-variant": "#004b70",
-                        "on-tertiary-fixed": "#001e30",
-                        "tertiary-fixed": "#cae6ff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Public Sans"],
-                        "label": ["Public Sans"]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#d4e5f3",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#021b3d",
+                    "surface-tint": "#176589",
+                    "surface-container-low": "#eaf5ff",
+                    "tertiary-fixed": "#cae6ff",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#b2c7f1",
+                    "on-surface": "#0d1d27",
+                    "secondary-fixed": "#d7e3ff",
+                    "surface-container": "#dff0fe",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f6faff",
+                    "on-primary-fixed": "#001e2d",
+                    "surface-dim": "#cbdcea",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c0c7ce",
+                    "on-secondary-container": "#465a7f",
+                    "on-primary-container": "#004562",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#23323d",
+                    "inverse-on-surface": "#e4f3ff",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "on-tertiary-container": "#004567",
+                    "primary-fixed-dim": "#8dcef7",
+                    "outline": "#70787e",
+                    "secondary": "#4b5f84",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#d4e5f3",
+                    "surface-container-high": "#d9eaf8",
+                    "secondary-container": "#bed2fd",
+                    "surface": "#f6faff",
+                    "tertiary": "#006494",
+                    "on-surface-variant": "#40484e",
+                    "on-tertiary-fixed": "#001e30",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#0d1d27",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "primary-fixed": "#c6e7ff",
+                    "primary": "#176589",
+                    "on-secondary-fixed-variant": "#33476a",
+                    "inverse-primary": "#8dcef7",
+                    "background": "#f6faff",
+                    "tertiary-container": "#65b4ec",
+                    "primary-container": "#73b4dc"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
     </script>
 <style>
         body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .editorial-shadow {
-            box-shadow: 0 8px 32px 0 rgba(13, 29, 39, 0.06);
-        }
+        .active-nav { font-variation-settings: 'FILL' 1; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-background text-on-surface antialiased">
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full flex justify-between items-center px-6 py-3 bg-[#d8e9f7]/80 dark:bg-slate-900/80 backdrop-blur-md z-50 shadow-sm opacity-90">
-<div class="text-lg font-black text-[#13294b] dark:text-white tracking-tighter font-['Manrope']">
-            Pediatric Dental-Feeding Collaborative
-        </div>
-<nav class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight">
-<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="index.html">Dashboard</a>
-<a class="text-[#13294b] dark:text-white border-b-2 border-[#4b9cd3] pb-1" href="modules.html">Modules</a>
-<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] transition-colors duration-200" href="guidelines.html">Guidelines</a>
-</nav>
-<div class="flex items-center space-x-4">
-<div class="relative hidden lg:block">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#4b9cd3]">search</span>
-<input class="pl-10 pr-4 py-1.5 rounded-full bg-white/50 border-none focus:ring-2 focus:ring-[#4b9cd3] text-sm w-64" placeholder="Search modules..." type="text"/>
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-3 bg-[#d8e9f7]/80 dark:bg-slate-900/80 backdrop-blur-md z-50 shadow-sm transition-all duration-300 opacity-90">
+<div class="flex items-center gap-3">
+<span class="text-lg font-black text-[#13294b] dark:text-white tracking-tighter font-['Manrope']">Pediatric Dental-Feeding Collaborative</span>
 </div>
-<button class="text-[#4b9cd3] hover:bg-[#4b9cd3]/10 p-2 rounded-full transition-colors duration-150">
-<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<nav class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight">
+<a class="text-[#4b9cd3]/70 dark:text-slate-400 hover:text-[#4b9cd3] hover:bg-[#4b9cd3]/10 px-2 py-1 transition-colors duration-200" href="#">Dashboard</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#4b9cd3]/10 transition-colors duration-200">
+<span class="material-symbols-outlined text-[#4b9cd3]">search</span>
+</button>
+<button class="p-1 rounded-full border-2 border-[#4b9cd3]/20 hover:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[#4b9cd3] text-2xl">account_circle</span>
 </button>
 </div>
 </header>
-<div class="flex min-h-screen pt-16">
 <!-- SideNavBar -->
-<aside class="h-screen w-64 fixed left-0 top-16 bg-[#f0f7ff] dark:bg-slate-950 flex flex-col pt-8 space-y-2 pr-4 bg-gradient-to-r from-transparent to-[#d8e9f7]/30">
-<div class="px-6 mb-6">
-<h2 class="text-[#13294b] font-extrabold font-['Manrope'] text-xs uppercase tracking-widest">Clinical Modules</h2>
-<p class="text-[#4b9cd3] text-[10px] font-medium tracking-tight">Editorial Intelligence</p>
+<aside class="h-screen w-64 fixed left-0 top-16 bg-[#f0f7ff] dark:bg-slate-950 flex flex-col pt-8 space-y-2 pr-4 bg-gradient-to-r from-transparent to-[#d8e9f7]/30 z-40">
+<div class="px-6 mb-8">
+<h2 class="text-[#13294b] font-bold text-sm uppercase tracking-widest font-['Public_Sans']">Clinical Modules</h2>
+<p class="text-[#4b9cd3] text-xs font-medium opacity-70"><br></p>
 </div>
 <nav class="flex flex-col space-y-1">
-<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module1.html">
-<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
-<span class="font-['Manrope'] text-sm font-semibold">Foundations</span>
-</a>
-<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module2.html">
-<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
-<span class="font-['Manrope'] text-sm font-semibold">Disease Recognition</span>
-</a>
-<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module3.html">
-<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
-<span class="font-['Manrope'] text-sm font-semibold">Nutrition</span>
-</a>
-<a class="flex items-center space-x-3 py-3 px-6 bg-[#4b9cd3] text-white rounded-r-full shadow-lg transition-transform duration-200" href="module4.html">
-<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
-<span class="font-['Manrope'] text-sm font-semibold">Habits</span>
-</a>
-<a class="flex items-center space-x-3 py-3 px-6 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full hover:translate-x-1 transition-transform duration-200" href="module5.html">
-<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
-<span class="font-['Manrope'] text-sm font-semibold">Special Populations</span>
-</a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full transition-transform duration-200 hover:translate-x-1 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">menu_book</span> Foundations
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full transition-transform duration-200 hover:translate-x-1 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">medical_services</span> Disease Recognition
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full transition-transform duration-200 hover:translate-x-1 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">restaurant</span> Nutrition
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 bg-[#4b9cd3] text-white rounded-r-full shadow-lg font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">psychology</span> Habits
+            </a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#13294b] dark:text-slate-300 hover:bg-[#73b4dc]/20 rounded-r-full transition-transform duration-200 hover:translate-x-1 font-['Public_Sans'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">diversity_3</span> Special Populations
+            </a>
 </nav>
 </aside>
 <!-- Main Content Canvas -->
-<main class="ml-64 flex-1 p-8 lg:p-12 overflow-y-auto">
-<!-- Editorial Header Section -->
-<section class="max-w-6xl mx-auto mb-16">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div class="space-y-4 max-w-2xl">
-<span class="text-tertiary font-bold tracking-widest text-xs uppercase">Module 04 • Editorial Intelligence</span>
-<h1 class="text-5xl font-extrabold font-headline text-on-surface leading-tight tracking-tighter">Feeding Behaviors, Oral Habits &amp; Dental Consequences</h1>
-<p class="text-xl text-on-surface-variant font-body leading-relaxed">Comprehensive SLP clinical focus on the intersection of myofunctional development and pediatric dental health.</p>
+<main class="ml-64 pt-24 pb-12 px-12 min-h-screen">
+<div class="max-w-6xl mx-auto space-y-12">
+<!-- Header Section -->
+<div class="mb-8">
+<h1 class="text-4xl font-extrabold text-[#13294b] font-['Manrope'] tracking-tight">
+    Module 4: Feeding Behaviors, Oral Habits &amp; Dental Consequences
+  </h1>
+</div><section class="bg-[#f0f7ff] rounded-xl p-8 mb-12 border border-[#4b9cd3]/20">
+<h2 class="text-xl font-bold text-[#13294b] mb-4 font-['Manrope']">Learning Objectives:</h2>
+<ol class="space-y-4 text-on-surface-variant text-sm">
+<li class="flex gap-3">
+<span class="font-bold text-[#4b9cd3]">1.</span>
+<span class="">Connect specific oral habits (non-nutritive sucking, digit sucking, prolonged pacifier use, and tongue thrusting) to their expected dental sequelae, including malocclusion type and severity.</span>
+</li>
+<li class="flex gap-3">
+<span class="font-bold text-[#4b9cd3]">2.</span>
+<span class="">Identify bruxism in pediatric patients, describe its etiological associations in feeding team populations, and explain the dental management and feeding implications of tooth wear.</span>
+</li>
+<li class="flex gap-3">
+<span class="font-bold text-[#4b9cd3]">3.</span>
+<span class="">Recognize how oral sensory processing differences (hyposensitivity and hypersensitivity) affect oral hygiene compliance, food acceptance, and collaboration with dental providers.</span>
+</li>
+<li class="flex gap-3">
+<span class="font-bold text-[#4b9cd3]">4.</span>
+<span class="">Understand the oral health implications of drooling and oral motor dysfunction in neurologically impaired children.</span>
+</li>
+</ol>
+</section>
+<!-- Learning Objectives & Bento Intro -->
+<!-- Detailed Analysis Sections -->
+<!-- Section 1: Oral Habits -->
+<section class="bg-surface-container-low rounded-xl p-8 border-t-2 border-primary/20 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mood</span>
 </div>
-<div class="bg-surface-container-high p-6 rounded-xl w-full md:w-64 editorial-shadow overflow-hidden">
-<img alt="pediatric sensory tools" class="w-full h-24 object-cover rounded-lg mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLIiDH0nIQB4Ayp4V0-a3oy5Y8j5TqLFX3mF88gQIdaJBE_H30Ru7j1Q3YQyW9oE2l25_190xeN9YBkXASjHtrD_D-64OuvwqgeDDFMjisGyMbNgxn48JYqLX-fO5-nxJB2caWb_iLVm-NOkGOyq1eoc6rpPj_3Ay4cODw-EdYhLzwHF-nTat9jURYwDAnb3SQo2ywdF4KDe1g1nkXSnTRR7UbHRnn_nO9Pm_bKN9EHwf54crrN5LdgOVPcc2zhgQ_5yHZOQVwWS4"/>
+<h2 class="text-2xl font-bold text-on-surface">1. Non-Nutritive Oral Habits</h2>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Non-nutritive sucking (NNS) is common in early development; however, prolonged persistence beyond age 3 significantly increases the risk of dental malocclusion.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white/50 p-4 rounded-lg border-l-4 border-[#4b9cd3]">
+<h4 class="font-bold text-primary text-sm mb-2">Pacifier Use</h4>
+<p class="text-xs text-on-surface-variant">Often results in a wider anterior open bite and narrower maxillary arch compared to digit habits, as the nipple shape influences tongue positioning.</p>
+</div>
+<div class="bg-white/50 p-4 rounded-lg border-l-4 border-[#4b9cd3]">
+<h4 class="font-bold text-primary text-sm mb-2">Digit Sucking</h4>
+<p class="text-xs text-on-surface-variant">Typically leads to increased overjet, proclination of maxillary incisors, and localized alveolar changes based on the finger's pressure vector.</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center">
 </div>
 </div>
 </section>
-<!-- Bento Grid Content Layout -->
-<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- NNS Section - Large Asymmetric Card -->
-<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-8 opacity-10">
-<span class="material-symbols-outlined text-9xl">child_care</span>
+<!-- Section 2: Bruxism -->
+<section class="bg-surface-container-low rounded-xl p-8 border-t-2 border-primary/20 mb-8">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">medical_services</span>
 </div>
-<h2 class="text-2xl font-bold font-headline mb-6 text-primary flex items-center gap-2">
-<span class="material-symbols-outlined">psychology</span>
-                        Non-Nutritive Sucking (NNS)
-                    </h2>
-<div class="space-y-6 relative z-10">
-<p class="text-on-surface-variant leading-relaxed">
-                            Evaluation of intensity, duration, and frequency is critical for speech and dental health. Digit habits are often more recalcitrant and cause greater dental arch deformation.
-                        </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm border-l-4 border-tertiary">
-<h3 class="font-bold text-on-surface mb-2">Digit vs. Pacifier Use</h3>
-<p class="text-sm text-on-surface-variant">Evaluation of habitual intensity. Persistent use leads to anterior open bite and increased overjet.</p>
+<h2 class="text-2xl font-bold text-on-surface">2. Bruxism in Complex Pediatrics</h2>
 </div>
-<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm border-l-4 border-primary-container">
-<h3 class="font-bold text-on-surface mb-2">Dental Consequences</h3>
-<p class="text-sm text-on-surface-variant">Posterior crossbite due to buccal musculature pressure during prolonged NNS suction.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Bruxism in children with neurological or developmental conditions is often multifactorial, involving gastroesophageal reflux, sleep apnea, or dopamine-pathway dysfunction.</p>
+<div class="overflow-hidden rounded-lg border border-outline-variant/30">
+<table class="w-full text-left text-sm">
+<thead class="bg-primary/10 text-primary font-bold">
+<tr>
+<th class="p-3">Type</th>
+<th class="p-3">Characteristics</th>
+<th class="p-3">Clinical Concern</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30">
+<tr class="bg-white/30">
+<td class="p-3 font-medium">Sleep-Related</td>
+<td class="p-3">Rhythmic masticatory muscle activity; grinding sounds.</td>
+<td class="p-3">Sleep disordered breathing (SDB) screening required.</td>
+</tr>
+<tr class="bg-white/50">
+<td class="p-3 font-medium">Awake Bruxism</td>
+<td class="p-3">Often associated with stress or high-intensity focus.</td>
+<td class="p-3">TMJ tension and enamel wear in primary dentition.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</section><div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Section 3: Sensory Aversions -->
+<section class="bg-surface-container-low rounded-xl p-8 border-t-2 border-primary/20 md:col-span-2">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">psychology_alt</span>
 </div>
+<h2 class="text-2xl font-bold text-on-surface">3. Sensory Aversions</h2>
 </div>
+<div class="space-y-8">
+<p class="text-sm text-on-surface-variant leading-relaxed max-w-3xl">Oral hypersensitivity often leads to significant oral care challenges. Children may exhibit gagging, distress, or physical avoidance during toothbrushing, which compromises periodontal health.</p>
+<div class="space-y-4">
+<h5 class="font-bold text-tertiary text-xs uppercase tracking-widest">Desensitization Strategies</h5>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white/50 p-4 rounded-lg border border-outline-variant/30">
+<div class="font-bold text-on-surface text-sm mb-2">Systematic Desensitization</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Gradual tactile input from extremities toward the perioral and intraoral regions.</p>
 </div>
-<!-- Sensory Oral Aversion - Narrow Accent Card -->
-<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-6 border-l-4 border-tertiary">
-<h2 class="text-xl font-bold font-headline mb-4 text-on-surface">Sensory Oral Aversion</h2>
-<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Barriers to feeding success often manifest as defensive behaviors toward specific textures.</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-3 bg-white/50 p-2 rounded-lg">
-<span class="material-symbols-outlined text-tertiary text-sm">warning</span>
-<span class="text-xs font-bold text-on-surface uppercase">Hyper-responsivity</span>
-</li>
-<li class="flex items-center gap-3 bg-white/50 p-2 rounded-lg">
-<span class="material-symbols-outlined text-tertiary text-sm">texture</span>
-<span class="text-xs font-bold text-on-surface uppercase">Texture Selectivity</span>
-</li>
-</ul>
-<div class="mt-8 pt-6 border-t border-surface-variant/30">
-<p class="text-xs font-bold text-[#13294b] mb-1 uppercase">SLP Intervention Tip</p>
-<p class="text-xs text-on-surface-variant leading-relaxed">Transition from "extinction" models to "systematic desensitization" for long-term oral motor success.</p>
+<div class="bg-white/50 p-4 rounded-lg border border-outline-variant/30">
+<div class="font-bold text-on-surface text-sm mb-2">Vibration</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Use of Z-Vibe or electric brushes to modulate sensory threshold.</p>
 </div>
-</div>
-<!-- Visual Guide - Clinical Assessment Checklist -->
-<div class="md:col-span-12 lg:col-span-4 bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between">
-<div>
-<h2 class="text-xl font-bold font-headline mb-4">Assessment Checklist</h2>
-<p class="text-sm text-on-surface-variant mb-6">Based on the American Academy of Pediatric Dentistry (AAPD) policy on oral habits.</p>
-</div>
-<img alt="sterile dental tools" class="rounded-lg w-full h-48 object-cover mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM_AM0zTiTjHIeJIG1FPmidpTw7km3GxauFbQEI7KCEulqZ4eqSx844RA2jvnYAlgxPCrTq7m5Dw3TgA7rr7aLE_qSzx9UwB1K3M8VwFmU6ISTIy49gXcnkXr6MKY85RSnOO7QFOoVjKSRIXQq1mII6wW1n9k21Un4iKBjie4Vm5FIGeb2o0azfdh4C0r51tqTduUPuZIrPsko3LE8wvmEx551QZDVRhkHF-gBM_xNhcBkxAKmz--OVGHcQC_b2OPu6VLNUFuzbyk"/>
-<button class="w-full py-3 bg-gradient-to-r from-primary to-tertiary text-white font-bold text-xs uppercase tracking-widest rounded-lg">Download Clinical PDF</button>
-</div>
-<!-- Collaborative Insights - Vertical Column (Tongue Thrust) -->
-<div class="md:col-span-12 lg:col-span-8 space-y-8">
-<!-- Insight 1 -->
-<div class="flex gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container p-4 rounded-full flex-shrink-0">
-<span class="material-symbols-outlined">neurology</span>
-</div>
-<div class="flex-1 border-b border-surface-variant pb-8">
-<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Tongue Thrust &amp; OMD</h3>
-<p class="text-on-surface-variant leading-relaxed mb-4">
-                                Tongue thrust is a physiological imbalance. When the tongue pushes forward against teeth, it can exert up to 500 grams of pressure, causing significant dental displacement over time.
-                            </p>
-<div class="flex gap-4">
-<div class="bg-surface-container-low px-4 py-2 rounded-lg">
-<span class="block text-primary font-black text-lg">80%</span>
-<span class="text-[10px] uppercase font-bold text-on-surface-variant">OMD Co-morbidity</span>
-</div>
-<div class="bg-surface-container-low px-4 py-2 rounded-lg">
-<span class="block text-primary font-black text-lg">4.2x</span>
-<span class="text-[10px] uppercase font-bold text-on-surface-variant">Relapse Risk</span>
+<div class="bg-white/50 p-4 rounded-lg border border-outline-variant/30">
+<div class="font-bold text-on-surface text-sm mb-2">Environmental Control</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Reducing auditory/visual triggers in the dental operatory.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- Insight 2 -->
-<div class="flex gap-6 items-start">
-<div class="bg-tertiary-container text-on-tertiary-container p-4 rounded-full flex-shrink-0">
-<span class="material-symbols-outlined">checklist</span>
+</section>
+<!-- Section 4: Drooling & Oral Motor -->
+</div><section class="bg-surface-container-low rounded-xl p-8 border-t-2 border-primary/20 md:col-span-2">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">health_metrics</span>
 </div>
-<div class="flex-1">
-<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Treatment Pathways</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-<div class="bg-surface p-3 rounded-lg border border-outline-variant/30 text-xs font-medium">1. Habit elimination (Digit/Pacifier)</div>
-<div class="bg-surface p-3 rounded-lg border border-outline-variant/30 text-xs font-medium">2. Myofunctional therapy for posture</div>
-<div class="bg-surface p-3 rounded-lg border border-outline-variant/30 text-xs font-medium">3. Orthodontic arch correction</div>
+<h2 class="text-2xl font-bold text-on-surface">4. Oral Motor Dysfunction</h2>
 </div>
+<div class="space-y-4">
+<p class="text-sm text-on-surface-variant leading-relaxed">Inefficient bolus clearance and poor salivary management create a high-caries-risk environment, particularly in children with cerebral palsy or muscular dystrophies.</p>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-primary font-bold text-xl">80%</span>
+<p class="text-[10px] uppercase font-bold text-on-surface-variant">Higher risk of skin breakdown (Perioral)</p>
 </div>
-</div>
-</div>
-<!-- Progress Footer -->
-<div class="md:col-span-12 mt-8">
-<div class="bg-[#13294b] p-8 rounded-2xl text-white flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="flex items-center gap-6">
-<div class="w-16 h-16 rounded-full border-4 border-[#4b9cd3] flex items-center justify-center font-bold text-xl">4/5</div>
-<div>
-<h2 class="text-2xl font-extrabold font-headline">Module Progress</h2>
-<p class="opacity-80 text-sm">Next: Special Populations Clinical Management</p>
+<div class="bg-white/50 p-4 rounded-lg">
+<span class="text-primary font-bold text-xl">3x</span>
+<p class="text-[10px] uppercase font-bold text-on-surface-variant">Increased likelihood of bolus stasis</p>
 </div>
 </div>
-<div class="flex gap-4">
-<button class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-white/20 transition-colors border border-white/20">
-                                Previous Module
-                            </button>
-<button class="bg-[#4b9cd3] text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-[#3a8bc2] transition-colors editorial-shadow">
-                                Complete &amp; Continue
-                            </button>
+<div class="p-4 bg-error-container/30 rounded-lg text-sm text-on-error-container">
+<span class="font-bold">Caution:</span> Salivary stasis combined with frequent carbohydrate exposure in thickeners significantly accelerates enamel demineralization.
+                        </div>
 </div>
+</section>
+<!-- Academic References Section -->
+<footer class="mt-16 pt-8 border-t border-outline-variant/30 text-on-surface-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+<h3 class="text-lg font-bold">Academic References &amp; Citations</h3>
 </div>
-</div>
-</div>
-<!-- Footer Spacing -->
-<footer class="mt-24 pt-12 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-6 text-on-surface-variant text-sm">
-<div class="flex items-center gap-2">
-<span class="font-bold text-[#13294b]">Clinical Editorial Intelligence</span>
-<span class="opacity-30">|</span>
-<span>Version 4.2.0</span>
-</div>
-<div class="flex gap-8">
-<a class="hover:text-primary transition-colors" href="#">Privacy Standards</a>
-<a class="hover:text-primary transition-colors" href="#">Institutional Access</a>
-<a class="hover:text-primary transition-colors" href="#">Support</a>
-</div>
+<ol class="grid grid-cols-1 gap-6 text-xs font-['Public_Sans'] opacity-80 leading-relaxed list-decimal pl-5 space-y-4">
+<li class="pr-4">American Academy of Pediatric Dentistry. Policy on Oral Habits. <i>The Reference Manual of Pediatric Dentistry.</i> Chicago, IL: American Academy of Pediatric Dentistry; 2023:95-97.</li>
+<li class="pr-4">Lobbezoo F, et al. International consensus on the assessment of bruxism: Report of a work in progress. <i>Journal of Oral Rehabilitation.</i> 2018;45(11):837-844.</li>
+<li class="pr-4">Gisel EG. Oral-motor skills: A review of developing skills and their impact on feeding. <i>Journal of Pediatric Healthcare.</i> 2008;22(2):100-109.</li>
+<li class="pr-4">Mason RM. Myths that persist about orofacial myology. <i>International Journal of Orofacial Myology and Myofunctional Therapy.</i> 2011;37:26-38.</li>
+</ol>
 </footer>
-</main>
 </div>
-<!-- Floating Action for Quick Reference -->
-<button class="fixed bottom-8 right-8 bg-[#13294b] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform z-50">
-<span class="material-symbols-outlined">menu_book</span>
-</button>
+</main>
+<!-- FAB (Suppressed on Module Details per instruction, but shown here for UI flow consistency if user expects) -->
+<!-- Not rendered per "Contextual FAB Suppression" rules -->
+<script>
+        // Micro-interactions
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('scale-95');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('scale-95');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('scale-95');
+            });
+        });
+
+        // Simple scroll spy for header opacity
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.remove('opacity-90');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('opacity-90');
+            }
+        });
+    </script>
+
+
+
+
 </body></html>
